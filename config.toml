@@ -71,3 +71,10 @@ paginate = 5
                 identifier = "other-sites"
                 name = "Other Sites"
                 url = "/other-sites"
+                weight = 10
+
+            [[languages.en.menu.main]]
+                identifier = "main-website"
+                name = "Main Website"
+                url = "https://bbaovanc.com/"
+                weight = 20
