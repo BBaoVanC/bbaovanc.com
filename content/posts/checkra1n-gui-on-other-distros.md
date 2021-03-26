@@ -7,6 +7,7 @@ tags = ["linux", "archlinux", "jailbreak", "checkra1n"]
 keywords = ["checkra1n", "gui", "linux", "arch linux"]
 description = "You can run the GUI version of checkra1n on non Debian-based distributions. (The GUI looks garbled here because I have a high DPI monitor)"
 showFullContent = false
+toc = true
 +++
 
 *The GUI above looks garbled because I have a high DPI monitor.*
