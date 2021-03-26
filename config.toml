@@ -4,83 +4,83 @@ theme = "terminal"
 paginate = 5
 
 # [permalinks]
-#     posts = "/:year/:month/:title/"
+#   posts = "/:year/:month/:title/"
 
 [params]
-    # dir name of your main content (default is `content/posts`).
-    # the list of set content will show up on your index page (baseurl).
-    contentTypeName = "posts"
+  # dir name of your main content (default is `content/posts`).
+  # the list of set content will show up on your index page (baseurl).
+  contentTypeName = "posts"
 
-    # ["orange", "blue", "red", "green", "pink"]
-    themeColor = "blue"
+  # ["orange", "blue", "red", "green", "pink"]
+  themeColor = "blue"
 
-    # if you set this to 0, only submenu trigger will be visible
-    showMenuItems = 2
+  # if you set this to 0, only submenu trigger will be visible
+  showMenuItems = 2
 
-    # show selector to switch language
-    showLanguageSelector = false
+  # show selector to switch language
+  showLanguageSelector = false
 
-    # set theme to full screen width
-    fullWidthTheme = false
+  # set theme to full screen width
+  fullWidthTheme = false
 
-    # center theme with default width
-    centerTheme = true
+  # center theme with default width
+  centerTheme = true
 
-    # set a custom favicon (default is a `themeColor` square)
-    favicon = "icon/favicon.ico"
+  # set a custom favicon (default is a `themeColor` square)
+  favicon = "icon/favicon.ico"
 
-    # set post to show the last updated
-    # If you use git, you can set `enableGitInfo` to `true` and then post will automatically get the last updated
-    showLastUpdated = false
-    # Provide a string as a prefix for the last update date. By default, it looks like this: 2020-xx-xx [Updated: 2020-xx-xx] :: Author
-    # updatedDatePrefix = "Updated"
+  # set post to show the last updated
+  # If you use git, you can set `enableGitInfo` to `true` and then post will automatically get the last updated
+  showLastUpdated = false
+  # Provide a string as a prefix for the last update date. By default, it looks like this: 2020-xx-xx [Updated: 2020-xx-xx] :: Author
+  # updatedDatePrefix = "Updated"
 
-    # set all headings to their default size (depending on browser settings)
-    # it's set to `true` by default
-    # oneHeadingSize = false
+  # set all headings to their default size (depending on browser settings)
+  # it's set to `true` by default
+  # oneHeadingSize = false
 
 [params.twitter]
-    # set Twitter handles for Twitter cards
-    # see https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started#card-and-content-attribution
-    # do not include @
-    creator = ""
-    site = ""
+  # set Twitter handles for Twitter cards
+  # see https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started#card-and-content-attribution
+  # do not include @
+  creator = ""
+  site = ""
 
 [languages]
-    [languages.en]
-        languageName = "English"
-        title = "bbaovanc's blog"
-        subtitle = "My personal blog site"
-        owner = "bbaovanc"
-        keywords = ""
-        copyright = ""
-        menuMore = "Show more"
-        readMore = "Read more"
-        readOtherPosts = "Read other posts"
-        newerPosts = "Newer posts"
-        olderPosts = "Older posts"
-        missingContentMessage = "Page not found..."
-        missingBackButtonLabel = "Back to home page"
+  [languages.en]
+    languageName = "English"
+    title = "bbaovanc's blog"
+    subtitle = "My personal blog site"
+    owner = "bbaovanc"
+    keywords = ""
+    copyright = ""
+    menuMore = "Show more"
+    readMore = "Read more"
+    readOtherPosts = "Read other posts"
+    newerPosts = "Newer posts"
+    olderPosts = "Older posts"
+    missingContentMessage = "Page not found..."
+    missingBackButtonLabel = "Back to home page"
 
-        [languages.en.params.logo]
-            logoText = "bbaovanc's blog"
-            logoHomeLink = "/blog/"
+    [languages.en.params.logo]
+      logoText = "bbaovanc's blog"
+      logoHomeLink = "/blog/"
 
-        [languages.en.menu]
-            [[languages.en.menu.main]]
-                identifier = "other-sites"
-                name = "Other Sites"
-                url = "/other-sites"
-                weight = 10
+    [languages.en.menu]
+      [[languages.en.menu.main]]
+        identifier = "other-sites"
+        name = "Other Sites"
+        url = "/other-sites"
+        weight = 10
 
-            [[languages.en.menu.main]]
-                identifier = "main-website"
-                name = "Main Website"
-                url = "https://bbaovanc.com/"
-                weight = 20
+      [[languages.en.menu.main]]
+        identifier = "main-website"
+        name = "Main Website"
+        url = "https://bbaovanc.com/"
+        weight = 20
 
-            [[languages.en.menu.main]]
-                identifier = "rss"
-                name = "RSS Feed"
-                url = "/posts/index.xml"
-                weight = 30
+      [[languages.en.menu.main]]
+        identifier = "rss"
+        name = "RSS Feed"
+        url = "/posts/index.xml"
+        weight = 30
