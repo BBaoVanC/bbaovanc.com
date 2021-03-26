@@ -82,5 +82,5 @@ paginate = 5
             [[languages.en.menu.main]]
                 identifier = "rss"
                 name = "RSS Feed"
-                url = "/index.xml"
+                url = "/posts/index.xml"
                 weight = 30
