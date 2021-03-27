@@ -3,7 +3,7 @@ title = "Checkra1n GUI on Other Distros"
 date = "2021-03-25T21:19:51-05:00"
 author = "bbaovanc"
 cover = "/blog/media/checkra1n-gui-on-arch-linux.png"
-tags = ["linux", "archlinux", "jailbreak", "checkra1n"]
+tags = ["guide", "linux", "archlinux", "jailbreak", "checkra1n"]
 keywords = ["checkra1n", "gui", "linux", "arch linux"]
 
 description = """
