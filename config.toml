@@ -69,15 +69,15 @@ enableGitInfo = true
 
     [languages.en.menu]
       [[languages.en.menu.main]]
-        identifier = "other-sites"
-        name = "Other Sites"
-        url = "/other-sites"
+        identifier = "tags"
+        name = "Tags"
+        url = "/tags"
         weight = 10
 
       [[languages.en.menu.main]]
-        identifier = "main-website"
-        name = "Main Website"
-        url = "https://bbaovanc.com/"
+        identifier = "links"
+        name = "Links"
+        url = "/links"
         weight = 20
 
       [[languages.en.menu.main]]
@@ -85,3 +85,9 @@ enableGitInfo = true
         name = "RSS Feed"
         url = "/posts/index.xml"
         weight = 30
+
+      [[languages.en.menu.main]]
+        identifier = "main-website"
+        name = "Main Website"
+        url = "https://bbaovanc.com/"
+        weight = 40
