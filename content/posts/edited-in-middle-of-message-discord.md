@@ -3,7 +3,7 @@ title = "Put (edited) in the middle of a message in Discord"
 date = "2021-03-25T18:48:34-05:00"
 author = "bbaovanc"
 cover = "media/discord-tricks/edited-in-middle-of-message.png"
-tags = ["discord", "discord-tricks"]
+tags = ["tutorial", "discord", "discord-tricks"]
 keywords = ["discord", "edited"]
 
 description = """

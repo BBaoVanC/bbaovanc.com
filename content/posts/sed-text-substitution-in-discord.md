@@ -2,7 +2,7 @@
 title = "Text Substitution in Discord using `sed`"
 date = "2021-03-25T18:48:15-05:00"
 author = "bbaovanc"
-tags = ["discord", "discord-tricks"]
+tags = ["tutorial", "discord", "discord-tricks"]
 keywords = ["discord", "sed", "text", "replacement"]
 
 description = """
@@ -12,7 +12,7 @@ Discord has (very primitive) support for text replacement using `sed` syntax.
 showFullContent = false
 +++
 
-## How-to
+## Tutorial
 
 [Example Video](/blog/media/discord-tricks/sed-text-replacement.mov)
 
