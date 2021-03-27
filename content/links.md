@@ -10,7 +10,8 @@ toc: true
 - [Main Site](https://bbaovanc.com/)
 - [Blog](https://bbaovanc.com/blog/)
 - [Status Page](https://status.bbaovanc.com/)
-- [Searx Instance](https://searx.bbaovanc.com/)
+- [Searx Instance](https://searx.bbaovanc.com/) -
+  [source code](https://github.com/BBaoVanC/searx.bbaovanc.com)
 - [Gitea Instance](https://git.bbaovanc.com/)
 
 ## My Software
