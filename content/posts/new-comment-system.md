@@ -29,7 +29,7 @@ enough to spam my comment sections.
 
 You're supposed to be able to edit and delete comments up to 15 minutes after
 posting them. As of now, that doesn't seem to be working; the request just
-returns 403 (unauthorized).
+returns 403 (forbidden).
 
 ### White text on white background when previewing comment
 
