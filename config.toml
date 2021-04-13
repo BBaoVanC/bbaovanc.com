@@ -16,7 +16,7 @@ enableGitInfo = true
   themeColor = "blue"
 
   # if you set this to 0, only submenu trigger will be visible
-  showMenuItems = 5
+  showMenuItems = 6
 
   # show selector to switch language
   showLanguageSelector = false
@@ -87,13 +87,19 @@ enableGitInfo = true
         weight = 30
 
       [[languages.en.menu.main]]
+        identifier = "email-me"
+        name = "Email Me"
+        url = "mailto:contact@bbaovanc.com"
+        weight = 40
+
+      [[languages.en.menu.main]]
         identifier = "main-website"
         name = "Main Website"
         url = "https://bbaovanc.com/"
-        weight = 40
+        weight = 50
 
       [[languages.en.menu.main]]
         identifier = "source-code"
         name = "Source Code"
         url = "https://git.bbaovanc.com/bbaovanc.com/blog"
-        weight = 50
+        weight = 60
