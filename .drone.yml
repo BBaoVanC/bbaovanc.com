@@ -1,0 +1,36 @@
+---
+kind: pipeline
+type: docker
+name: Deploy to bbaovanc.com
+
+trigger:
+    branch:
+        - master
+    event:
+        exclude:
+            - pull_request
+
+steps:
+    - name: Update submodules
+      image: alpine/git
+      commands:
+          - git submodule update --init --recursive
+
+    - name: Build site
+      image: mapitman/docker-hugo
+      commands:
+          - hugo version
+          - hugo --minify
+
+    - name: Upload files
+      image: appleboy/drone-scp
+      settings:
+          host: bbaovanc.com
+          port: 2222
+          username: droneci
+          key:
+              from_secret: SSH_KEY
+          target: /var/www/bbaovanc/blog/
+          rm: true
+          source: public/
+          strip_components: 1
