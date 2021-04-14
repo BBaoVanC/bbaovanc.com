@@ -174,7 +174,7 @@
     margin: 0 0 .3em;
     padding: .4em .8em;
     border-radius: 3px;
-    background-color: #fff;
+    /*background-color: #fff;*/
     border: 1px solid rgba(0, 0, 0, 0.2);
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
@@ -202,7 +202,9 @@
     padding: .3em 10px;
     max-width: 100%;
     border-radius: 3px;
-    background-color: #fff;
+    /*background-color: #fff;*/
+    background-color: rgb(0, 0, 0, 0);
+    color: #fff;
     line-height: 1.4em;
     border: 1px solid rgba(0, 0, 0, 0.2);
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
@@ -215,8 +217,10 @@
 .isso-postbox > .form-wrapper > .auth-section .post-action > input {
     padding: calc(.3em - 1px);
     border-radius: 2px;
-    border: 1px solid #CCC;
-    background-color: #DDD;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    /*background-color: #DDD;*/
+    background-color: rgb(0, 0, 0, 0);
+    color: #fff;
     cursor: pointer;
     outline: 0;
     line-height: 1.4em;
@@ -241,14 +245,14 @@
     display: inline;
 }
 .isso-postbox > .form-wrapper .preview {
-    background-color: #f8f8f8;
+    /*background-color: #f8f8f8;
     background: repeating-linear-gradient(
         -45deg,
         #f8f8f8,
         #f8f8f8 10px,
         #fff 10px,
         #fff 20px
-    );
+    );*/
 }
 .isso-postbox > .form-wrapper > .notification-section {
     display: none;
