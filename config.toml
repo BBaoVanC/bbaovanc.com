@@ -28,7 +28,7 @@ enableGitInfo = true
   centerTheme = true
 
   # set a custom favicon (default is a `themeColor` square)
-  favicon = "icon/favicon.ico"
+  favicon = "img/favicon.ico"
 
   # set post to show the last updated
   # If you use git, you can set `enableGitInfo` to `true` and then post will automatically get the last updated
