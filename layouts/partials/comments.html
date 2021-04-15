@@ -1,4 +1,6 @@
-<link rel="stylesheet" href="/blog/isso.css">
+{{ $css := resources.Get "css/isso.css" }}
+{{ $style := $css | resources.Minify }}
+<link rel="stylesheet" href="{{ $style.Permalink }}">
 <script data-isso="https://bbaovanc.com/isso/"
         data-isso-css="false"
         src="https://bbaovanc.com/isso/js/embed.min.js"></script>
