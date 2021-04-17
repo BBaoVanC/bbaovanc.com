@@ -2,7 +2,7 @@
 title = "Allow Non Root Processes to Bind to Privileged Ports"
 date = "2021-03-28T20:03:16-05:00"
 author = "bbaovanc"
-tags = ["guide", "linux", "systemd"]
+tags = ["guide", "linux"]
 keywords = ["linux", "privileged", "ports", "tutorial", "guide", "gitea",
 "systemd"]
 
