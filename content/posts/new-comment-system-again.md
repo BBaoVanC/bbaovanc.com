@@ -11,7 +11,6 @@ I decided to switch my comment system from Isso to
 """
 
 showFullContent = false
-toc = true
 +++
 
 ## Isso vs Commento
