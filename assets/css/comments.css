@@ -1,0 +1,22 @@
+.commento-root * {
+    color: white;
+}
+
+.commento-root .commento-logged-container .commento-logged-in-as .commento-name,
+.commento-root .commento-anonymous-checkbox-container input[type="checkbox"] + label {
+    color: rgb(134, 142, 150);
+}
+
+.commento-root textarea {
+    border-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+}
+
+.commento-root .commento-card {
+    border-top-color: rgba(255, 255, 255, 0.1);
+}
+
+.commento-root .commento-dark-card {
+    background-color: rgb(64, 64, 64);
+}

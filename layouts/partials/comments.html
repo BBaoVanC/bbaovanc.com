@@ -1,8 +1,15 @@
-{{ $css := resources.Get "css/isso.css" }}
+{{ $css := resources.Get "css/comments.css" }}
 {{ $style := $css | resources.Minify }}
-<link rel="stylesheet" href="{{ $style.Permalink }}">
-<script data-isso="https://bbaovanc.com/isso/"
-        data-isso-css="false"
-        src="https://bbaovanc.com/isso/js/embed.min.js"></script>
 
-<section id="isso-thread"></section>
+<script defer
+    src="https://commento.bbaovanc.com/js/commento.js"
+    data-page-id="{{ .RelPermalink }}"
+    data-no-fonts="true"
+    data-css-override="{{ $style.Permalink }}">
+</script>
+<div id="commento"></div>
+
+<noscript>
+    <br />
+    <b>Comments are not available when JavaScript is disabled.</b>
+</noscript>
