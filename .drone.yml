@@ -22,11 +22,10 @@ steps:
           - hugo version
           - hugo --minify
 
-    - name: tree
+    - name: list files
       image: alpine:latest
       commands:
-          - apk add tree
-          - tree -a public/
+          - find public/
 
     - name: upload
       image: appleboy/drone-scp
