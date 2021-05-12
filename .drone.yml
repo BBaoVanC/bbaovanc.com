@@ -17,7 +17,7 @@ steps:
           - git submodule update --init --recursive
 
     - name: build
-      image: mapitman/docker-hugo
+      image: bbaovanc/hugo
       commands:
           - hugo version
           - hugo --minify
