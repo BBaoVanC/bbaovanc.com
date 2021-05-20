@@ -1,16 +1,19 @@
 +++
 title = "New Comment System"
-date = "2021-04-11T00:17:13-05:00"
-author = "bbaovanc"
-tags = ["announcement", "hugo", "blog"]
-keywords = ["hugo", "comment system", "blog", "isso"]
+date = "2021-04-11"
+aliases = [
+  "posts/new-comment-system/",
+]
 
 description = """
 I added a comment system to my blog, using [Isso](https://posativ.org/isso/).
 """
 
-showFullContent = false
-toc = true
+tags = [
+  "announcement",
+  "hugo",
+  "blog",
+]
 +++
 
 ## About

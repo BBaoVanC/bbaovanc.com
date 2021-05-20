@@ -1,15 +1,19 @@
 +++
 title = "Text Substitution in Discord using `sed`"
-date = "2021-03-25T18:48:15-05:00"
-author = "bbaovanc"
-tags = ["tutorial", "discord", "discord-tricks"]
-keywords = ["discord", "sed", "text", "replacement"]
+date = "2021-03-25"
+aliases = [
+  "posts/text-substitution-in-discord-using-sed/",
+]
 
 description = """
 Discord has (very primitive) support for text replacement using `sed` syntax.
 """
 
-showFullContent = false
+tags = [
+  "tutorial",
+  "discord",
+  "discord-tricks",
+]
 +++
 
 ## Tutorial

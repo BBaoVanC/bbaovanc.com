@@ -1,18 +1,23 @@
 +++
 title = "Put (edited) in the middle of a message in Discord"
-date = "2021-03-25T18:48:34-05:00"
-author = "bbaovanc"
-cover = "media/discord-tricks/edited-in-middle-of-message.webp"
-tags = ["tutorial", "discord", "discord-tricks"]
-keywords = ["discord", "edited"]
+date = "2021-03-25"
+aliases = [
+  "posts/edited-in-middle-of-message-discord/",
+]
 
 description = """
 With a bit of trickery using the RLE character (U+202B), you can get the
 (edited) text on a message to be somewhere other than at the end of the message.
 """
 
-showFullContent = false
+tags = [
+  "tutorial",
+  "discord",
+  "discord-tricks",
+]
 +++
+
+![Example image](/media/discord-tricks/edited-in-middle-of-message.webp)
 
 ## Tutorial
 

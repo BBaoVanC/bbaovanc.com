@@ -1,105 +1,62 @@
-baseURL = "https://bbaovanc.com/blog/"
-languageCode = "en-us"
-theme = "terminal"
-paginate = 5
-enableGitInfo = true
 
-# [permalinks]
-#   posts = "/:year/:month/:title/"
+baseURL = "https://bbaovanc.com"
+
+# The name of this wonderful theme ;-).
+theme = 'hugo-bearblog'
+
+# Basic metadata configuration for your blog.
+title = "bbaovanc's blog"
+author = "bbaovanc"
+copyright = "Copyright © 2021, bbaovanc."
+languageCode = "en-US"
+
+# Generate a nice robots.txt for SEO
+enableRobotsTXT = true
+
+# Generate "Bearblog"-like URLs !only!, see https://bearblog.dev/.
+disableKinds = ["taxonomy"]
+ignoreErrors = ["error-disable-taxonomy"]
+[permalinks]
+  #blog = "/:slug/"
+  tags = "/blog/:slug"
 
 [params]
-  # dir name of your main content (default is `content/posts`).
-  # the list of set content will show up on your index page (baseurl).
-  contentTypeName = "posts"
+  # The "description" of your website. This is used in the meta data of your generated html.
+  description = "My personal blog site"
 
-  # ["orange", "blue", "red", "green", "pink"]
-  themeColor = "blue"
-
-  # if you set this to 0, only submenu trigger will be visible
-  showMenuItems = 6
-
-  # show selector to switch language
-  showLanguageSelector = false
-
-  # set theme to full screen width
-  fullWidthTheme = false
-
-  # center theme with default width
-  centerTheme = true
-
-  # set a custom favicon (default is a `themeColor` square)
+  # The path to your "favicon". This should be a square (at least 32px x 32px) png-file.
+  # Hint: It's good practise to also put a "favicon.ico"-file into your "static"-folder.
   favicon = "img/favicon.ico"
 
-  # set post to show the last updated
-  # If you use git, you can set `enableGitInfo` to `true` and then post will automatically get the last updated
-  showLastUpdated = true
-  # Provide a string as a prefix for the last update date. By default, it looks like this: 2020-xx-xx [Updated: 2020-xx-xx] :: Author
-  # updatedDatePrefix = "Updated"
+  # These "images" are used for the structured data templates. This will show up, when
+  # services like Twitter or Slack want to generate a preview of a link to your site.
+  # See https://gohugo.io/templates/internal#twitter-cards and
+  # https://gohugo.io/templates/internal#open-graph.
+  images = ["img/favicon.png"]
 
-  # set all headings to their default size (depending on browser settings)
-  # it's set to `true` by default
-  # oneHeadingSize = false
+  # Another "title" :-). This one is used as the site_name on the Hugo's internal
+  # opengraph structured data template.
+  # See https://ogp.me/ and https://gohugo.io/templates/internal#open-graph.
+  title = "bbaovanc's blog"
 
-[params.twitter]
-  # set Twitter handles for Twitter cards
-  # see https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started#card-and-content-attribution
-  # do not include @
-  creator = ""
-  site = ""
+  # This theme will, by default, inject a made-with-line at the bottom of the page.
+  # You can turn it off, but we would really appreciate if you don’t :-).
+  # hideMadeWithLine = true
 
-[languages]
-  [languages.en]
-    languageName = "English"
-    title = "bbaovanc's blog"
-    subtitle = "My personal blog site"
-    owner = "bbaovanc"
-    keywords = ""
-    copyright = ""
-    menuMore = "Show more"
-    readMore = "Read more"
-    readOtherPosts = "Read other posts"
-    newerPosts = "Newer posts"
-    olderPosts = "Older posts"
-    missingContentMessage = "Page not found..."
-    missingBackButtonLabel = "Back to home page"
+  # By default, this theme displays dates with a format like "02 Jan, 2006", but
+  # you can customize it by setting the `dateFormat` param in your site's config
+  # file. See [Hugo's Format function docs](https://gohugo.io/functions/format/)
+  # for details. An example TOML config that uses [ISO
+  # 8601](https://en.wikipedia.org/wiki/ISO_8601) format:
+  # dateFormat = "2006-01-02"
 
-    [languages.en.params.logo]
-      logoText = "bbaovanc's blog"
-      logoHomeLink = "/blog/"
+[menu]
+  [[menu.main]]
+    identifier = "rss"
+    name = "RSS Feed"
+    url = "/blog/index.xml"
 
-    [languages.en.menu]
-      [[languages.en.menu.main]]
-        identifier = "tags"
-        name = "Tags"
-        url = "/tags"
-        weight = 10
-
-      [[languages.en.menu.main]]
-        identifier = "links"
-        name = "Links"
-        url = "/links"
-        weight = 20
-
-      [[languages.en.menu.main]]
-        identifier = "rss"
-        name = "RSS Feed"
-        url = "/posts/index.xml"
-        weight = 30
-
-      [[languages.en.menu.main]]
-        identifier = "email-me"
-        name = "Email Me"
-        url = "mailto:contact@bbaovanc.com"
-        weight = 40
-
-      [[languages.en.menu.main]]
-        identifier = "main-website"
-        name = "Main Website"
-        url = "https://bbaovanc.com/"
-        weight = 50
-
-      [[languages.en.menu.main]]
-        identifier = "source-code"
-        name = "Source Code"
-        url = "https://git.bbaovanc.com/bbaovanc.com/blog"
-        weight = 60
+  [[menu.main]]
+    identifier = "git-repo"
+    name = "Source Code"
+    url = "https://git.bbaovanc.com/bbaovanc.com/blog"

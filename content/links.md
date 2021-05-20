@@ -1,9 +1,14 @@
----
-title: "Links"
-toc: true
----
++++
+title = "Links"
+menu = "main"
+aliases = [
+  "/blog/links/",
+]
 
----
+description = """
+Various links to my stuff
+"""
++++
 
 ## Other
 

@@ -1,16 +1,20 @@
 +++
 title = "New Comment System (again)"
-date = "2021-04-17T00:08:30-05:00"
-author = "bbaovanc"
-tags = ["announcement", "hugo", "blog"]
-keywords = ["hugo", "comment system", "blog", "commento"]
+date = "2021-04-17"
+aliases = [
+  "posts/new-comment-system-again/",
+]
 
 description = """
 I decided to switch my comment system from Isso to
 [Commento](https://www.commento.io/)
 """
 
-showFullContent = false
+tags = [
+  "announcement",
+  "hugo",
+  "blog",
+]
 +++
 
 ## Isso vs Commento
@@ -24,10 +28,10 @@ this working on Isso), and a nicer design. I also was able to write some
 supports SSO, so I might add support for signing up with GitHub, and possibly
 GitLab.
 
-## Summary of the [first post]({{< ref "/posts/new-comment-system" >}})
+## Summary of the [first post]({{< ref "/blog/new-comment-system" >}})
 
 If you haven't read the
-[New Comment System]({{< ref "/posts/new-comment-system" >}}) post, here's the
+[New Comment System]({{< ref "/blog/new-comment-system" >}}) post, here's the
 most important information. There's a comment section at the bottom of each post
 where you can view and post comments. You can post anonymously, or create an
 account so you can show your username and get email notifications. You can also

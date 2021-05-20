@@ -1,18 +1,19 @@
 +++
 title = "Allow Non Root Processes to Bind to Privileged Ports"
-date = "2021-03-28T20:03:16-05:00"
-author = "bbaovanc"
-tags = ["guide", "linux"]
-keywords = ["linux", "privileged", "ports", "tutorial", "guide", "gitea",
-"systemd"]
+date = "2021-03-28"
+aliases = [
+  "posts/allow-non-root-processes-to-bind-to-privileged-ports/",
+]
 
 description = """
 In Linux, processes cannot bind to privileged ports (<=1024) unless they are
 running as root. Here's how to allow any process to bind to privileged ports.
 """
 
-showFullContent = false
-toc = true
+tags = [
+  "guide",
+  "linux",
+]
 +++
 
 ## Introduction
