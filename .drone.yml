@@ -35,7 +35,7 @@ steps:
           username: droneci
           key:
               from_secret: SSH_KEY
-          target: /var/www/bbaovanc/blog/
+          target: /var/www/bbaovanc/public/
           rm: true
           source: public/
           strip_components: 1
