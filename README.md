@@ -1,3 +1,3 @@
-# blog
+# bbaovanc.com
 
-My Hugo blog
+My personal website, generated using [Hugo](https://gohugo.io)
