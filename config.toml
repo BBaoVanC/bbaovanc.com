@@ -9,5 +9,4 @@ enableRobotsTXT = true
 # these are for the OpenGraph/Twitter embeds
 [params]
   description = "My personal website"
-  images = ["favicon.png"]
   title = "bbaovanc.com"
