@@ -1,62 +1,13 @@
-
 baseURL = "https://bbaovanc.com"
-
-# The name of this wonderful theme ;-).
-theme = 'hugo-bearblog'
-
-# Basic metadata configuration for your blog.
-title = "bbaovanc.com"
-author = "bbaovanc"
-copyright = "Copyright © 2021, bbaovanc."
+theme = "bobatheme"
 languageCode = "en-US"
-
-# Generate a nice robots.txt for SEO
+author = "bbaovanc"
+title = "bbaovanc's Website"
+sectionPagesMenu = "main"
 enableRobotsTXT = true
 
-# Generate "Bearblog"-like URLs !only!, see https://bearblog.dev/.
-disableKinds = ["taxonomy"]
-ignoreErrors = ["error-disable-taxonomy"]
-[permalinks]
-  #blog = "/:slug/"
-  tags = "/blog/:slug"
-
+# these are for the OpenGraph/Twitter embeds
 [params]
-  # The "description" of your website. This is used in the meta data of your generated html.
   description = "My personal website"
-
-  # The path to your "favicon". This should be a square (at least 32px x 32px) png-file.
-  # Hint: It's good practise to also put a "favicon.ico"-file into your "static"-folder.
-  favicon = "img/favicon.ico"
-
-  # These "images" are used for the structured data templates. This will show up, when
-  # services like Twitter or Slack want to generate a preview of a link to your site.
-  # See https://gohugo.io/templates/internal#twitter-cards and
-  # https://gohugo.io/templates/internal#open-graph.
-  images = ["img/favicon.png"]
-
-  # Another "title" :-). This one is used as the site_name on the Hugo's internal
-  # opengraph structured data template.
-  # See https://ogp.me/ and https://gohugo.io/templates/internal#open-graph.
-  title = "bbaovanc's blog"
-
-  # This theme will, by default, inject a made-with-line at the bottom of the page.
-  # You can turn it off, but we would really appreciate if you don’t :-).
-  # hideMadeWithLine = true
-
-  # By default, this theme displays dates with a format like "02 Jan, 2006", but
-  # you can customize it by setting the `dateFormat` param in your site's config
-  # file. See [Hugo's Format function docs](https://gohugo.io/functions/format/)
-  # for details. An example TOML config that uses [ISO
-  # 8601](https://en.wikipedia.org/wiki/ISO_8601) format:
-  # dateFormat = "2006-01-02"
-
-[menu]
-  [[menu.main]]
-    identifier = "rss"
-    name = "RSS Feed"
-    url = "/blog/index.xml"
-
-  [[menu.main]]
-    identifier = "git-repo"
-    name = "Source"
-    url = "https://git.bbaovanc.com/bbaovanc.com/bbaovanc.com"
+  images = ["favicon.png"]
+  title = "boba.best"
