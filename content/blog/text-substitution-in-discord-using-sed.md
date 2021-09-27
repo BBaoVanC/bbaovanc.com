@@ -18,7 +18,7 @@ tags = [
 
 ## Tutorial
 
-[Example Video](/blog/media/discord-tricks/sed-text-replacement.mov)
+[Example Video](/media/discord-tricks/sed-text-replacement.mov)
 
 If you send a message using `sed` substitution format (`s/old text/new text`),
 Discord will execute it on the message you've last sent.
