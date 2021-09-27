@@ -1,7 +1,3 @@
-[submodule "themes/hugo-bearblog"]
-	path = themes/hugo-bearblog
-	url = https://github.com/BBaoVanC/hugo-bearblog.git
-	branch = master
 [submodule "themes/bobatheme"]
 	path = themes/bobatheme
 	url = https://github.com/BBaoVanC/bobatheme.git
