@@ -20,12 +20,12 @@ steps:
       image: bbaovanc/hugo
       commands:
           - hugo version
-          - hugo --minify
+          - hugo
 
-    - name: list files
-      image: alpine:latest
+    - name: compress
+      image: bbaovanc/compression:latest
       commands:
-          - find public/
+          - time ./compress.sh
 
     - name: upload
       image: appleboy/drone-scp
