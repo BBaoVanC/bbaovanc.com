@@ -1,6 +1,8 @@
 +++
 title = "New Comment System (again)"
 date = "2021-04-17"
+toc = true
+
 aliases = [
   "posts/new-comment-system-again/",
 ]

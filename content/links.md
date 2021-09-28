@@ -1,6 +1,7 @@
 +++
 title = "Links"
 menu = "main"
+toc = true
 aliases = [
   "/blog/links/",
 ]

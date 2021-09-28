@@ -6,7 +6,11 @@ title = "bbaovanc's Website"
 sectionPagesMenu = "main"
 enableRobotsTXT = true
 
-# these are for the OpenGraph/Twitter embeds
 [params]
+  # these are for the OpenGraph/Twitter embeds in Hugo
   description = "My personal website"
   title = "bbaovanc.com"
+
+  # these are for favicons in bobatheme
+  faviconICO = "/favicon.ico"
+  faviconPNG = "/favicon.png"
