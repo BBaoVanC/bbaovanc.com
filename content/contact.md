@@ -1,6 +1,7 @@
 +++
 title = "Contact"
 menu = "main"
+toc = false
 
 description = """
 List of ways to contact me

@@ -1,6 +1,7 @@
 +++
 title = "GPG Fingerprints"
 menu = "main"
+toc = false
 
 description = """
 Fingerprint of my GPG key

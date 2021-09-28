@@ -1,6 +1,7 @@
 +++
 title = "Referral Codes"
 menu = "main"
+toc = false
 aliases = [
   "/referrals/",
 ]

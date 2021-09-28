@@ -1,6 +1,7 @@
 +++
 title = "Donate"
 menu = "main"
+toc = false
 
 description = """
 How to donate to me
