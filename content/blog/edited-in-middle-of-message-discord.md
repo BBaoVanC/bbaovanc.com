@@ -19,7 +19,7 @@ tags = [
 ]
 +++
 
-![Example image](/media/discord-tricks/edited-in-middle-of-message.webp)
+![Example image](edited-in-middle-of-message.webp)
 
 ## Tutorial
 

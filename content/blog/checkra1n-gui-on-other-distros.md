@@ -20,7 +20,7 @@ tags = [
 ]
 +++
 
-![Checkra1n GUI running on Arch Linux](/media/checkra1n-gui-on-arch-linux.webp)
+![Checkra1n GUI running on Arch Linux](checkra1n-gui-on-arch-linux.webp)
 
 ## Introduction
 
