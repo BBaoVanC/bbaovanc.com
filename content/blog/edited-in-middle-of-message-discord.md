@@ -19,7 +19,7 @@ tags = [
 ]
 +++
 
-![Example image](edited-in-middle-of-message.webp)
+![Example image](example.webp)
 
 ## Tutorial
 
