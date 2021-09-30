@@ -6,6 +6,5 @@ My personal website
 """
 +++
 
-This is my website.
-
-https://boba.best is also my website.
+This website, and https://boba.best are currently undergoing a complete
+re-theme. See https://github.com/BBaoVanC/bobatheme for more information.
