@@ -32,11 +32,10 @@ GitLab.
 
 ## Summary of the [first post](new-comment-system)
 
-If you haven't read the
-[New Comment System](new-comment-system) post, here's the
-most important information. There's a comment section at the bottom of each post
-where you can view and post comments. You can post anonymously, or create an
-account so you can show your username and get email notifications. You can also
-upvote, downvote, and reply to other comments.
+If you haven't read the [New Comment System](new-comment-system) post, here's
+the most important information. There's a comment section at the bottom of each
+post where you can view and post comments. You can post anonymously, or create
+an account so you can show your username and get email notifications. You can
+also upvote, downvote, and reply to other comments.
 
 [1]: https://git.bbaovanc.com/bbaovanc.com/blog/src/commit/478e15218313a33216d361de387b3bd878cd0ba6/assets/css/comments.css

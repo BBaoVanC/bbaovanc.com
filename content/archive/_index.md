@@ -2,6 +2,6 @@
 title = "Archive"
 
 description = """
-Lorem ipsum
+Archived blog posts
 """
 +++
