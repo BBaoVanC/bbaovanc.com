@@ -5,6 +5,7 @@ author = "bbaovanc"
 title = "bbaovanc's Website"
 sectionPagesMenu = "main"
 enableRobotsTXT = true
+pagination = 5
 
 [params]
   # these are for the OpenGraph/Twitter embeds in Hugo
