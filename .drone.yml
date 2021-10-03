@@ -17,9 +17,8 @@ steps:
           - git submodule update --init --recursive
 
     - name: build
-      image: bbaovanc/hugo
+      image: jojomi/hugo
       commands:
-          - hugo version
           - hugo
 
     - name: compress
