@@ -8,5 +8,5 @@ List of ways to contact me
 """
 +++
 
-- [Email](mailto:contact@bbaovanc.com)
-- [Matrix](https://matrix.to/#/@bbaovanc:boba.best)
+- Email: [contact@bbaovanc.com](mailto:contact@bbaovanc.com)
+- Matrix: [@bbaovanc:boba.best](https://matrix.to/#/@bbaovanc:boba.best)

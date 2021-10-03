@@ -4,7 +4,8 @@ date = "2021-03-25"
 toc = true
 
 aliases = [
-  "posts/text-substitution-in-discord-using-sed/",
+  "/blog/posts/sed-text-substitution-in-discord/",
+  "/blog/posts/text-substitution-in-discord-using-sed/",
 ]
 
 description = """
