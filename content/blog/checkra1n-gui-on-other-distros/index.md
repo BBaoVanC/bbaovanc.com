@@ -18,6 +18,11 @@ tags = [
   "jailbreak",
   "checkra1n",
 ]
+
+[[resources]]
+name = "feature"
+src = "gui.webp"
+title = "Checkra1n GUI running on Arch Linux"
 +++
 
 ![Checkra1n GUI running on Arch Linux](gui.webp)

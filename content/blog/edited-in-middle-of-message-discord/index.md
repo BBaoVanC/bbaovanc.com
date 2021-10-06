@@ -17,6 +17,11 @@ tags = [
   "discord",
   "discord-tricks",
 ]
+
+[[resources]]
+name = "feature"
+src = "example.webp"
+title = "Example image"
 +++
 
 ![Example image](example.webp)
