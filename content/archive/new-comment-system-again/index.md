@@ -30,7 +30,7 @@ this working on Isso), and a nicer design. I also was able to write some
 supports SSO, so I might add support for signing up with GitHub, and possibly
 GitLab.
 
-## Summary of the [first post](../new-comment-system)
+## Summary of the first post
 
 If you haven't read the [New Comment System](../new-comment-system) post, here's
 the most important information. There's a comment section at the bottom of each
