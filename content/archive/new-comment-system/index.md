@@ -7,16 +7,16 @@ aliases = [
   "posts/new-comment-system/",
 ]
 
-description = """
-I added a comment system to my blog, using [Isso](https://posativ.org/isso/).
-"""
-
 #tags = [
 #  "announcement",
 #  "hugo",
 #  "blog",
 #]
 +++
+
+I added a comment system to my blog, using [Isso](https://posativ.org/isso/).
+
+<!--more-->
 
 ## About
 

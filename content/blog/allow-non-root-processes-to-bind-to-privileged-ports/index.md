@@ -7,16 +7,16 @@ aliases = [
   "posts/allow-non-root-processes-to-bind-to-privileged-ports/",
 ]
 
-description = """
-In Linux, processes cannot bind to privileged ports (<=1024) unless they are
-running as root. Here's how to allow any process to bind to privileged ports.
-"""
-
 tags = [
   "guide",
   "linux",
 ]
 +++
+
+In Linux, processes cannot bind to privileged ports (<=1024) unless they are
+running as root. Here's how to allow any process to bind to privileged ports.
+
+<!--more-->
 
 ## Introduction
 

@@ -7,10 +7,6 @@ aliases = [
   "posts/checkra1n-gui-on-other-distros/",
 ]
 
-description = """
-You can run the GUI version of checkra1n on non Debian-based distributions.
-"""
-
 tags = [
   "guide",
   "linux",
@@ -24,6 +20,10 @@ name = "feature"
 src = "gui.webp"
 title = "Checkra1n GUI running on Arch Linux"
 +++
+
+You can run the GUI version of checkra1n on non Debian-based distributions.
+
+<!--more-->
 
 ![Checkra1n GUI running on Arch Linux](gui.webp)
 

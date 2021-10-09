@@ -7,11 +7,6 @@ aliases = [
   "posts/edited-in-middle-of-message-discord/",
 ]
 
-description = """
-With a bit of trickery using the RLE character (U+202B), you can get the
-(edited) text on a message to be somewhere other than at the end of the message.
-"""
-
 tags = [
   "tutorial",
   "discord",
@@ -23,6 +18,11 @@ name = "feature"
 src = "example.webp"
 title = "Example image"
 +++
+
+With a bit of trickery using the RLE character (U+202B), you can get the
+(edited) text on a message to be somewhere other than at the end of the message.
+
+<!--more-->
 
 ![Example image](example.webp)
 

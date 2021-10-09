@@ -8,10 +8,6 @@ aliases = [
   "/blog/posts/text-substitution-in-discord-using-sed/",
 ]
 
-description = """
-Discord has (very primitive) support for text replacement using `sed` syntax.
-"""
-
 tags = [
   "tutorial",
   "discord",
@@ -23,6 +19,10 @@ name = "feature"
 src = "example.mov"
 title = "Example Video"
 +++
+
+Discord has (very primitive) support for text replacement using `sed` syntax.
+
+<!--more-->
 
 ## Tutorial
 

@@ -7,17 +7,17 @@ aliases = [
   "posts/new-comment-system-again/",
 ]
 
-description = """
-I decided to switch my comment system from Isso to
-[Commento](https://www.commento.io/)
-"""
-
 #tags = [
 #  "announcement",
 #  "hugo",
 #  "blog",
 #]
 +++
+
+I decided to switch my comment system from Isso to
+[Commento](https://www.commento.io/).
+
+<!--more-->
 
 ## Isso vs Commento
 
