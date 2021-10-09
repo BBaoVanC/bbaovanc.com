@@ -19,7 +19,7 @@ tags = [
 ]
 
 [[resources]]
-name = "feature-video"
+name = "feature"
 src = "example.mov"
 title = "Example Video"
 +++
