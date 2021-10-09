@@ -16,3 +16,7 @@ enableGitInfo = true
   # these are for favicons in bobatheme
   faviconICO = "/favicon.ico"
   faviconPNG = "/favicon.png"
+
+  # show word count and/or reading time
+  wordcount = true
+  readingtime = true
