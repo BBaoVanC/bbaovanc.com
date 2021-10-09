@@ -17,7 +17,7 @@ steps:
           - git submodule update --init --recursive
 
     - name: build
-      image: jojomi/hugo
+      image: klakegg/hugo:ext-ubuntu-ci # og:video doesn't work on the alpine one for some reason
       commands:
           - hugo
 
