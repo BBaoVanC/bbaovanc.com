@@ -9,11 +9,11 @@ aliases = [
   "/archive/new-comment-system/",
 ]
 
-#tags = [
-#  "announcement",
-#  "hugo",
-#  "blog",
-#]
+tags = [
+  "announcement",
+  "hugo",
+  "blog",
+]
 +++
 
 I added a comment system to my blog, using [Isso](https://posativ.org/isso/).

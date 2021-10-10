@@ -9,11 +9,11 @@ aliases = [
   "/archive/new-comment-system-again/",
 ]
 
-#tags = [
-#  "announcement",
-#  "hugo",
-#  "blog",
-#]
+tags = [
+  "announcement",
+  "hugo",
+  "blog",
+]
 +++
 
 I decided to switch my comment system from Isso to
