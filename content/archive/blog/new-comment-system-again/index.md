@@ -4,7 +4,9 @@ date = "2021-04-17"
 toc = true
 
 aliases = [
-  "posts/new-comment-system-again/",
+  "/blog/posts/new-comment-system-again/",
+  "/blog/new-comment-system-again/",
+  "/archive/new-comment-system-again/",
 ]
 
 #tags = [
