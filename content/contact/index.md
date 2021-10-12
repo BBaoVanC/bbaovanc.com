@@ -4,7 +4,7 @@ menu = "main"
 toc = false
 
 description = """
-List of ways to contact me
+Want to contact me? Here's how you can.
 """
 +++
 

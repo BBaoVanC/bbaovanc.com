@@ -2,7 +2,7 @@
 title = "Home"
 
 description = """
-My personal website
+This is my website.
 """
 +++
 

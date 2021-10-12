@@ -7,7 +7,7 @@ aliases = [
 ]
 
 description = """
-Various links to my stuff
+A page with links to a lot of my different projects.
 """
 +++
 
