@@ -19,11 +19,10 @@ Añadí una nueva sistema de comentarios a mi blog usando
 
 Instalé una sistema de comentarios que se llama
 [Isso](https://posativ.org/isso/) en mi blog hoy. En el fondo de cada entrada de
-blog, hay un sección de comentarios. No necesitas inscribirse en una cuenta o
-iniciar sesión con Google, Facebook, nada de esa porquería. Puedes comentar
-anónimamente, o mostrar tu nombre, dirección de correo electrónico, y/o sito
-web, que será mostrado a otras personas que están leyendo tu comentario. Voy a
-esperar que nadie es bastante malicioso para enviar comentarios no deseados.
+blog, hay un sección de comentarios. Puedes comentar anónimamente, o mostrar tu
+nombre, dirección de correo electrónico, y/o sito web, que será mostrado a otras
+personas que están leyendo tu comentario. No pienso que nadie va a maltratar la
+sistema de comentarios porque mi sitio web es tan pequeña.
 
 ## Problemas conocidas
 
