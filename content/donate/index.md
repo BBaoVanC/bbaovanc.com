@@ -8,7 +8,7 @@ How to donate to me
 """
 +++
 
-## Cryptocurrency Links
+## Cryptocurrency Addresses
 
 Nano: `nano_1ewtme68x5gia1bjq3jx1ku5pcxzayipdxjmjrc3x8qjjpat4ria8ajhjoxd`
 
