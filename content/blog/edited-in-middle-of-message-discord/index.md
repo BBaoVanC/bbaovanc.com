@@ -20,7 +20,8 @@ title = "Example image"
 +++
 
 With a bit of trickery using the RLE character (U+202B), you can get the
-(edited) text on a message to be somewhere other than at the end of the message.
+`(edited)` text on a message to be somewhere other than at the end of the
+message.
 
 <!--more-->
 
