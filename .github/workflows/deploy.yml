@@ -1,0 +1,34 @@
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v2
+        with:
+          submodules: recursive
+
+      - name: build
+        uses: klakegg/actions-hugo@1.0.0
+        with:
+          image: ext-ubuntu
+
+      - name: compress
+        run: |
+          time sudo ./compress.sh
+
+      - name: upload
+        uses: up9cloud/action-rsync@v1
+        env:
+          HOST: bbaovanc.com
+          USER: droneci
+          PORT: 2222
+          SOURCE: public/
+          MODE: push
+          VERBOSE: true
+          KEY: ${{secrets.DEPLOY_SSH_KEY}}
+          TARGET: /var/www/bbaovanc/public/
