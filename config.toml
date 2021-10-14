@@ -20,7 +20,7 @@ enableGitInfo = true
   readingtime = true
 
   # used for last update
-  repoURL = "https://git.bbaovanc.com/bbaovanc.com/bbaovanc.com"
+  repoURL = "https://github.com/BBaoVanC/bbaovanc.com"
 
 [languages]
   [languages.en]
