@@ -1,13 +1,14 @@
-+++
-title = "Donate"
-menu = "main"
-toc = false
+---
 
-description = """
-I have a few cryptocurrency addresses that you can use if you want to donate to
-me.
-"""
-+++
+title: Donate
+menu: main
+toc: false
+
+description: |
+  I have a few cryptocurrency addresses that you can use if you want to donate to
+  me.
+
+---
 
 ## Cryptocurrency Addresses
 

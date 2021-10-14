@@ -1,7 +1,8 @@
-+++
-title = "Blog"
+---
 
-description = """
-My blog posts
-"""
-+++
+title: Blog
+
+description: |
+  My blog posts
+
+---

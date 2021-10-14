@@ -1,15 +1,16 @@
-+++
-title = "Links"
-menu = "main"
-toc = true
-aliases = [
-  "/blog/links/",
-]
+---
 
-description = """
-A page with links to a lot of my different projects.
-"""
-+++
+title: Links
+menu: main
+toc: true
+
+aliases:
+  - /blog/links/
+
+description: |
+  A page with links to a lot of my different projects.
+
+---
 
 ## Other
 

@@ -1,23 +1,23 @@
-+++
-title = "Put `(edited)` in the middle of a message in Discord"
-date = "2021-03-25"
-toc = false
+---
 
-aliases = [
-  "posts/edited-in-middle-of-message-discord/",
-]
+title: Put `(edited)` in the middle of a message in Discord
+date: "2021-03-25"
+toc: false
 
-tags = [
-  "tutorial",
-  "discord",
-  "discord-tricks",
-]
+aliases:
+  - posts/edited-in-middle-of-message-discord/
 
-[[resources]]
-name = "feature"
-src = "example.webp"
-title = "Example image"
-+++
+tags:
+  - tutorial
+  - discord
+  - discord-tricks
+
+resources:
+  - name: feature
+    src: example.webp
+    title: Example image
+
+---
 
 With a bit of trickery using the RLE character (U+202B), you can get the
 `(edited)` text on a message to be somewhere other than at the end of the

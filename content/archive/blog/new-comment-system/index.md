@@ -1,20 +1,20 @@
-+++
-title = "New Comment System"
-date = "2021-04-11"
-toc = true
+---
 
-aliases = [
-  "/blog/posts/new-comment-system/",
-  "/blog/new-comment-system/",
-  "/archive/new-comment-system/",
-]
+title: New Comment System
+date: "2021-04-11"
+toc: true
 
-tags = [
-  "announcement",
-  "hugo",
-  "blog",
-]
-+++
+aliases:
+  - /blog/posts/new-comment-system/
+  - /blog/new-comment-system/
+  - /archive/new-comment-system/
+
+tags:
+  - announcement
+  - hugo
+  - blog
+
+---
 
 I added a comment system to my blog, using [Isso](https://posativ.org/isso/).
 

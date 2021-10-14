@@ -1,24 +1,24 @@
-+++
-title = "Text Substitution in Discord using `sed`"
-date = "2021-03-25"
-toc = false
+---
 
-aliases = [
-  "/blog/posts/sed-text-substitution-in-discord/",
-  "/blog/posts/text-substitution-in-discord-using-sed/",
-]
+title: Text Substitution in Discord using `sed`
+date: "2021-03-25"
+toc: false
 
-tags = [
-  "tutorial",
-  "discord",
-  "discord-tricks",
-]
+aliases:
+  - /blog/posts/sed-text-substitution-in-discord/
+  - /blog/posts/text-substitution-in-discord-using-sed/
 
-[[resources]]
-name = "feature"
-src = "example.mov"
-title = "Example Video"
-+++
+tags:
+  - tutorial
+  - discord
+  - discord-tricks
+
+resources:
+  - name: feature
+    src: example.mov
+    title: Example Video
+
+---
 
 Discord has (very primitive) support for text replacement using `sed` syntax.
 

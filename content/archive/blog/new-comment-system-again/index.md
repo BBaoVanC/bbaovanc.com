@@ -1,20 +1,20 @@
-+++
-title = "New Comment System (again)"
-date = "2021-04-17"
-toc = true
+---
 
-aliases = [
-  "/blog/posts/new-comment-system-again/",
-  "/blog/new-comment-system-again/",
-  "/archive/new-comment-system-again/",
-]
+title: New Comment System (again)
+date: "2021-04-17"
+toc: true
 
-tags = [
-  "announcement",
-  "hugo",
-  "blog",
-]
-+++
+aliases:
+  - /blog/posts/new-comment-system-again/
+  - /blog/new-comment-system-again/
+  - /archive/new-comment-system-again/
+
+tags:
+  - announcement
+  - hugo
+  - blog
+
+---
 
 I decided to switch my comment system from Isso to
 [Commento](https://www.commento.io/).

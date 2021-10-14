@@ -1,10 +1,11 @@
-+++
-title = "Home"
+---
 
-description = """
-This is my website.
-"""
-+++
+title: Home
+
+description: |
+  This is my website.
+
+---
 
 ## My Website
 

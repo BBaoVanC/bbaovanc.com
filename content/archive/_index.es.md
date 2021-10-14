@@ -1,8 +1,9 @@
-+++
-title = "Archivo"
-icon = "archive"
+---
 
-description = """
-Entradas archivos de blog
-"""
-+++
+title: Archivo
+icon: archive
+
+description: |
+  Entradas archivos de blog
+
+---

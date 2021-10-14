@@ -1,25 +1,25 @@
-+++
-title = "Checkra1n GUI on Other Distros"
-date = "2021-03-25"
-toc = true
+---
 
-aliases = [
-  "posts/checkra1n-gui-on-other-distros/",
-]
+title: Checkra1n GUI on Other Distros
+date: "2021-03-25"
+toc: true
 
-tags = [
-  "guide",
-  "linux",
-  "archlinux",
-  "jailbreak",
-  "checkra1n",
-]
+aliases:
+  - posts/checkra1n-gui-on-other-distros/
 
-[[resources]]
-name = "feature"
-src = "gui.webp"
-title = "Checkra1n GUI running on Arch Linux"
-+++
+tags:
+  - guide
+  - linux
+  - archlinux
+  - jailbreak
+  - checkra1n
+
+resources:
+  - name: feature
+    src: gui.webp
+    title: Checkra1n GUI running on Arch Linux
+
+---
 
 You can run the GUI version of checkra1n on non Debian-based distributions.
 

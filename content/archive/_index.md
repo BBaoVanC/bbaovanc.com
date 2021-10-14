@@ -1,8 +1,9 @@
-+++
-title = "Archive"
-icon = "archive"
+---
 
-description = """
-Archived blog posts
-"""
-+++
+title: Archive
+icon: archive
+
+description: |
+  Archived blog posts
+
+---
