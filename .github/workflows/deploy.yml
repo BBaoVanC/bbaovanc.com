@@ -13,9 +13,10 @@ jobs:
           submodules: recursive
 
       - name: build
-        uses: klakegg/actions-hugo@1.0.0
+        uses: peaceiris/actions-hugo@v2
         with:
-          image: ext-ubuntu
+          hugo-version: latest
+          extended: true
 
       - name: compress
         run: |
