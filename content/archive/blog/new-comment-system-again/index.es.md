@@ -1,14 +1,15 @@
-+++
-title = "Nueva sistema de comentarios (otra vez)"
-date = "2021-04-17"
-toc = true
+---
 
-tags = [
-  "announcement",
-  "hugo",
-  "blog",
-]
-+++
+title: Nueva sistema de comentarios (otra vez)
+date: 2021-04-17
+toc: true
+
+tags:
+  - announcement
+  - hugo
+  - blog
+
+---
 
 Decidí cambiar mi sistema de comentarios de Isso a
 [Commento](https://www.commento.io/).

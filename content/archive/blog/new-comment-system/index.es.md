@@ -1,14 +1,15 @@
-+++
-title = "Nueva sistema de comentarios"
-date = "2021-04-11"
-toc = true
+---
 
-tags = [
-  "announcement",
-  "hugo",
-  "blog",
-]
-+++
+title: Nueva sistema de comentarios
+date: 2021-04-11
+toc: true
+
+tags:
+  - announcement
+  - hugo
+  - blog
+
+---
 
 Añadí una nueva sistema de comentarios a mi blog usando
 [Isso](https://posativ.org/isso/).
