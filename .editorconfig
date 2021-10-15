@@ -1,8 +1,10 @@
 root = true
 
-[*.{md,toml}]
+[*]
 end_of_line = lf
 insert_final_newline = true
+
+[*.{md,toml}]
 indent_style = space
 indent_size = 2
 trim_trailing_whitespace = true

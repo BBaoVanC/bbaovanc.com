@@ -4,7 +4,7 @@ title: Contact
 menu: main
 toc: false
 
-description: |
+description: >-
   Want to contact me? Here's how you can.
 
 ---

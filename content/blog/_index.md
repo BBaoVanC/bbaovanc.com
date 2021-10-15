@@ -2,7 +2,7 @@
 
 title: Blog
 
-description: |
+description: >-
   My blog posts
 
 ---

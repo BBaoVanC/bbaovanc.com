@@ -3,7 +3,7 @@
 title: Archive
 icon: archive
 
-description: |
+description: >-
   Archived blog posts
 
 ---

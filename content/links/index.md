@@ -7,7 +7,7 @@ toc: true
 aliases:
   - /blog/links/
 
-description: |
+description: >-
   A page with links to a lot of my different projects.
 
 ---

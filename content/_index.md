@@ -2,7 +2,7 @@
 
 title: Home
 
-description: |
+description: >-
   This is my website.
 
 ---

@@ -4,7 +4,7 @@ title: Donate
 menu: main
 toc: false
 
-description: |
+description: >-
   I have a few cryptocurrency addresses that you can use if you want to donate to
   me.
 

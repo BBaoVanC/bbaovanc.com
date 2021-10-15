@@ -3,7 +3,7 @@
 title: Archivo
 icon: archive
 
-description: |
+description: >-
   Entradas archivos de blog
 
 ---
