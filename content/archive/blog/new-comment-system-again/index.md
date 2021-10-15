@@ -1,7 +1,7 @@
 ---
 
 title: New Comment System (again)
-date: "2021-04-17"
+date: 2021-04-17
 toc: true
 
 aliases:

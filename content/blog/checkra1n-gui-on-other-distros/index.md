@@ -1,7 +1,7 @@
 ---
 
 title: Checkra1n GUI on Other Distros
-date: "2021-03-25"
+date: 2021-03-25
 toc: true
 
 aliases:
