@@ -1,3 +1,5 @@
+name: Deploy
+
 on:
   push:
     branches:
@@ -6,6 +8,7 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    environment: bbaovanc.com
     steps:
       - name: Checkout
         uses: actions/checkout@v2
