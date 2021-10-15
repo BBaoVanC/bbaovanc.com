@@ -8,7 +8,9 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    environment: bbaovanc.com
+    environment:
+      name: bbaovanc.com
+      url: https://bbaovanc.com
     steps:
       - name: Checkout
         uses: actions/checkout@v2
