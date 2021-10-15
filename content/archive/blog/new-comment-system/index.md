@@ -23,12 +23,11 @@ I added a comment system to my blog, using [Isso](https://posativ.org/isso/).
 ## About
 
 I set up a comment system named [Isso](https://posativ.org/isso/) on my blog
-today. At the bottom of each blog post, there's a comment section. You don't
-need to sign up with an account or sign in with Google, Facebook, none of that
-junk. You can comment anonymously, or provide any of the following three fields:
-name, email address, and website, which will be shown to other people viewing
-your comment. I'm going off of the assumption that no one cares/is malicious
-enough to spam my comment sections.
+today. At the bottom of each blog post, there's a comment section.  You can
+comment anonymously, or provide any of the following three fields: name, email
+address, and website, which will be shown to other people viewing your comment.
+I'm not currently concerned about abuse (such as spam) in the comment section
+since my website is so small.
 
 ## Known Issues
 
