@@ -7,6 +7,11 @@ enableRobotsTXT = true
 paginate = 5
 enableGitInfo = true
 
+[markup]
+  [markup.highlight]
+    noClasses = false
+    lineNos = true
+
 [params]
   # these are for the OpenGraph/Twitter embeds in Hugo
   description = "My personal website"
