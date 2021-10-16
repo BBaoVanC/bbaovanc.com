@@ -3,4 +3,5 @@
 *.css linguist-detectable=true
 *.js linguist-detectable=true
 README.md linguist-detectable=false
+CONTRIBUTING.md linguist-detectable=false
 docs/** linguist-detectable=false
