@@ -1,6 +1,6 @@
 ---
 
-title: Checkra1n GUI on Other Distros
+title: Checkra1n GUI on other Linux distros
 date: 2021-03-25
 toc: true
 
