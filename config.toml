@@ -1,12 +1,15 @@
 baseURL = "https://bbaovanc.com"
 theme = "bobatheme"
 defaultContentLanguage = "en"
-author = "bbaovanc"
 copyright = 'This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.'
 sectionPagesMenu = "main"
 enableRobotsTXT = true
 paginate = 5
 enableGitInfo = true
+
+[author]
+  name = "BBaoVanC"
+  email = "bbaovanc@bbaovanc.com"
 
 [markup]
   [markup.highlight]
