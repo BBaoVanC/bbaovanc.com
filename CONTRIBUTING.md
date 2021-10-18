@@ -17,11 +17,23 @@ prefixed with "Translate:" and tagged with the "translation" tag as they are
 placeholders used in the projects tab. I might mark them as closed in the future
 to clean it up but I'll worry about that later.
 
-## Translations
+### Translations
 
 Discussion relating to translations should either go as comments or reviews on
 the pull request adding the translation, or as a discussion under the
 [Translations category](https://github.com/BBaoVanC/bbaovanc.com/discussions/categories/translations).
+
+## Writing translations
+
+Translations should aim to get the meaning as close as possible to original
+document. The changes in a translation pull request *should*:
+
+- only update one page (multiple pages should be split into separate pull
+  requests)
+- only contain changes for a single new file (no changes unrelated to
+  translation)
+- thoroughly compared to the original text in order to get the same meaning
+  across
 
 ## Pull requests
 
