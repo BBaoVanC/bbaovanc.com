@@ -21,7 +21,7 @@ website with the goal of keeping it simple but not ugly.
 
 <!--more-->
 
-![Homepage on bbaovanc.com, using bobatheme.](bobatheme.webp)
+{{< figure src="bobatheme.webp" caption="Screenshot of the homepage" >}}
 
 ## A total redesign
 
