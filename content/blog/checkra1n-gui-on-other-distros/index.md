@@ -25,8 +25,6 @@ You can run the GUI version of checkra1n on non Debian-based distributions.
 
 <!--more-->
 
-![Checkra1n GUI running on Arch Linux](gui.webp)
-
 ## Introduction
 
 The official cross-distribution build of checkra1n only contains a CLI and TUI.

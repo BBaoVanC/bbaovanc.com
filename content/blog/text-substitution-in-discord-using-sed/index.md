@@ -26,8 +26,6 @@ Discord has (very primitive) support for text replacement using `sed` syntax.
 
 ## Tutorial
 
-{{< video src="example.mov" title="Example Video" >}}
-
 If you send a message using `sed` substitution format (`s/old text/new text`),
 Discord will execute it on the message you've last sent.
 

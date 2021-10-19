@@ -25,8 +25,6 @@ message.
 
 <!--more-->
 
-![Example image](example.webp)
-
 ## Tutorial
 
 1. Copy the "right-to-left embedding" character (U+202A) to your clipboard.
