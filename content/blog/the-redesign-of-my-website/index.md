@@ -21,7 +21,7 @@ website with the goal of keeping it simple but not ugly.
 
 <!--more-->
 
-{{< figure src="bobatheme.webp" caption="Screenshot of the homepage" >}}
+{{< figure resrc="feature" caption="Screenshot of the homepage" >}}
 
 ## A total redesign
 
