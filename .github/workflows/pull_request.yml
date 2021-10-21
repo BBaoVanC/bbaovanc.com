@@ -19,7 +19,7 @@ jobs:
         id: deployment
         with:
           token: "${{ github.token }}"
-          target_url: "https://demo.bbaovanc.com/pull_request/${{ github.event.number }}"
+          log_url: "https://demo.bbaovanc.com/pull_request/${{ github.event.number }}"
           environment: demo.bbaovanc.com
           ref: ${{ github.event.pull_request.head.sha }}
 
@@ -53,7 +53,7 @@ jobs:
         uses: chrnorm/deployment-status@releases/v1
         with:
           token: "${{ github.token }}"
-          target_url: "https://demo.bbaovanc.com/pull_request/${{ github.event.number }}"
+          log_url: "https://demo.bbaovanc.com/pull_request/${{ github.event.number }}"
           state: "success"
           deployment_id: ${{ steps.deployment.outputs.deployment_id }}
 
@@ -62,7 +62,7 @@ jobs:
         uses: chrnorm/deployment-status@releases/v1
         with:
           token: "${{ github.token }}"
-          target_url: "https://demo.bbaovanc.com/pull_request/${{ github.event.number }}"
+          log_url: "https://demo.bbaovanc.com/pull_request/${{ github.event.number }}"
           state: "failure"
           deployment_id: ${{ steps.deployment.outputs.deployment_id }}
 
