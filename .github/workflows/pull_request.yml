@@ -55,5 +55,5 @@ jobs:
           body: |
             A preview of this pull request is ready!
             See it at https://demo.bbaovanc.com/pull_request/${{ github.event.number }}/
-            This preview was deployed from ${{ github.sha }}
+            View the deploy log at https://github.com/BBaoVanC/bbaovanc.com/actions/runs/${{ github.run_id}}
           edit-mode: replace
