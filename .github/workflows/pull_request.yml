@@ -19,7 +19,6 @@ jobs:
         id: deployment
         with:
           token: "${{ github.token }}"
-          log_url: "https://demo.bbaovanc.com/pull_request/${{ github.event.number }}"
           environment: demo.bbaovanc.com
           ref: ${{ github.event.pull_request.head.sha }}
 
