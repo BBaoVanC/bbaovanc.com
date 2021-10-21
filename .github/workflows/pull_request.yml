@@ -21,7 +21,7 @@ jobs:
           extended: true
 
       - name: Build
-        run: hugo --i18n-warnings --path-warnings
+        run: hugo --i18n-warnings --path-warnings --baseURL "https://demo.bbaovanc.com/pull_request/${{ github.event.number }}"
 
       - name: Compress
         run: |
