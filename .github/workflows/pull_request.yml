@@ -21,6 +21,7 @@ jobs:
           token: "${{ github.token }}"
           target_url: "https://demo.bbaovanc.com/pull_request/${{ github.event.number }}"
           environment: demo.bbaovanc.com
+          ref: ${{ github.sha }}
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
