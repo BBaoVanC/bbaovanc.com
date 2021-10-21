@@ -54,5 +54,6 @@ jobs:
           issue-number: ${{ github.event.number }}
           body: |
             A preview of this pull request is ready!
-            See it at https://demo.bbaovanc.com/pull_request/${{ github.event.number }}
+            See it at https://demo.bbaovanc.com/pull_request/${{ github.event.number }}/
+            This preview was deployed from ${{ github.sha }}
           edit-mode: replace
