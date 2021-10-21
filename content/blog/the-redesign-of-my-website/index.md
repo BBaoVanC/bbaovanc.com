@@ -71,11 +71,14 @@ for more information).
 I'm currently tracking translation status using [GitHub
 projects](https://github.com/BBaoVanC/bbaovanc.com/projects). Each language has
 one "progress" project which shows each page's translation status in the
-language, and a second "pull requests" project which organizes individual pull
-requests. For example, here's the [Spanish Translation
-Progress](https://github.com/BBaoVanC/bbaovanc.com/projects/4) and [Spanish
-Translation Pull Requests](https://github.com/BBaoVanC/bbaovanc.com/projects/1)
-projects.
+language. For example, here's the [Spanish Translation
+Progress](https://github.com/BBaoVanC/bbaovanc.com/projects/4)
+
+There's also a [Translation Pull
+Requests](https://github.com/BBaoVanC/bbaovanc.com/projects/1) project which
+tracks the review status of translation pull requests in all languages. If you
+want to look at pull requests for a specific language, you can filter by the
+translation label (for example: Spanish is `translate-es`).
 
 ### Contribute translations
 
