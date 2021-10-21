@@ -14,6 +14,14 @@ jobs:
           submodules: recursive
           fetch-depth: 0
 
+      - name: Create GitHub deployment
+        uses: chrnorm/deployment-action@v1
+        id: deployment
+        with:
+          token: "${{ github.token }}"
+          target_url: "https://demo.bbaovanc.com/pull_request/${{ github.event.number }}"
+          environment: demo.bbaovanc.com
+
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
@@ -38,6 +46,24 @@ jobs:
           VERBOSE: true
           KEY: ${{secrets.DEPLOY_SSH_KEY}}
           TARGET: /var/www/demo/pull_request/${{ github.event.number }}/
+
+      - name: Update deployment status (success)
+        if: success()
+        uses: chrnorm/deployment-status@releases/v1
+        with:
+          token: "${{ github.token }}"
+          target_url: "https://demo.bbaovanc.com/pull_request/${{ github.event.number }}"
+          state: "success"
+          deployment_id: ${{ steps.deployment.outputs.deployment_id }}
+
+      - name: Update deployment status (failure)
+        if: failure()
+        uses: chrnorm/deployment-status@releases/v1
+        with:
+          token: "${{ github.token }}"
+          target_url: "https://demo.bbaovanc.com/pull_request/${{ github.event.number }}"
+          state: "failure"
+          deployment_id: ${{ steps.deployment.outputs.deployment_id }}
 
       - name: Find PR comment
         uses: peter-evans/find-comment@v1
