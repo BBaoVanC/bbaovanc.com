@@ -22,7 +22,7 @@ jobs:
           token: ${{ github.token }}
           env: demo.bbaovanc.com
           ref: ${{ github.head_ref }}
-          no_override: false
+          no_override: true
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
