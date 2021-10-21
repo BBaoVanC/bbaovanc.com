@@ -59,6 +59,8 @@ jobs:
           status: ${{ job.status }}
           deployment_id: ${{ steps.deployment.outputs.deployment_id }}
           env_url: "https://demo.bbaovanc.com/pull_request/${{ github.event.number }}/"
+          no_override: true
+          auto_inactive: false
 
       - name: Find PR comment
         uses: peter-evans/find-comment@v1
