@@ -14,13 +14,15 @@ jobs:
           submodules: recursive
           fetch-depth: 0
 
-      - name: Create GitHub deployment
-        uses: chrnorm/deployment-action@v1.2.0
+      - name: Start deployment
+        uses: bobheadxi/deployments@v0.6.0
         id: deployment
         with:
-          token: "${{ github.token }}"
-          environment: demo.bbaovanc.com
+          step: start
+          token: ${{ github.token }}
+          env: demo.bbaovanc.com
           ref: ${{ github.event.pull_request.head.sha }}
+          no_override: false
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
@@ -47,23 +49,15 @@ jobs:
           KEY: ${{secrets.DEPLOY_SSH_KEY}}
           TARGET: /var/www/demo/pull_request/${{ github.event.number }}/
 
-      - name: Update deployment status (success)
-        if: success()
-        uses: chrnorm/deployment-status@releases/v1
+      - name: Finish deployment
+        uses: bobheadxi/deployments@v0.6.0
+        if: always()
         with:
-          token: "${{ github.token }}"
-          log_url: "https://demo.bbaovanc.com/pull_request/${{ github.event.number }}"
-          state: "success"
+          step: finish
+          token: ${{ github.token }}
+          status: ${{ job.status }}
           deployment_id: ${{ steps.deployment.outputs.deployment_id }}
-
-      - name: Update deployment status (failure)
-        if: failure()
-        uses: chrnorm/deployment-status@releases/v1
-        with:
-          token: "${{ github.token }}"
-          log_url: "https://demo.bbaovanc.com/pull_request/${{ github.event.number }}"
-          state: "failure"
-          deployment_id: ${{ steps.deployment.outputs.deployment_id }}
+          env_url: "https://demo.bbaovanc.com/pull_request/${{ github.event.number }}/"
 
       - name: Find PR comment
         uses: peter-evans/find-comment@v1
