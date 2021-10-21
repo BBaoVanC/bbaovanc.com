@@ -1,0 +1,40 @@
+name: Deploy Demo
+
+on:
+  pull_request_target:
+    types: ['opened', 'synchronize']
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          submodules: recursive
+          fetch-depth: 0
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: latest
+          extended: true
+
+      - name: Build
+        run: hugo --i18n-warnings --path-warnings
+
+      - name: Compress
+        run: |
+          time sudo ./compress.sh
+
+      - name: Upload
+        uses: up9cloud/action-rsync@v1
+        env:
+          HOST: bbaovanc.com
+          USER: droneci
+          PORT: 2222
+          SOURCE: public/
+          MODE: push
+          VERBOSE: true
+          KEY: ${{secrets.DEPLOY_SSH_KEY}}
+          TARGET: /var/www/demo/pull_request/${{ github.event.number }}
