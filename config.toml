@@ -21,8 +21,8 @@ enableGitInfo = true
   description = "My personal website"
 
   # these are for favicons in bobatheme
-  faviconICO = "/favicon.ico"
-  faviconPNG = "/favicon.png"
+  faviconICO = "favicon.ico"
+  faviconPNG = "favicon.png"
 
   # show word count and/or reading time (enabled by default)
   wordcount = true
