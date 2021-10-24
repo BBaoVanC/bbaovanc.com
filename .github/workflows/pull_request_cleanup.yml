@@ -1,0 +1,27 @@
+name: Pull Request Cleanup
+
+on:
+  pull_request:
+    types:
+      - closed
+
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Setup SSH
+        uses: kielabokkie/ssh-key-and-known-hosts-action@v1
+        with:
+          ssh-private-key: ${{ secrets.DEPLOY_SSH_KEY }}
+          ssh-host: bbaovanc.com
+          ssh-port: 2222
+
+      - name: Delete pull request on server
+        run:
+          ssh -p 2222 droneci@bbaovanc.com rm -r /var/www/demo/pull_request/${{ github.event.number }}/
+
+      - name: Delete deployment
+        uses: strumwolf/delete-deployment-environment@v2
+        with:
+          token: ${{ github.token }}
+          environment: pr-${{ github.event.number }}
