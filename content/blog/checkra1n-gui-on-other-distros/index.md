@@ -3,6 +3,7 @@
 title: Checkra1n GUI on other Linux distros
 date: 2021-03-25
 toc: true
+comments: true
 
 aliases:
   - posts/checkra1n-gui-on-other-distros/

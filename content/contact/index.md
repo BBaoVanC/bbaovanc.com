@@ -3,6 +3,7 @@
 title: Contact
 menu: main
 toc: false
+comments: false
 
 description: >-
   Want to contact me? Here's how you can.

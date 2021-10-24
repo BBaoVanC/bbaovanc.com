@@ -3,6 +3,7 @@
 title: Allow non root processes to bind to privileged ports in Linux
 date: 2021-03-28
 toc: true
+comments: true
 
 aliases:
   - posts/allow-non-root-processes-to-bind-to-privileged-ports/

@@ -3,6 +3,7 @@
 title: The redesign of my website
 date: 2021-10-16
 toc: true
+comments: true
 
 tags:
   - announcement

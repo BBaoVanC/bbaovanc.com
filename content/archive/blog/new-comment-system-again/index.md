@@ -3,6 +3,7 @@
 title: New Comment System (again)
 date: 2021-04-17
 toc: true
+comments: false
 
 aliases:
   - /blog/posts/new-comment-system-again/

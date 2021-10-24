@@ -3,6 +3,7 @@
 title: Links
 menu: main
 toc: true
+comments: false
 
 aliases:
   - /blog/links/

@@ -3,6 +3,7 @@
 title: Text substitution in Discord using `sed`
 date: 2021-03-25
 toc: false
+comments: true
 
 aliases:
   - /blog/posts/sed-text-substitution-in-discord/
