@@ -12,11 +12,11 @@
     </small>
 </noscript>
 
-{{ $url := .RelPermalink }}
+{{ $url := .Permalink }}
 
 {{ if .IsTranslated }}
 {{ with index .AllTranslations 0 }}
-{{ $url = .RelPermalink }}
+{{ $url = .Permalink }}
 {{ end }}
 {{ end }}
 
