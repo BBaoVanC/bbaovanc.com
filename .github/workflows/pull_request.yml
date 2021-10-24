@@ -22,10 +22,8 @@ jobs:
         with:
           step: start
           token: ${{ github.token }}
-          env: demo.bbaovanc.com
+          env: pr-${{ github.event.number }}
           ref: ${{ github.head_ref }}
-          no_override: true
-          auto_inactive: false
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
