@@ -12,13 +12,15 @@
     </small>
 </noscript>
 
-{{ $url := .Permalink }}
+{{ $path := .RelPermalink }}
 
 {{ if .IsTranslated }}
 {{ with index .AllTranslations 0 }}
-{{ $url = .Permalink }}
+{{ $path = .RelPermalink }}
 {{ end }}
 {{ end }}
+
+{{ $url := (printf "https://bbaovanc.com%s" $path) | absURL }}
 
 <script>
     var remark_config = {
