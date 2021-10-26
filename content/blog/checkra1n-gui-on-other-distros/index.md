@@ -2,6 +2,7 @@
 
 title: Checkra1n GUI on other Linux distros
 date: 2021-03-25
+author: bbaovanc
 toc: true
 comments: true
 

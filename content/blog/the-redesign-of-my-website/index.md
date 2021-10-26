@@ -2,6 +2,7 @@
 
 title: The redesign of my website
 date: 2021-10-16
+author: bbaovanc
 toc: true
 comments: true
 

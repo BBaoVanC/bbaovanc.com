@@ -2,6 +2,7 @@
 
 title: Text substitution in Discord using `sed`
 date: 2021-03-25
+author: bbaovanc
 toc: false
 comments: true
 
