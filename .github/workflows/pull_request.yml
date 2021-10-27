@@ -27,6 +27,7 @@ jobs:
           token: ${{ github.token }}
           env: pr-${{ github.event.number }}
           ref: ${{ github.head_ref }}
+          no_override: false
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
