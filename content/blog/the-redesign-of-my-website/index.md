@@ -16,6 +16,14 @@ resources:
     src: bobatheme.webp
     title: Homepage on bbaovanc.com, using bobatheme.
 
+  - name: actions-comment
+    src: github-actions-deploy-comment.webp
+    title: Comment from GitHub Actions that links to the pull request preview.
+
+  - name: deployment
+    src: pull-request-deployment.webp
+    title: GitHub deployments are created for the previews as well.
+
 ---
 
 For the past three weeks I've been designing and perfecting a new theme for my
@@ -53,12 +61,17 @@ features such as copying code blocks to the clipboard.
 
 My website's source code was previously on git.bbaovanc.com, but I migrated it
 to [a new repository on GitHub](https://github.com/BBaoVanC/bbaovanc.com) so I
-could use Netlify to automatically build website previews for pull requests.
+could use Netlify/GitHub Actions to automatically build website previews for
+pull requests.
 
-### Netlify
+### Automatic Pull Request Previews
 
-Every pull request has its own preview built for it using Netlify, which is
-linked in a comment.
+Every pull request has its own preview built for it using GitHub Actions, which
+is linked in a comment, and shown as a deployment on the pull request.
+
+{{< figure src="actions-comment" >}}
+
+{{< figure src="deployment" >}}
 
 ## Translations
 
@@ -71,16 +84,11 @@ for more information).
 ### Tracking Status
 
 I'm currently tracking translation status using [GitHub
-projects](https://github.com/BBaoVanC/bbaovanc.com/projects). Each language has
-one "progress" project which shows each page's translation status in the
-language. For example, here's the [Spanish Translation
-Progress](https://github.com/BBaoVanC/bbaovanc.com/projects/4)
-
-There's also a [Translation Pull
-Requests](https://github.com/BBaoVanC/bbaovanc.com/projects/1) project which
-tracks the review status of translation pull requests in all languages. If you
-want to look at pull requests for a specific language, you can filter by the
-translation label (for example: Spanish is `translate-es`).
+projects](https://github.com/BBaoVanC/bbaovanc.com/projects). There's a
+[Translation Pull Requests](https://github.com/BBaoVanC/bbaovanc.com/projects/1)
+project which tracks the review status of translation pull requests in all
+languages. If you want to look at pull requests for a specific language, you can
+filter by the label (for example: Spanish is `translate-es`).
 
 ### Contribute translations
 
