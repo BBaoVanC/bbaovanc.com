@@ -20,9 +20,10 @@ jobs:
         run:
           ssh -p 2222 droneci@bbaovanc.com rm -r /var/www/demo/pull_request/${{ github.event.number }}/
 
-      - name: Delete deployment
-        uses: strumwolf/delete-deployment-environment@v2
+      - name: Deactivate deployment
+        uses: bobheadxi/deployments@v0.6.0
         with:
+          step: deactivate-env
           token: ${{ github.token }}
-          environment: pr-${{ github.event.number }}
-          onlyRemoveDeployments: true
+          env: pr-${{ github.event.number }}
+          desc: Deployment was pruned
