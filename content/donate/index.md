@@ -1,10 +1,12 @@
 ---
 
 title: Donate
-author: bbaovanc
 menu: main
 toc: false
 comments: false
+
+authors:
+  - bbaovanc
 
 description: >-
   I have a few cryptocurrency addresses that you can use if you want to donate to

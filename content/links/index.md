@@ -1,10 +1,12 @@
 ---
 
 title: Links
-author: bbaovanc
 menu: main
 toc: true
 comments: false
+
+authors:
+  - bbaovanc
 
 aliases:
   - /blog/links/

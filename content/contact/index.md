@@ -1,10 +1,12 @@
 ---
 
 title: Contact
-author: bbaovanc
 menu: main
 toc: false
 comments: false
+
+authors:
+  - bbaovanc
 
 description: >-
   Want to contact me? Here's how you can.
