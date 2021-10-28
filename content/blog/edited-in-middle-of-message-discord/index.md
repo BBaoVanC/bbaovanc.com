@@ -31,7 +31,8 @@ message.
 
 ## Tutorial
 
-1. Copy the "right-to-left embedding" character (U+202A) to your clipboard.
+1. Copy the "right-to-left embedding" character
+   ([U+202B](https://unicode-explorer.com/c/202B)) to your clipboard.
 2. Open editing box of a message
 3. Delete all text inside
 4. Paste the character
