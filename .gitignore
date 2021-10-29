@@ -14,3 +14,6 @@ hugo.darwin
 hugo.linux
 
 # End of https://www.toptal.com/developers/gitignore/api/hugo
+
+# My private drafts
+/content/blog/drafts/
