@@ -9,8 +9,8 @@ authors:
   - bbaovanc
 
 description: >-
-  I have a few cryptocurrency addresses that you can use if you want to donate to
-  me.
+  I have a few cryptocurrency addresses that you can use if you want to donate
+  to me.
 
 ---
 

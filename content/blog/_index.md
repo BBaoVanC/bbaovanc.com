@@ -3,6 +3,6 @@
 title: Blog
 
 description: >-
-  My blog posts
+  The home of my blog.
 
 ---

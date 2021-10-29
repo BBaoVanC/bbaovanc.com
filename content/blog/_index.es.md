@@ -3,6 +3,6 @@
 title: Blog
 
 description: >-
-  Mis entradas de blog
+  El hogar de mi blog.
 
 ---

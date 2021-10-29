@@ -3,7 +3,9 @@
 title: Home
 
 description: >-
-  This is my website.
+  This is my website, home to my blog and other personal pages. It's powered by
+  my own custom theme named bobatheme, available at
+  https://github.com/BBaoVanC/bobatheme.
 
 ---
 
