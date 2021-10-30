@@ -1,0 +1,57 @@
+baseURL: https://bbaovanc.com/abc
+theme: bobatheme
+defaultContentLanguage: en
+copyright: '&copy; 2021 bbaovanc <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>'
+sectionPagesMenu: main
+enableRobotsTXT: true
+paginate: 5
+enableGitInfo: true
+
+author:
+  name: bbaovanc
+
+markup:
+  highlight:
+    noClasses: false
+    lineNos: true
+
+params:
+  # these are for the OpenGraph/Twitter embeds in Hugo
+  description: My personal website
+
+  # these are for favicons in bobatheme
+  faviconICO: favicon.ico
+  faviconPNG: favicon.png
+
+  # show word count and/or reading time (enabled by default)
+  wordcount: true
+  readingtime: true
+
+  # used for last update
+  repoURL: https://github.com/BBaoVanC/bbaovanc.com
+
+privacy:
+  googleAnalytics:
+    disable: true
+
+  twitter:
+    enableDNT: true
+
+  vimeo:
+    enableDNT: true
+
+  youtube:
+    privacyEnhanced: true
+
+languages:
+  en:
+    languageName: English
+    title: bbaovanc's Website
+    weight: 1
+
+  es:
+    languageName: Español
+    title: sitio web de bbaovanc
+    weight: 2
+    params:
+      description: Mi sitio web personal
