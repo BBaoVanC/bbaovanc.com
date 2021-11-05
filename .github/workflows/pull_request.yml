@@ -52,7 +52,7 @@ jobs:
           MODE: push
           VERBOSE: true
           KEY: ${{secrets.DEPLOY_SSH_KEY}}
-          TARGET: /var/www/demo/pull_request/${{ github.event.number }}/
+          TARGET: /var/www/demo.bbaovanc.com/pull_request/${{ github.event.number }}/
 
       - name: Finish deployment
         uses: bobheadxi/deployments@v0.6.0

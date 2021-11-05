@@ -42,4 +42,4 @@ jobs:
           MODE: push
           VERBOSE: true
           KEY: ${{secrets.DEPLOY_SSH_KEY}}
-          TARGET: /var/www/bbaovanc/public/
+          TARGET: /var/www/bbaovanc.com/public/
