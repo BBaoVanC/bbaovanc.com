@@ -39,11 +39,11 @@ I've switched to a new theme. Visually, it's similar to
 [hugo-bearblog](https://github.com/janraasch/hugo-bearblog) which was the theme
 I had previously. Bearblog does a great job for being simple and very light, but
 it's not featureful enough for me. bobatheme has a lot of fancy features thanks
-to Hugo. For example: list pages (such as [/blog/](/blog/)) have previews for
-each article, including featured images or videos for select articles. You can
-also link to specific headers in an article, and articles have metadata such as
-word count, reading time, and the git commit that last modified them. My
-favorite new feature, however, is that bobatheme has icons.
+to Hugo. For example: list pages (such as [/blog/]({{< ref "/blog/" >}})) have
+previews for each article, including featured images or videos for select
+articles. You can also link to specific headers in an article, and articles have
+metadata such as word count, reading time, and the git commit that last modified
+them. My favorite new feature, however, is that bobatheme has icons.
 
 ### Icons
 
