@@ -32,7 +32,8 @@ params:
   readingtime: true
 
   # used for "View history"
-  historyURL: https://github.com/BBaoVanC/bbaovanc.com/commits/master
+  gitFileURL: https://github.com/BBaoVanC/bbaovanc.com/blob/master
+  gitFileIcon: code
 
 privacy:
   googleAnalytics:
