@@ -7,6 +7,10 @@ enableRobotsTXT: true
 paginate: 5
 enableGitInfo: true
 
+taxonomies:
+  tag: tags
+  author: authors
+
 author:
   name: bbaovanc
 
