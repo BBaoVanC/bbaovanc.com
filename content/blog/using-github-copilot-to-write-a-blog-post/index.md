@@ -4,7 +4,6 @@ title: Using Github copilot to write a blog post
 date: 2021-11-07
 toc: true
 comments: true
-draft: true
 
 authors:
   - bbaovanc
