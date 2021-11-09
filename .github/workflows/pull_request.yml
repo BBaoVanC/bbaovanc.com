@@ -45,7 +45,7 @@ jobs:
       - name: Upload
         uses: up9cloud/action-rsync@v1
         env:
-          HOST: bbaovanc.com
+          HOST: srv.bbaovanc.com
           USER: droneci
           PORT: 2222
           SOURCE: public/

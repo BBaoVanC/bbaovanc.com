@@ -13,12 +13,12 @@ jobs:
         uses: kielabokkie/ssh-key-and-known-hosts-action@v1
         with:
           ssh-private-key: ${{ secrets.DEPLOY_SSH_KEY }}
-          ssh-host: bbaovanc.com
+          ssh-host: srv.bbaovanc.com
           ssh-port: 2222
 
       - name: Delete pull request on server
         run:
-          ssh -p 2222 droneci@bbaovanc.com rm -r /var/www/demo.bbaovanc.com/pull_request/${{ github.event.number }}/
+          ssh -p 2222 droneci@srv.bbaovanc.com rm -r /var/www/demo.bbaovanc.com/pull_request/${{ github.event.number }}/
 
       - name: Deactivate deployment
         uses: bobheadxi/deployments@v0.6.0
