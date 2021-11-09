@@ -29,6 +29,13 @@ jobs:
           ref: ${{ github.head_ref }}
           no_override: false
 
+      - name: Setup SSH
+        uses: kielabokkie/ssh-key-and-known-hosts-action@v1
+        with:
+          ssh-private-key: ${{ secrets.DEPLOY_SSH_KEY }}
+          ssh-host: srv.bbaovanc.com
+          ssh-port: 2222
+
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
