@@ -27,7 +27,7 @@ jobs:
           ssh-port: 2222
 
       - name: Test SSH
-        run: ssh droneci@srv.bbaovanc.com echo true
+        run: ssh -p 2222 droneci@srv.bbaovanc.com echo true
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
