@@ -26,6 +26,9 @@ jobs:
           ssh-host: srv.bbaovanc.com
           ssh-port: 2222
 
+      - name: Test SSH
+        run: ssh droneci@srv.bbaovanc.com echo true
+
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
