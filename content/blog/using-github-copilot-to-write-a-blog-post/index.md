@@ -15,11 +15,12 @@ tags:
 # this will be shown for the article in list pages and in the page metadata
 # it can be either an image or video (this might change in the future, however)
 resources:
+  - name: feature
+    src: copilot-blog-post.webp
+    title: GitHub Copilot helps me write a blog post.
+
   - name: print-a-news-article
     src: print-a-news-article.webp
-
-  - name: copilot-blog-post
-    src: copilot-blog-post.webp
 
 ---
 
@@ -47,7 +48,7 @@ I decided to take it a step further and set the language to Markdown. I started
 writing out the basic structure of a blog post on my website and let it
 autocomplete.
 
-{{< figure src="copilot-blog-post" >}}
+{{< figure src="feature" >}}
 
 I'm not quite sure who Kurt A. Smith is, why Copilot chose April Fools 2020 for
 the date, or why it was so adamant on writing a blog post about itself. What I

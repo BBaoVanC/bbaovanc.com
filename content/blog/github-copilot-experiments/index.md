@@ -12,6 +12,10 @@ tags:
   - github-copilot
 
 resources:
+  - name: feature
+    src: boba-shop.webp
+    title: GitHub Copilot tends to repeat stuff.
+
   - name: rust-poem
     src: rust-poem.webp
 
@@ -24,7 +28,7 @@ resources:
   - name: dropdown-css
     src: dropdown-css.webp
 
-  - name: boba-shop
+  - name: boba-shop # same as feature
     src: boba-shop.webp
 
   - name: boba-shop-size
