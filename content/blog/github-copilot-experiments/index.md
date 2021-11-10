@@ -1,7 +1,7 @@
 ---
 
 title: GitHub Copilot experiments
-date: 2021-11-06
+date: 2021-11-06T23:56:47-05:00
 toc: true
 comments: true
 

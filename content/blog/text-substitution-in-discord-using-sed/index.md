@@ -1,7 +1,7 @@
 ---
 
 title: Text substitution in Discord using `sed`
-date: 2021-03-25
+date: 2021-03-25T18:48:15-05:00
 toc: false
 comments: true
 

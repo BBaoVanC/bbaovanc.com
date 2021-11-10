@@ -1,7 +1,7 @@
 ---
 
 title: Put `(edited)` in the middle of a message in Discord
-date: 2021-03-25
+date: 2021-03-25T18:48:34-05:00
 toc: false
 comments: true
 

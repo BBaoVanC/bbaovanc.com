@@ -1,7 +1,7 @@
 ---
 
 title: Using Github copilot to write a blog post
-date: 2021-11-07
+date: 2021-11-07T16:17:15-06:00
 toc: true
 comments: true
 
