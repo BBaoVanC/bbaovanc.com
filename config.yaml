@@ -21,8 +21,8 @@ params:
   description: My personal website
 
   # these are for favicons in bobatheme (unset by default)
-  faviconICO: /favicon.ico
-  faviconPNG: /favicon.png
+  faviconICO: favicon.ico
+  faviconPNG: favicon.png
 
   # show reading time (enabled by default)
   readingtime: true
