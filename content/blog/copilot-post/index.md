@@ -13,6 +13,9 @@ authors:
 tags:
   - github-copilot
 
+series:
+  - GitHub Copilot Experiments
+
 ---
 
 Did you know that Copilot is a command line interface for Copilot? It's a tool

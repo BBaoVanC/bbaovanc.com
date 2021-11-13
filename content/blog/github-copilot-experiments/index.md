@@ -11,6 +11,9 @@ authors:
 tags:
   - github-copilot
 
+series:
+  - GitHub Copilot Experiments
+
 resources:
   - name: feature
     src: boba-shop.webp

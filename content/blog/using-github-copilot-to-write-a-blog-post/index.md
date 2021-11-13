@@ -1,6 +1,6 @@
 ---
 
-title: Using Github copilot to write a blog post
+title: Using Github Copilot to write a blog post
 date: 2021-11-07T16:17:15-06:00
 toc: true
 comments: true
@@ -11,6 +11,9 @@ authors:
 tags:
   - github-copilot
   - blog
+
+series:
+  - GitHub Copilot Experiments
 
 # this will be shown for the article in list pages and in the page metadata
 # it can be either an image or video (this might change in the future, however)
