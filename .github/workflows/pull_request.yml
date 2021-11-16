@@ -60,6 +60,7 @@ jobs:
           VERBOSE: true
           KEY: ${{secrets.DEPLOY_SSH_KEY}}
           TARGET: /var/www/demo.bbaovanc.com/pull_request/${{ github.event.number }}/
+          ARGS_MORE: --checksum
 
       - name: Finish deployment
         uses: bobheadxi/deployments@v0.6.0
