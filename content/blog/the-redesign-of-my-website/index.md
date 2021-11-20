@@ -12,6 +12,7 @@ tags:
   - announcement
   - blog
   - hugo
+  - bobatheme
 
 resources:
   - name: feature
