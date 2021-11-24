@@ -38,10 +38,6 @@ Discord will execute it on the message you've last sent.
 - Regex is not supported
 - Global substitution is not supported
 
-<hr>
-Test
-<hr>
-
 *This post was adapted from [gitea:bbaovanc/discord-tricks][1]*
 
 [1]: https://git.bbaovanc.com/bbaovanc/discord-tricks
