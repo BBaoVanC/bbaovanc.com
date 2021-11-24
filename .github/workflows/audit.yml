@@ -2,11 +2,6 @@ name: Audit
 
 on:
   push:
-  pull_request:
-    types:
-      - opened
-      - reopened
-      - synchronize
 
 jobs:
   audit:
@@ -33,4 +28,4 @@ jobs:
       # See https://discourse.gohugo.io/t/audit-your-published-site-for-problems/35184
       - name: Audit
         run: |
-          grep -inorE "<\!-- raw HTML omitted -->|ZgotmplZ|\[i18n\]|\(<nil>\)|(&lt;nil&gt;)|hahahugo" public/
+          ! grep -inorE "<\!-- raw HTML omitted -->|ZgotmplZ|\[i18n\]|\(<nil>\)|(&lt;nil&gt;)|hahahugo" public/
