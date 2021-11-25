@@ -19,13 +19,6 @@ jobs:
           submodules: recursive
           fetch-depth: 0
 
-      - name: Setup SSH
-        uses: kielabokkie/ssh-key-and-known-hosts-action@v1
-        with:
-          ssh-private-key: ${{ secrets.DEPLOY_SSH_KEY }}
-          ssh-host: srv.bbaovanc.com
-          ssh-port: 2222
-
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
@@ -39,6 +32,13 @@ jobs:
         run: |
           time sudo ./compress.sh
 
+      - name: Setup SSH
+        uses: kielabokkie/ssh-key-and-known-hosts-action@v1
+        with:
+          ssh-private-key: ${{ secrets.DEPLOY_SSH_KEY }}
+          ssh-host: srv.bbaovanc.com
+          ssh-port: 2222
+
       - name: Upload
         uses: up9cloud/action-rsync@v1
         env:
@@ -50,4 +50,4 @@ jobs:
           VERBOSE: true
           KEY: ${{secrets.DEPLOY_SSH_KEY}}
           TARGET: /var/www/bbaovanc.com/public/
-          ARGS_MORE: --checksum
+          ARGS: -avPzc --delete-delay --exclude=/.git/ --exclude=/.github/
