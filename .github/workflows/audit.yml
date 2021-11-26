@@ -28,32 +28,32 @@ jobs:
       # For the following steps, see
       # https://discourse.gohugo.io/t/audit-your-published-site-for-problems/35184
 
-      - name: Audit: raw HTML
+      - name: Audit - raw HTML
         if: always()
         run: |
           ! grep -inorE "<\!-- raw HTML omitted -->" public/
 
-      - name: Audit: ZgotmplZ (unsafe URL content)
+      - name: Audit - ZgotmplZ (unsafe URL content)
         if: always()
         run: |
           ! grep -inorE "ZgotmplZ" public/
 
-      - name: Audit: missing translations
+      - name: Audit - missing translations
         if: always()
         run: |
           ! grep -inorE "\[i18n\]" public/
 
-      - name: Audit: nil values in printf
+      - name: Audit - nil values in printf
         if: always()
         run: |
           ! grep -inorE "\(<nil>\)" public/
 
-      - name: Audit: nil values in printf without safeHTML
+      - name: Audit - nil values in printf without safeHTML
         if: always()
         run: |
           ! grep -inorE "(&lt;nil&gt;)" public/
 
-      - name: Audit: HAHAHUGO
+      - name: Audit - HAHAHUGO
         if: always()
         run: |
           ! grep -inorE "hahahugo" public/
