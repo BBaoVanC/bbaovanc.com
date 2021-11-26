@@ -38,10 +38,10 @@ jobs:
         run: |
           ! grep -inorE "ZgotmplZ" public/
 
-      - name: Audit - missing translations
-        if: always()
-        run: |
-          ! grep -inorE "\[i18n\]" public/
+      #- name: Audit - missing translations
+      #  if: always()
+      #  run: |
+      #    ! grep -inorE "\[i18n\]" public/
 
       - name: Audit - nil values in printf
         if: always()
@@ -57,7 +57,3 @@ jobs:
         if: always()
         run: |
           ! grep -inorE "hahahugo" public/
-
-      - name: Force job success
-        if: always()
-        run: true
