@@ -59,4 +59,5 @@ jobs:
           ! grep -inorE "hahahugo" public/
 
       - name: Force job success
+        if: always()
         run: true
