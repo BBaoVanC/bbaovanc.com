@@ -4,17 +4,20 @@
     </small>
 </noscript>
 
-{{ $url := .Permalink }}
+{{ $url := .RelPermalink }}
 
 {{ if .IsTranslated }}
     {{ with index .AllTranslations 0 }}
-        {{ $url = .Permalink }}
+        {{ $url = .RelPermalink }}
     {{ end }}
 {{ end }}
+
+{{ $css := resources.Get "css/commento.css" }}
 
 <script defer
     src="https://commento.bbaovanc.com/js/commento.js"
     data-page-id="{{ $url }}"
+    data-css-override="{{ $css.Permalink }}"
 ></script>
 
 <div id="commento"></div>
