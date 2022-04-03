@@ -1,63 +1,63 @@
 {{ if ne .Site.BaseURL "https://bbaovanc.com" }}
-<i>Comment section is not available during development previews.</i>
+    <i>Comment section is not available during development previews.</i>
 {{ else }}
 
-<noscript>
-    <style>
-        #comments-hr {
-            display: none;
-        }
-    </style>
+    <noscript>
+        <style>
+            #comments-hr {
+                display: none;
+            }
+        </style>
 
-    <small>
-        <i>Enable JavaScript to see the comment section.</i>
-    </small>
-</noscript>
+        <small>
+            <i>Enable JavaScript to see the comment section.</i>
+        </small>
+    </noscript>
 
-{{ $url := .Permalink }}
+    {{ $url := .Permalink }}
 
-{{ if .IsTranslated }}
-{{ with index .AllTranslations 0 }}
-{{ $url = .Permalink }}
-{{ end }}
-{{ end }}
+    {{ if .IsTranslated }}
+        {{ with index .AllTranslations 0 }}
+            {{ $url = .Permalink }}
+        {{ end }}
+    {{ end }}
 
-<script>
-    var remark_config = {
-        host: "https://remark.bbaovanc.com",
-        site_id: "bbaovanc.com",
-        components: [
-            "embed",
-            //"last-comments",
-            //"counter",
-        ],
-        url: "{{ $url }}", // make this permalink the main language so all languages have the same comments
-        max_shown_comments: 10,
-        page_title: "{{ .Title }}",
-        locale: "{{ .Language.Lang }}",
-        show_email_subscription: true,
-        simple_view: false,
-    };
+    <script>
+        var remark_config = {
+            host: "https://remark.bbaovanc.com",
+            site_id: "bbaovanc.com",
+            components: [
+                "embed",
+                //"last-comments",
+                //"counter",
+            ],
+            url: "{{ $url }}", // make this permalink the main language so all languages have the same comments
+            max_shown_comments: 10,
+            page_title: "{{ .Title }}",
+            locale: "{{ .Language.Lang }}",
+            show_email_subscription: true,
+            simple_view: false,
+        };
 
-    if (window.matchMedia('(prefers-color-scheme: light)').matches) {
-        remark_config["theme"] = "light";
-    } else {
-        remark_config["theme"] = "dark";
-    }
-</script>
-<script>!function(e,n){for(var o=0;o<e.length;o++){var r=n.createElement("script"),c=".js",d=n.head||n.body;"noModule"in r?(r.type="module",c=".mjs"):r.async=!0,r.defer=!0,r.src=remark_config.host+"/web/"+e[o]+c,d.appendChild(r)}}(remark_config.components||["embed"],document);</script>
-
-<script>
-    const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: light)');
-    darkModeMediaQuery.addListener((e) => {
-        if (e.matches) {
-            window.REMARK42.changeTheme('light');
+        if (window.matchMedia('(prefers-color-scheme: light)').matches) {
+            remark_config["theme"] = "light";
         } else {
-            window.REMARK42.changeTheme('dark');
+            remark_config["theme"] = "dark";
         }
-    });
-</script>
+    </script>
+    <script>!function(e,n){for(var o=0;o<e.length;o++){var r=n.createElement("script"),c=".js",d=n.head||n.body;"noModule"in r?(r.type="module",c=".mjs"):r.async=!0,r.defer=!0,r.src=remark_config.host+"/web/"+e[o]+c,d.appendChild(r)}}(remark_config.components||["embed"],document);</script>
 
-<div id="remark42"></div>
+    <script>
+        const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: light)');
+        darkModeMediaQuery.addListener((e) => {
+            if (e.matches) {
+                window.REMARK42.changeTheme('light');
+            } else {
+                window.REMARK42.changeTheme('dark');
+            }
+        });
+    </script>
+
+    <div id="remark42"></div>
 
 {{ end }}
