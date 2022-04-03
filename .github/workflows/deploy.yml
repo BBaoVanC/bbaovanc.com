@@ -26,7 +26,7 @@ jobs:
           extended: true
 
       - name: Build
-        run: hugo --i18n-warnings --path-warnings
+        run: hugo --printI18nWarnings --path-warnings
 
       - name: Compress
         run: |
