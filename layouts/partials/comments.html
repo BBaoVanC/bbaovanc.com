@@ -1,27 +1,34 @@
-<noscript>
-    <small>
-        <i>Enable JavaScript to see the comment section.</i>
-    </small>
-</noscript>
-
-{{ $id := "" }}
-{{ with .Params.discussionId }}
-    {{ $id = . }}
+{{ if ne .Site.BaseURL "https://bbaovanc.com" }}
+    <i>Comment section is not available during development previews.</i>
 {{ else }}
-    {{ if .IsTranslated }}
-        {{ with index .AllTranslations 0 }}
-            {{ $id = .RelPermalink }}
-        {{ end }}
-    {{ else }}
-        {{ $id = .RelPermalink }}
-    {{ end }}
-{{ end }}
+    <noscript>
+        <small>
+            <i>Enable JavaScript to see the comment section.</i>
+        </small>
+    </noscript>
 
-<script>talkyardServerUrl='{{ .Site.Params.talkyardServerUrl }}';</script>
-<script async defer src="{{ .Site.Params.talkyardScriptUrl }}"></script>
-<!-- You can specify a per page discussion id on the next line, if your URLs might change. -->
-<div class="talkyard-comments" data-discussion-id="{{ $id }}" style="margin-top: 45px;">
-<p style="margin-top: 25px; opacity: 0.9; font-size: 96%">Comments powered by
-<a href="https://www.talkyard.io">Talkyard</a>.</p>
-<small>Discussion ID: {{ $id }}</small>
-</div>
+    {{ $id := "" }}
+    {{ with .Params.discussionId }}
+        {{ $id = . }}
+    {{ else }}
+        {{ if .IsTranslated }}
+            {{ with index .AllTranslations 0 }}
+                {{ $id = .Permalink }}
+            {{ end }}
+        {{ else }}
+            {{ $id = .Permalink }}
+        {{ end }}
+    {{ end }}
+
+    <script>talkyardServerUrl='{{ .Site.Params.talkyardServerUrl }}';</script>
+    <script async defer src="{{ .Site.Params.talkyardScriptUrl }}"></script>
+    <!-- You can specify a per page discussion id on the next line, if your URLs might change. -->
+    <div class="talkyard-comments" data-discussion-id="{{ $id }}" style="margin-top: 45px;">
+    </div>
+    <div class="comments-footer" style="text-align: right;">
+        <small>
+            <p style="margin: 0;">Comments powered by <a href="https://www.talkyard.io">Talkyard</a>.</p>
+            <p style="margin: 0;">Discussion ID: <code>{{ $id }}</code></p>
+        </small>
+    </div>
+{{ end }}
