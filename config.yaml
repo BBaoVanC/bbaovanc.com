@@ -31,6 +31,9 @@ params:
   gitFileURL: https://github.com/BBaoVanC/bbaovanc.com/blob/master
   gitFileIcon: code
 
+  talkyardServerUrl: "https://talkyard.bbaovanc.com"
+  talkyardScriptUrl: "https://talkyard.bbaovanc.com/-/talkyard-comments.min.js"
+
 # see https://gohugo.io/about/hugo-and-gdpr/#all-privacy-settings
 # you probably want to keep this default
 privacy:
