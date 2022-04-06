@@ -52,10 +52,10 @@ than an entire essay with the same amount of information.
 
 ## Building
 
-## Automatic deploy previews with Netlify
+## Automatic deploy previews with GitHub Actions
 
-Netlify will automatically build each pull request into a public deploy preview,
-and will link it in a comment.
+My GitHub Actions workflows will automatically build each pull request into a
+public deploy preview on demo.bbaovanc.com, and will link it in a comment.
 
 ## Manual (local) building
 
