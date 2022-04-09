@@ -23,7 +23,11 @@
     <script>talkyardServerUrl='{{ .Site.Params.talkyardServerUrl }}';</script>
     <script async defer src="{{ .Site.Params.talkyardScriptUrl }}"></script>
     <!-- You can specify a per page discussion id on the next line, if your URLs might change. -->
-    <div class="talkyard-comments" data-discussion-id="{{ $id }}" style="margin-top: 45px;">
+    <div class="talkyard-comments"
+         data-discussion-id="{{ $id }}"
+         style="margin-top: 45px;
+                padding: 4px;
+                border: 3px solid var(--figure-border);">
     </div>
     <div class="comments-footer" style="text-align: right;">
         <small>
