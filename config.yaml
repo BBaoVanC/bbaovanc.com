@@ -49,6 +49,11 @@ languages:
     languageName: English
     title: bbaovanc's Website
     weight: 1
+    menu:
+      main:
+        - identifier: forum
+          name: Forum
+          url: https://talkyard.bbaovanc.com
 
   es:
     languageName: Español
@@ -56,3 +61,8 @@ languages:
     weight: 2
     params:
       description: Mi sitio web personal
+    menu:
+      main:
+        - identifier: foro
+          name: Foro
+          url: https://talkyard.bbaovanc.com
