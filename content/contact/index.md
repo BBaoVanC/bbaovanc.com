@@ -3,7 +3,7 @@
 title: Contact
 menu: main
 toc: false
-comments: false
+comments: true
 
 authors:
   - bbaovanc
@@ -14,4 +14,3 @@ description: >-
 ---
 
 - Email: [contact@bbaovanc.com](mailto:contact@bbaovanc.com)
-- Matrix: [@bbaovanc:boba.best](https://matrix.to/#/@bbaovanc:boba.best)

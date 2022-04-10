@@ -3,7 +3,7 @@
 title: Links
 menu: main
 toc: true
-comments: false
+comments: true
 
 authors:
   - bbaovanc

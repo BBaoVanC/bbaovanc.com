@@ -3,7 +3,7 @@
 title: Donate
 menu: main
 toc: false
-comments: false
+comments: true
 
 authors:
   - bbaovanc
