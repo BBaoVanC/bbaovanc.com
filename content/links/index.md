@@ -18,41 +18,57 @@ description: >-
 
 ## Other
 
-- [GitHub](https://github.com/BBaoVanC/)
+- [GitHub](https://github.com/BBaoVanC/) - my GitHub profile
 - [boba.best](https://boba.best/)
 
 ## My Website
 
-- [Homepage](https://bbaovanc.com/) - theme:
-  [bobatheme](https://github.com/BBaoVanC/bobatheme)
-- [Blog](https://bbaovanc.com/blog/)
-- [Status Page](https://status.bbaovanc.com/)
-- [Searx Instance](https://search.bbaovanc.com/) -
-  [source code](https://github.com/BBaoVanC/searx)
-- [Gitea Instance](https://git.bbaovanc.com/)
+- [bbaovanc.com source code](https://github.com/BBaoVanC/bbaovanc.com)
+- [bobatheme](https://github.com/BBaoVanC/bobatheme) - theme for this website
+- [bobaforum](https://talkyard.bbaovanc.com) - my public forum
+- [Searx Instance](https://search.bbaovanc.com/) - privacy-respecting search
+  engine
+- [Gitea Instance](https://git.bbaovanc.com/) - mostly just mirrors of my GitHub
+  repos
 
-## My Software
+## My Projects
 
-- [smines](https://github.com/BBaoVanC/smines)
-- [imgupload.py](https://github.com/imgupload-py/imgupload.py)
-- [mojiman](https://github.com/BBaoVanC/mojiman)
-- [pynamegen](https://git.bbaovanc.com/bbaovanc/pynamegen)
+- [smines](https://github.com/BBaoVanC/smines) - TUI minesweeper in C, made for
+  practice
+- [imgupload.py](https://github.com/imgupload-py/imgupload.py) - simple image
+  uploading server written with Python Flask
+- [mojiman](https://github.com/BBaoVanC/mojiman) - program I made to learn Rust
+- [pynamegen](https://git.bbaovanc.com/bbaovanc/pynamegen) - name generator
+  written in Python
   - [libnamegen](https://git.bbaovanc.com/bbaovanc/libnamegen)
   - [liblistloader](https://git.bbaovanc.com/bbaovanc/liblistloader)
   - [libprogress](https://git.bbaovanc.com/bbaovanc/libprogress)
-- [RokuRemote](https://github.com/BBaoVanC/RokuRemote)
+- [RokuRemote](https://github.com/BBaoVanC/RokuRemote) - keyboard-based remote
+  control for Roku
 
 ## My Configurations
 
-- [dotfiles](https://github.com/BBaoVanC/dotfiles)
-- [dwm](https://github.com/BBaoVanC/.dwm)
-  - [dwm-flexipatch](https://github.com/BBaoVanC/dwm-flexipatch)
-  - [dwmblocks](https://github.com/BBaoVanC/dwmblocks)
-  - [dmenu](https://github.com/BBaoVanC/dmenu)
+- [dotfiles](https://github.com/BBaoVanC/dotfiles) - main repository with my
+  configs
+- [docker-dotfiles](https://github.com/BBaoVanC/docker-dotfiles) - Docker image
+  that contains my dotfiles
+- [onehalf](https://github.com/BBaoVanC/onehalf) - the theme I use on my
+  terminal
 
 ### Archived
 
-- [dwm](https://github.com/BBaoVanC/dwm)
-  - [st](https://github.com/BBaoVanC/st)
-  - [slstatus](https://github.com/BBaoVanC/slstatus)
-- [xmonad](https://github.com/BBaoVanC/.xmonad)
+- [dwm](https://github.com/BBaoVanC/.dwm) - outer repo with submodules for my
+  various dwm-related configs
+  - [dwm-flexipatch](https://github.com/BBaoVanC/dwm-flexipatch) - see
+    https://github.com/bakkeby/dwm-flexipatch
+  - [dwmblocks](https://github.com/BBaoVanC/dwmblocks) - DWM status bar, see
+    https://github.com/torrinfail/dwmblocks
+  - [dmenu](https://github.com/BBaoVanC/dmenu) - dynamic menu, see
+    https://tools.suckless.org/dmenu/
+  - [st](https://github.com/BBaoVanC/st) - simple terminal, see
+    https://st.suckless.org
+  - [slstatus](https://github.com/BBaoVanC/slstatus) - suckless status, see
+    https://tools.suckless.org/slstatus/
+  - [dwm](https://github.com/BBaoVanC/dwm) - dynamic window manager, see
+    https://dwm.suckless.org/
+- [xmonad](https://github.com/BBaoVanC/.xmonad) - see https://xmonad.org
