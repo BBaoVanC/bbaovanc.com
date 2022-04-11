@@ -11,8 +11,9 @@ authors:
 tags:
   - announcement
   - blog
-  - hugo
   - bobatheme
+  - hugo
+  - website
 
 resources:
   - name: feature
