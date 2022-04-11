@@ -46,7 +46,10 @@ params:
   talkyardServerUrl: "https://talkyard.bbaovanc.com"
   talkyardScriptUrl: "https://talkyard.bbaovanc.com/-/talkyard-comments.min.js"
 
-  footer: true
+  footer: >-
+    See the [anonymous and privacy-friendly
+    analytics](https://plausible.bbaovanc.com/bbaovanc.com) for this site,
+    powered by [Plausible](https://plausible.io).
 
 # see https://gohugo.io/about/hugo-and-gdpr/#all-privacy-settings
 # you probably want to keep this default
