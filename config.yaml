@@ -66,15 +66,3 @@ languages:
         - identifier: forum
           name: Forum
           url: https://talkyard.bbaovanc.com
-
-  es:
-    languageName: Español
-    title: sitio web de bbaovanc
-    weight: 2
-    params:
-      description: Mi sitio web personal
-    menu:
-      main:
-        - identifier: foro
-          name: Foro
-          url: https://talkyard.bbaovanc.com
