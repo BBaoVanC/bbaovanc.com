@@ -14,7 +14,7 @@ tags:
   - github-copilot
 
 series:
-  - GitHub Copilot Experiments
+  - github-copilot-experiments
 
 ---
 

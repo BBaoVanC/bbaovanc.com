@@ -13,7 +13,7 @@ tags:
   - blog
 
 series:
-  - GitHub Copilot Experiments
+  - github-copilot-experiments
 
 # this will be shown for the article in list pages and in the page metadata
 # it can be either an image or video (this might change in the future, however)
