@@ -17,16 +17,16 @@ markup: # this just keeps the bobatheme markup styling
   _merge: deep
 
 related:
-  includeNewer: true # this is the only non-default settings
+  includeNewer: true
   indices:
-    - name: keywords
-      weight: 100
+    #- name: keywords
+    #  weight: 100
     - name: tags
       weight: 80
     - name: date
       weight: 10
   threshold: 80
-  toLower: false
+  toLower: true
 
 params:
   # these are for the OpenGraph/Twitter embeds in Hugo
