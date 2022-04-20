@@ -2,6 +2,7 @@
 
 title: Using Github Copilot to write a blog post
 date: 2021-11-07T16:17:15-06:00
+lastmod: 2021-11-08T21:46:39-06:00
 toc: true
 comments: true
 
