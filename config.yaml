@@ -50,9 +50,6 @@ params:
   gitFileURL: https://github.com/BBaoVanC/bbaovanc.com/blob/master
   gitFileIcon: code
 
-  talkyardServerUrl: "https://talkyard.bbaovanc.com"
-  talkyardScriptUrl: "https://talkyard.bbaovanc.com/-/talkyard-comments.min.js"
-
   footer: >-
     See the [anonymous and privacy-friendly
     analytics](https://plausible.bbaovanc.com/bbaovanc.com) for this site,
@@ -68,8 +65,8 @@ languages:
     languageName: English
     title: bbaovanc's Website
     weight: 1
-    menu:
-      main:
-        - identifier: forum
-          name: Forum
-          url: https://talkyard.bbaovanc.com
+    #menu:
+    #  main:
+    #    - identifier: forum
+    #      name: Forum
+    #      url: https://forum.bbaovanc.com

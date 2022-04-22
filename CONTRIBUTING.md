@@ -2,8 +2,10 @@
 
 ## Where to put questions/issues/etc
 
-Please use the [section on
-bobaforum](https://talkyard.bbaovanc.com/top/my-website).
+For now, please use [GitHub
+Issues](https://github.com/BBaoVanC/bbaovanc.com/issues) for issues and [GitHub
+Discussions](https://github.com/BBaoVanC/bbaovanc.com/discussions) for anything
+else. I will look into making my own forum in the future for this.
 
 ## Building
 

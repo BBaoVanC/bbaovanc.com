@@ -4,7 +4,7 @@ My personal website, generated using [Hugo](https://gohugo.io)
 
 ## Discussions
 
-Please use the [category on
-bobaforum](https://talkyard.bbaovanc.com/top/my-website) for any questions,
-issues, ideas, discussions, etc. relating to my website. This should replace the
-GitHub Discussions system.
+For now, use [GitHub
+Discussions](https://github.com/BBaoVanC/bbaovanc.com/discussions) for
+questions, ideas, discussions, etc. relating to me or my website. In the future
+I will look into making a forum for this.
