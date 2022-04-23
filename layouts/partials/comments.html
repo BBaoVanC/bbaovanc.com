@@ -1,46 +1,116 @@
+<style>
+#isso-thread > h4 {
+    color: var(--text-normal);
+}
+
+#isso-root .isso-comment:not(:first-of-type),
+.isso-follow-up .isso-comment,
+.isso-comment > .isso-avatar > svg {
+    border-color: var(--background-5);
+}
+
+.isso-comment > .isso-text-wrapper > .isso-comment-header .isso-author,
+.isso-comment > .isso-text-wrapper > .isso-comment-footer,
+.isso-comment > .isso-text-wrapper > .isso-comment-footer .isso-votes {
+    color: var(--text-normal);
+    opacity: 80%;
+}
+
+/* bug is preventing me from testing this
+.isso-comment > .isso-text-wrapper > .isso-textarea-wrapper .isso-preview,
+.isso-postbox > .isso-form-wrapper .isso-preview {
+    color: var(--text-normal);
+    background-color: var(--background-2);
+    border-color: idk;
+    box-shadow-color: idk;
+} */
+
+.isso-comment > .isso-text-wrapper > .isso-comment-footer a,
+.isso-comment > .isso-text-wrapper > .isso-comment-footer a:hover {
+    color: var(--link-color) !important;
+}
+
+.isso-comment > .isso-text-wrapper > .isso-comment-footer a:hover {
+    text-decoration: underline;
+}
+
+
+/* idk
+#isso-thread .isso-textarea:focus,
+#isso-thread input:focus {
+    border-opacity: var(--text-normal);
+} */
+
+.isso-postbox > .isso-form-wrapper > .isso-auth-section .isso-input-wrapper input {
+    background-color: var(--background-2);
+    color: var(--text-normal);
+    border-color: var(--background-4);
+}
+
+.isso-postbox > .isso-form-wrapper > .isso-auth-section .isso-post-action > input,
+#isso-thread .isso-textarea {
+    color: var(--text-normal);
+    background-color: var(--background-2);
+    border-color: var(--background-4);
+}
+
+.isso-postbox > .isso-form-wrapper > .isso-auth-section .isso-post-action > input:hover {
+    background-color: var(--background-4);
+}
+
+.isso-postbox > .isso-form-wrapper > .isso-auth-section .isso-post-action > input:active {
+    background-color: var(--background-5);
+}
+</style>
+
+
 <h2>Comments</h2>
-{{/*
 
 {{ if ne .Site.BaseURL "https://bbaovanc.com" }}
     <i>Comment section is not available during development previews.</i>
 {{ else }}
     <noscript>
-        <small>
-            <i>Enable JavaScript to see the comment section.</i>
-        </small>
+        <i>Enable JavaScript to see the comment section.</i>
     </noscript>
 
-    {{ $id := "" }}
-    {{ with .Params.discussionId }}
-        {{ $id = . }}
-    {{ else }}
-        {{ if .IsTranslated }}
-            {{ with index .AllTranslations 0 }}
-                {{ $id = .Permalink }}
-            {{ end }}
-        {{ else }}
-            {{ $id = .Permalink }}
+    {{ $url := .Permalink }}
+    {{ if .IsTranslated }}
+        {{ with index .AllTranslations 0 }}
+            {{ $url = .Permalink }}
         {{ end }}
     {{ end }}
 
-    <script>talkyardServerUrl='{{ .Site.Params.talkyardServerUrl }}';</script>
-    <script async defer src="{{ .Site.Params.talkyardScriptUrl }}"></script>
-    <!-- You can specify a per page discussion id on the next line, if your URLs might change. -->
-    <div class="talkyard-comments"
-         data-discussion-id="{{ $id }}"
-         data-category="extid:embedded_comments"
-         style="padding: 4px;
-                border: 3px solid var(--figure-border);">
-    </div>
+
+    <script data-isso-id="{{ $url }}"
+            data-isso-default-lang="{{ .Language.Lang }}"
+            data-isso-css="true"
+            data-isso-max-comments-top="10"
+            data-isso-max-comments-nested="5"
+            data-isso-reveal-on-click="5"
+            {{/*
+            data-isso-avatar-bg="#111"
+            data-isso-avatar-fg="#9abf88 #5698c4 #e279a3 #9163b6 ..."
+            */}}
+            data-isso-vote="true"
+            {{/*
+            data-isso-vote-levels=""
+            */}}
+            data-isso-feed="false"
+            data-isso-require-email="true"
+            data-isso-reply-notifications="true"
+            src="https://isso.bbaovanc.com/js/embed.min.js">
+    </script>
+
+    <section id="isso-thread"></section>
+
     <div class="comments-footer" style="text-align: right;">
         <small>
-            <p style="margin: 0;">Comments powered by <a href="https://www.talkyard.io">Talkyard</a>.</p>
-            <p style="margin: 0;">Discussion ID: <code>{{ $id }}</code></p>
+            <p style="margin: 0;">
+                Comments powered by <a href="https://posativ.org/isso/">Isso</a>.
+            </p>
+            <p style="margin: 0;">
+                Discussion ID: <code>{{ $url }}</code>
+            </p>
         </small>
     </div>
 {{ end }}
-
-
-*/}}
-
-<i>Comments are temporarily disabled.</i>
