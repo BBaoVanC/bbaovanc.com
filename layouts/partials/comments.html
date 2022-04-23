@@ -7,9 +7,8 @@
 }
 
 #isso-root .isso-comment:not(:first-of-type),
-.isso-follow-up .isso-comment,
-.isso-comment > .isso-avatar > svg {
-    border-color: var(--background-5);
+.isso-follow-up .isso-comment {
+    border-color: var(--background-4);
 }
 
 .isso-comment > .isso-text-wrapper > .isso-comment-header .isso-author,
@@ -19,14 +18,10 @@
     opacity: 80%;
 }
 
-/* bug is preventing me from testing this
-.isso-comment > .isso-text-wrapper > .isso-textarea-wrapper .isso-preview,
 .isso-postbox > .isso-form-wrapper .isso-preview {
     color: var(--text-normal);
-    background-color: var(--background-2);
-    border-color: idk;
-    box-shadow-color: idk;
-} */
+    background: var(--background-2);
+}
 
 .isso-comment > .isso-text-wrapper > .isso-comment-footer a,
 .isso-comment > .isso-text-wrapper > .isso-comment-footer a:hover {
@@ -37,30 +32,18 @@
     text-decoration: underline;
 }
 
-
-/* idk
-#isso-thread .isso-textarea:focus,
-#isso-thread input:focus {
-    border-opacity: var(--text-normal);
-} */
-
-.isso-postbox > .isso-form-wrapper > .isso-auth-section .isso-input-wrapper input {
-    background-color: var(--background-2);
-    color: var(--text-normal);
-    border-color: var(--background-4);
-}
-
+.isso-postbox > .isso-form-wrapper > .isso-auth-section .isso-input-wrapper input,
 .isso-postbox > .isso-form-wrapper > .isso-auth-section .isso-post-action > input,
-#isso-thread .isso-textarea {
+#isso-thread .isso-textarea,
+.isso-postbox > .isso-form-wrapper .isso-preview {
     color: var(--text-normal);
     background-color: var(--background-2);
-    border-color: var(--background-4);
+    border-color: var(--background-4) !important;
 }
 
 .isso-postbox > .isso-form-wrapper > .isso-auth-section .isso-post-action > input:hover {
     background-color: var(--background-4);
 }
-
 .isso-postbox > .isso-form-wrapper > .isso-auth-section .isso-post-action > input:active {
     background-color: var(--background-5);
 }
