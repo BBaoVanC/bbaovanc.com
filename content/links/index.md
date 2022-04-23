@@ -25,7 +25,10 @@ description: >-
 
 - [bbaovanc.com source code](https://github.com/BBaoVanC/bbaovanc.com)
 - [bobatheme](https://github.com/BBaoVanC/bobatheme) - theme for this
-  website <!--- [bobaforum](https://talkyard.bbaovanc.com) - my public forum -->
+  website
+- [bobaforum (Talkyard)](https://talkyard.bbaovanc.com) - my public forum,
+  running [Talkyard](https://talkyard.io). May be deleted soon as I'm trying to
+  find the right forum software.
 - [Searx Instance](https://search.bbaovanc.com/) - privacy-respecting search
   engine
 - [Gitea Instance](https://git.bbaovanc.com/) - mostly just mirrors of my GitHub
