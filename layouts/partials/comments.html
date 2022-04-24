@@ -94,7 +94,18 @@
         data-isso-feed="false"
         data-isso-require-email="false"
         data-isso-reply-notifications="true"
-        data-isso-page-author-hash="284513e38f5c"
+
+        {{ with (.GetTerms "authors") }}
+            {{ $authorHashes := slice }}
+            {{ range . }}
+                {{ with .Params.issoUserID }}
+                    {{ $authorHashes = $authorHashes | append . }}
+                {{ end }}
+            {{ end }}
+
+            data-isso-page-author-hash="{{ delimit $authorHashes "," }}"
+        {{ end }}
+
         src="https://isso.bbaovanc.com/js/embed.min.js">
 </script>
 
