@@ -28,13 +28,6 @@ related:
   threshold: 80
   toLower: true
 
-frontmatter:
-  lastmod: # make explicit `lastmod` param override git
-    - lastmod
-    - :git
-    - date
-    - publishDate
-
 params:
   # these are for the OpenGraph/Twitter embeds in Hugo
   description: My personal website
