@@ -18,11 +18,11 @@
     opacity: 80%;
 }
 
-.isso-comment.isso-page-author > .isso-text-wrapper {
+.isso-comment.isso-is-page-author > .isso-text-wrapper {
     background-color: var(--background-accent);
 }
-.isso-comment > .isso-text-wrapper > .isso-comment-header .isso-page-author {
-    color: var(--link-color) !important;
+.isso-comment.isso-is-page-author > .isso-text-wrapper > .isso-comment-header > .isso-author {
+    color: var(--link-color);
 }
 
 .isso-postbox > .isso-form-wrapper .isso-preview {
@@ -104,7 +104,7 @@
                 {{ end }}
             {{ end }}
 
-            data-isso-page-author-hash="{{ delimit $authorHashes "," }}"
+            data-isso-page-author-hashes="{{ delimit $authorHashes "," }}"
         {{ end }}
 
         src="https://isso.bbaovanc.com/js/embed.min.js">
