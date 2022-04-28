@@ -58,8 +58,8 @@ languages:
     languageName: English
     title: bbaovanc's Website
     weight: 1
-    #menu:
-    #  main:
-    #    - identifier: forum
-    #      name: Forum
-    #      url: https://forum.bbaovanc.com
+    menu:
+      main:
+        - identifier: forum
+          name: Forum
+          url: https://forum.bbaovanc.com
