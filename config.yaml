@@ -43,6 +43,9 @@ params:
   gitFileURL: https://github.com/BBaoVanC/bbaovanc.com/blob/master
   gitFileIcon: code
 
+  # display a "Latest Posts" section on the homepage below its content
+  homepageLatestPosts: true
+
   footer: >-
     See the [anonymous and privacy-friendly
     analytics](https://plausible.bbaovanc.com/bbaovanc.com) for this site,
