@@ -32,9 +32,9 @@ params:
   # these are for the OpenGraph/Twitter embeds in Hugo
   description: My personal website
 
-  # these are for favicons in bobatheme (unset by default)
-  faviconICO: favicon.ico
-  faviconPNG: favicon.png
+  # these are for favicons in bobatheme (disabled by default)
+  faviconSVG: favicon.svg
+  appleTouchPNG: apple-touch-icon.png
 
   # show reading time (enabled by default)
   readingtime: true
@@ -45,6 +45,14 @@ params:
 
   # display a "Latest Posts" section on the homepage below its content
   homepageLatestPosts: true
+
+  # social media share icons
+  shareButtons:
+    twitter: true
+    facebook: true
+    linkedin: true
+    reddit: true
+    telegram: true
 
   footer: >-
     See the [anonymous and privacy-friendly
