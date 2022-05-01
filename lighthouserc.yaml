@@ -1,0 +1,10 @@
+ci:
+  collect:
+    url:
+      - https://localhost/
+      - https://localhost/blog/
+      - https://localhost/blog/caddy-is-the-best-webserver/
+      - https://localhost/links/
+    startServerCommand: sudo caddy run
+    settings:
+      chromeFlags: "--ignore-certificate-errors --throttling.cpuSlowdownMultiplier=2.4"
