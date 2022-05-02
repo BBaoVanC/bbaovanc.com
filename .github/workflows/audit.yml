@@ -39,7 +39,6 @@ jobs:
         uses: treosh/lighthouse-ci-action@v9
         with:
           uploadArtifacts: true
-          temporaryPublicStorage: true
           configPath: ./lighthouserc.yaml
           serverBaseUrl: https://lhci.bbaovanc.com/
           # this should be safe since it only allows adding (not deleting) data
