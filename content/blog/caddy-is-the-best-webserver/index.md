@@ -2,7 +2,7 @@
 
 title: Caddy is literally the best webserver
 date: 2021-11-13T00:43:35-06:00
-lastmod: 2021-11-13T00:43:35-06:00
+lastmod: 2022-05-02T00:54:43-05:00
 toc: true
 comments: true
 
@@ -38,14 +38,14 @@ for general use.
 ## Built-in automatic HTTPS
 
 Caddy can fetch certificates from Let's Encrypt and ZeroSSL out of the box.
-HTTPS is enabled by default for eligible domains[^1], unless you explicitly tell
-it not to.
+HTTPS is enabled by default for eligible domains[^hostname-requirements], unless
+you explicitly tell it not to.
 
 ### Incredible cipher security
 
 Caddy has incredible defaults for TLS/SSL ciphers. Any site you host on Caddy
 gets a perfect score from [Qualys SSL Labs](https://www.ssllabs.com/ssltest/)
-out of the box.[^2]
+out of the box.[^caddy-qualys-score]
 
 ## Dead simple configuration files: Caddy vs NGINX
 
@@ -195,7 +195,7 @@ templates](https://pkg.go.dev/text/template). This means you can make simple
 dynamic content while only using Caddy!
 
 In fact, the [official Caddy website](https://caddyserver.com) is generated
-entirely using Caddy's and Go templates![^3]
+entirely using Caddy's and Go templates![^caddy-templating]
 
 #### Error pages using HTTP Cats
 
@@ -218,12 +218,14 @@ border around the image.
 {{< figure src="caddy-browse" >}}
 
 
-[^1]: The rules for what domains have automatic HTTPS by default are
-  [here](https://caddyserver.com/docs/automatic-https#hostname-requirements)
+[^hostname-requirements]: For the rules on what domains have automatic HTTPS by
+  default, see ["Hostname requirements" on the Caddy
+  documentation](https://caddyserver.com/docs/automatic-https#hostname-requirements).
 
-[^2]: SSL Labs caps the score to an A if HSTS isn't enabled. After enabling it,
-  then you get a perfect A+ score. See
-  https://www.ssllabs.com/ssltest/analyze.html?d=bbaovanc.com&latest
+[^caddy-qualys-score]: SSL Labs caps the score to an A if HSTS isn't enabled.
+  After enabling it, then you get a perfect A+ score. See [my website's
+  score](https://www.ssllabs.com/ssltest/analyze.html?d=bbaovanc.com&latest)
   ([archived](https://archive.today/4JJDN)) for an example (bbaovanc.com).
 
-[^3]: See more info [on the Caddy docs](https://caddyserver.com/docs/caddyfile/directives/templates#examples)
+[^caddy-templating]: See more info about templating [on the Caddy
+  docs](https://caddyserver.com/docs/caddyfile/directives/templates#examples)
