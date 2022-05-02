@@ -2,7 +2,7 @@
 
 title: Youtube URL structures you should know
 date: 2021-10-30T21:20:38-05:00
-lastmod: 2021-10-30T21:20:38-05:00
+lastmod: 2022-05-02T00:59:25-05:00
 toc: true
 comments: true
 
@@ -61,7 +61,7 @@ Here's the video I'll be using as an example:
 
 {{< youtube F6va6tg62qg >}}
 
-I embedded that video on my website with this code:[^1]
+I embedded that video on my website with this code:[^hugo-shortcode]
 
 ```text
 {{</* youtube F6va6tg62qg */>}}
@@ -122,5 +122,9 @@ As far as I know, it's not possible to link to a playlist using `youtu.be`.
 [This Stack Exchange answer](https://webapps.stackexchange.com/a/9881) is a good
 reference for some other YouTube parameters.
 
-[^1]: I use a static site generator called [Hugo](https://gohugo.io) for my
-  website.
+[^hugo-shortcode]: I use a static site generator called
+  [Hugo](https://gohugo.io) for my website. It has a built in "shortcode" which
+  is a feature that allows me to embed certain code blocks into a page. One of
+  its shortcodes, named `youtube`, allows me to embed a YouTube video into my
+  post. You can read more info about [shortcodes on the Hugo
+  docs](https://gohugo.io/content-management/shortcodes/#use-hugos-built-in-shortcodes)
