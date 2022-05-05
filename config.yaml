@@ -54,6 +54,10 @@ params:
     reddit: true
     telegram: true
 
+  # show "Latest Posts" section at bottom of content pages
+  latestPostsOnContent: true
+
+
   footer: >-
     See the [anonymous and privacy-friendly
     analytics](https://plausible.bbaovanc.com/bbaovanc.com) for this site,
