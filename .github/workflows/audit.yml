@@ -40,6 +40,7 @@ jobs:
         with:
           uploadArtifacts: true
           configPath: ./lighthouserc.yaml
+          runs: 3
           serverBaseUrl: https://lhci.bbaovanc.com/
           # this should be safe since it only allows adding (not deleting) data
           serverToken: 926a24f2-90e4-48b1-809f-055b9408cf4b
