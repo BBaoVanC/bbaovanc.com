@@ -10,11 +10,9 @@ authors:
   - bbaovanc
 
 tags:
-  - announcement
-  - blog
   - bobatheme
   - hugo
-  - website
+  - meta
 
 resources:
   - name: feature

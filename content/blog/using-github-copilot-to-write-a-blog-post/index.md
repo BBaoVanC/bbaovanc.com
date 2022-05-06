@@ -11,7 +11,6 @@ authors:
 
 tags:
   - github-copilot
-  - blog
 
 series:
   - github-copilot-experiments
