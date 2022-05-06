@@ -3,22 +3,31 @@
 title: Home
 
 description: >-
-  This is my website, home to my blog and other personal pages. It's powered by
-  my own custom theme named bobatheme, available at
+  This is my personal website, home to my blog. It's powered by my own custom
+  theme named bobatheme, which is available at
   https://github.com/BBaoVanC/bobatheme.
 
 ---
 
 ## My Website
 
-This is my website. Pretty self-explanatory.
+This is my personal website. I wrote it myself from scratch using [my own
+theme][bobatheme-github] and a static site generator named [Hugo][hugo-website].
+I occasionally write blog posts under the [blog section][blog-section].
 
-## A fresh new theme
+[bobatheme-github]: https://github.com/BBaoVanC/bobatheme
+[hugo-website]: https://gohugo.io
+[blog-section]: {{< ref "/blog/" >}}
 
-My website uses my own custom theme named
-[bobatheme](https://github.com/BBaoVanC/bobatheme). Although it's not quite
-finished yet, the current style will probably stay for the forseeable future.
+## Topics I write about
 
-## Another website
+I write mostly about technology, including:
+
+- Linux
+- Open Source Software
+- Programming
+- Web Development
+
+## My other website
 
 I also run another website: https://boba.best.
