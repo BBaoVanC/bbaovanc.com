@@ -13,8 +13,6 @@ categories:
   - github-copilot
 
 tags:
-  - copilot
-  - github
   - markdown
 
 series:

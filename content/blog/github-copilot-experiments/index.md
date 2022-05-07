@@ -12,11 +12,6 @@ authors:
 categories:
   - github-copilot
 
-tags:
-  - copilot
-  - github
-  - programming
-
 series:
   - github-copilot-experiments
 
