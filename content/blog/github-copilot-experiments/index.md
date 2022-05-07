@@ -11,6 +11,7 @@ authors:
 
 categories:
   - programming
+  - tinkering
 
 tags:
   - github-copilot
