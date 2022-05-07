@@ -9,10 +9,13 @@ comments: true
 authors:
   - bbaovanc
 
-tags:
+categories:
   - linux
-  - webserver
+  - sysadmin
+
+tags:
   - caddy
+  - webserver
 
 resources:
   - name: feature

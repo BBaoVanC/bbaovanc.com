@@ -11,8 +11,12 @@ authors:
   - GitHub Copilot
   - bbaovanc
 
-tags:
+categories:
   - github-copilot
+
+tags:
+  - copilot
+  - github
 
 series:
   - github-copilot-experiments

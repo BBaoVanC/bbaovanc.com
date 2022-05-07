@@ -1,6 +1,6 @@
 ---
 
-title: GitHub Copilot experiments
+title: Experimenting with GitHub Copilot
 date: 2021-11-06T23:56:47-05:00
 lastmod: 2021-11-08T21:46:39-06:00
 toc: true
@@ -9,8 +9,13 @@ comments: true
 authors:
   - bbaovanc
 
-tags:
+categories:
   - github-copilot
+
+tags:
+  - copilot
+  - github
+  - programming
 
 series:
   - github-copilot-experiments

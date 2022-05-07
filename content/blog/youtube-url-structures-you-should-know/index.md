@@ -9,9 +9,12 @@ comments: true
 authors:
   - bbaovanc
 
-tags:
-  - youtube
+categories:
   - url-structures
+
+tags:
+  - query-parameters
+  - youtube
 
 resources:
   - name: feature

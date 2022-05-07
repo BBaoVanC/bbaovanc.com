@@ -9,8 +9,13 @@ comments: true
 authors:
   - bbaovanc
 
-tags:
+categories:
   - github-copilot
+
+tags:
+  - copilot
+  - github
+  - markdown
 
 series:
   - github-copilot-experiments

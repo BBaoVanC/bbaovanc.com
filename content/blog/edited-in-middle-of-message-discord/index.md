@@ -12,10 +12,15 @@ authors:
 aliases:
   - posts/edited-in-middle-of-message-discord/
 
-tags:
-  - tutorial
+categories:
   - discord
+  - guides
+  - tips-and-tricks
+
+tags:
   - discord-tricks
+  - right-to-left-embedding
+  - rle-character
 
 resources:
   - name: feature
