@@ -9,10 +9,13 @@ comments: true
 authors:
   - bbaovanc
 
+categories:
+  - meta
+
 tags:
   - bobatheme
   - hugo
-  - meta
+  - web-development
 
 resources:
   - name: feature

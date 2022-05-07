@@ -3,13 +3,21 @@ ci:
     url:
       - https://localhost/ # homepage
       - https://localhost/links/ # very simple page
+
       - https://localhost/blog/ # list page
       - https://localhost/blog/the-redesign-of-my-website/ # average post, but no footnotes
       - https://localhost/blog/blog-post-newsletter/ # average post, but WITH footnotes
+      - https://localhost/blog/caddy-is-the-best-webserver/ # another average post with footnotes, WITH code blocks
       - https://localhost/blog/youtube-url-structures-you-should-know/ # youtube embed
       - https://localhost/blog/copilot-post/ # lots of code blocks & text
       - https://localhost/blog/github-copilot-experiments/ # heavy use of images
-      - https://localhost/blog/caddy-is-the-best-webserver/
+
+      - https://localhost/categories/
+      - https://localhost/categories/linux/
+
+      - https://localhost/tags/
+      - https://localhost/tags/github-copilot/
+
     startServerCommand: sudo caddy run
     settings:
       chromeFlags: "--ignore-certificate-errors --throttling.cpuSlowdownMultiplier=2.4"

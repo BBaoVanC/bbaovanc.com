@@ -12,9 +12,13 @@ authors:
 aliases:
   - posts/allow-non-root-processes-to-bind-to-privileged-ports/
 
-tags:
-  - guide
+categories:
+  - guides
   - linux
+
+tags:
+  - gitea
+  - systemd
 
 ---
 

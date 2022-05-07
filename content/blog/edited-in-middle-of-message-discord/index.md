@@ -12,8 +12,11 @@ authors:
 aliases:
   - posts/edited-in-middle-of-message-discord/
 
+categories:
+  - guides
+  - tips-and-tricks
+
 tags:
-  - tutorial
   - discord
   - discord-tricks
 

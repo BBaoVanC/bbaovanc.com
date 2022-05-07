@@ -9,8 +9,13 @@ comments: true
 authors:
   - bbaovanc
 
-tags:
+categories:
   - meta
+
+tags:
+  - bobanews
+  - listmonk
+  - mailing-list
   - newsletter
 
 # this will be shown for the article in list pages and in the page metadata

@@ -12,10 +12,13 @@ aliases:
   - /blog/posts/sed-text-substitution-in-discord/
   - /blog/posts/text-substitution-in-discord-using-sed/
 
+categories:
+  - tips-and-tricks
+
 tags:
-  - tutorial
   - discord
   - discord-tricks
+  - sed
 
 resources:
   - name: feature

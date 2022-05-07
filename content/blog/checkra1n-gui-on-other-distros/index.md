@@ -12,11 +12,13 @@ authors:
 aliases:
   - posts/checkra1n-gui-on-other-distros/
 
-tags:
-  - guide
-  - linux
-  - archlinux
+categories:
+  - guides
   - jailbreak
+  - linux
+
+tags:
+  - arch-linux
   - checkra1n
 
 resources:

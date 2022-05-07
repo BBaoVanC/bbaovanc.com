@@ -11,6 +11,8 @@ authors:
   - GitHub Copilot
   - bbaovanc
 
+categories:
+
 tags:
   - github-copilot
 
