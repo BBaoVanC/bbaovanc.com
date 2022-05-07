@@ -4,6 +4,7 @@
 <style>
 #isso-thread > h4 {
     color: var(--text-normal);
+    margin-bottom: 8px;
 }
 
 #isso-root .isso-comment:not(:first-of-type),
@@ -55,6 +56,32 @@
 .isso-postbox > .isso-form-wrapper > .isso-auth-section .isso-post-action > input:active {
     background-color: var(--background-5);
 }
+
+#isso-thread .isso-textarea {
+    margin-bottom: 4px;
+}
+.isso-postbox > .isso-form-wrapper > .isso-auth-section .isso-input-wrapper {
+    display: inline-flex;
+    flex-direction: column;
+    margin-right: 4px;
+}
+.isso-postbox > .isso-form-wrapper > .isso-auth-section .isso-input-wrapper input {
+    order: 1;
+}
+.isso-postbox > .isso-form-wrapper > .isso-auth-section .isso-input-wrapper label {
+    order: 2;
+    font-size: small;
+}
+.isso-postbox > .isso-form-wrapper > .isso-auth-section .isso-post-action {
+    margin-left: 4px;
+    margin-top: 0;
+}
+@media screen and (max-width: 600px) {
+    .isso-postbox > .isso-form-wrapper > .isso-auth-section .isso-input-wrapper {
+        display: block;
+        margin-right: 0;
+    }
+}
 </style>
 
 
@@ -92,7 +119,7 @@
         {{/*
         data-isso-vote-levels=""
         */}}
-        data-isso-feed="false"
+        data-isso-feed="true"
         data-isso-require-email="false"
         data-isso-reply-notifications="true"
         data-isso-reply-notifications-default-enabled="true"
