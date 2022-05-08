@@ -82,6 +82,20 @@
         margin-right: 0;
     }
 }
+
+@media print {
+    .comments {
+        break-before: always;
+    }
+    .isso-comment > .isso-text-wrapper {
+        break-inside: avoid;
+    }
+
+    .isso-postbox,
+    .isso-feedlink {
+        display: none;
+    }
+}
 </style>
 
 
