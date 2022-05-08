@@ -14,6 +14,7 @@ categories:
   - meta
 
 tags:
+  - caddy
   - github-actions
   - google-lighthouse
 
