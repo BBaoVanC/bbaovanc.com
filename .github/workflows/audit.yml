@@ -3,8 +3,7 @@ name: Audit
 on:
   push:
     branches:
-      - master
-  pull_request:
+      - test1
 
 jobs:
   lighthouse:
