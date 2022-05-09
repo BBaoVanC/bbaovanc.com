@@ -49,10 +49,10 @@ jobs:
           cp -r public/ new/
           # copy, so that public/ stays, it will be needed for Caddy to serve
 
-      - name: Show full diff
+      - name: Save full diff
         run: diff -r old/ new/ > changes.diff || true
 
-      - name: Upload diff
+      - name: Upload full diff
         uses: actions/upload-artifact@v3
         with:
           name: diff
