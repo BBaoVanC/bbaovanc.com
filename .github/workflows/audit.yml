@@ -2,20 +2,76 @@ name: Audit
 
 on:
   push:
+    branches:
+      - master
+  pull_request:
 
 jobs:
   lighthouse:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkount
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: latest
+          extended: true
+
+      - name: Checkout (pull_request)
+        if: github.event.pull_request
         uses: actions/checkout@v2
         with:
           submodules: recursive
           fetch-depth: 0
-          ref: ${{github.event.pull_request.head.ref}}
-          repository: ${{github.event.pull_request.head.repo.full_name}}
+          ref: ${{ github.event.pull_request.base.ref }}
+
+      - name: Checkout (push)
+        if: github.event_name == 'push'
+        uses: actions/checkout@v2
+        with:
+          submodules: recursive
+          fetch-depth: 0
+          ref: ${{ github.event.before }}
+
+      - name: Build previous commit
+        run: |
+          hugo --printI18nWarnings --printPathWarnings --baseURL https://localhost -d old/
+
+      - name: Checkout current commit
+        uses: actions/checkout@v2
+        with:
+          submodules: recursive
+          fetch-depth: 0
+          clean: false
+
+      - name: Build current commit
+        run: |
+          hugo --printI18nWarnings --printPathWarnings --baseURL https://localhost
+          cp -r public/ new/
+          # copy, so that public/ stays, it will be needed for Caddy to serve
+
+      - name: Save full diff
+        run: diff -r old/ new/ | tee changes.diff || true
+
+      - name: Upload full diff
+        uses: actions/upload-artifact@v3
+        with:
+          name: diff
+          path: changes.diff
+
+      - name: Find changed URLs
+        id: changed_urls
+        env:
+          SCHEME: https
+          DOMAIN: localhost
+        run: |
+          urls="$(./changed-urls.sh)"
+          urls="${urls//'%'/'%25'}"
+          urls="${urls//$'\n'/'%0A'}"
+          urls="${urls//$'\r'/'%0D'}"
+          echo "::set-output name=urls::$urls"
 
       - name: Install Caddy
+        if: "${{ steps.changed_urls.outputs.urls != '' }}"
         run: |
           curl -1sLf 'https://dl.cloudsmith.io/public/caddy/stable/gpg.key' | sudo tee /etc/apt/trusted.gpg.d/caddy-stable.asc
           curl -1sLf 'https://dl.cloudsmith.io/public/caddy/stable/debian.deb.txt' | sudo tee /etc/apt/sources.list.d/caddy-stable.list
@@ -23,19 +79,12 @@ jobs:
           sudo apt install caddy
           sudo systemctl disable --now caddy
 
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2
-        with:
-          hugo-version: latest
-          extended: true
-
-      - name: Build
-        run: hugo --printI18nWarnings --printPathWarnings --baseURL https://localhost
-
       - name: Compress
+        if: "${{ steps.changed_urls.outputs.urls != '' }}"
         run: time ./compress.sh
 
       - name: Audit using Lighthouse
+        if: "${{ steps.changed_urls.outputs.urls != '' }}"
         uses: treosh/lighthouse-ci-action@v9
         with:
           uploadArtifacts: true
@@ -44,6 +93,7 @@ jobs:
           serverBaseUrl: https://lhci.bbaovanc.com/
           # this should be safe since it only allows adding (not deleting) data
           serverToken: 926a24f2-90e4-48b1-809f-055b9408cf4b
+          urls: ${{ steps.changed_urls.outputs.urls }}
 
 
   audit:
