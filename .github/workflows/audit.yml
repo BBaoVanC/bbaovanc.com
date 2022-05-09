@@ -50,7 +50,7 @@ jobs:
           # copy, so that public/ stays, it will be needed for Caddy to serve
 
       - name: Save full diff
-        run: diff -r old/ new/ > changes.diff || true
+        run: diff -r old/ new/ | tee changes.diff || true
 
       - name: Upload full diff
         uses: actions/upload-artifact@v3
@@ -71,6 +71,7 @@ jobs:
           echo "::set-output name=urls::$urls"
 
       - name: Install Caddy
+        if: "${{ steps.changed_urls.outputs.urls != '' }}"
         run: |
           curl -1sLf 'https://dl.cloudsmith.io/public/caddy/stable/gpg.key' | sudo tee /etc/apt/trusted.gpg.d/caddy-stable.asc
           curl -1sLf 'https://dl.cloudsmith.io/public/caddy/stable/debian.deb.txt' | sudo tee /etc/apt/sources.list.d/caddy-stable.list
@@ -79,9 +80,11 @@ jobs:
           sudo systemctl disable --now caddy
 
       - name: Compress
+        if: "${{ steps.changed_urls.outputs.urls != '' }}"
         run: time ./compress.sh
 
       - name: Audit using Lighthouse
+        if: "${{ steps.changed_urls.outputs.urls != '' }}"
         uses: treosh/lighthouse-ci-action@v9
         with:
           uploadArtifacts: true
