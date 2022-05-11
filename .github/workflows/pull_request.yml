@@ -91,5 +91,4 @@ jobs:
             A preview of this pull request is ready!
             See it at https://demo.bbaovanc.com/pull_request/${{ github.event.number }}/
             View the deploy log at https://github.com/BBaoVanC/bbaovanc.com/actions/runs/${{ github.run_id}}
-            Please note that currently the comment system is only operational on real deploys on bbaovanc.com. If you see an error, it's probably not your fault.
           edit-mode: replace
