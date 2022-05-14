@@ -2,8 +2,8 @@
 
 # this is the title it generated. not even joking
 title: Copilot
-date: 2021-11-07T16:17:15-06:00
-lastmod: 2021-11-07T16:17:15-06:00
+date: 2021-11-07T16:20:15-06:00
+lastmod: 2021-11-07T16:20:15-06:00
 toc: true
 comments: true
 
