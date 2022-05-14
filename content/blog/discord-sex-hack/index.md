@@ -53,10 +53,20 @@ run text replacement commands. Here's a very simple example of what a basic
 $ sed 's/hello/goodbye/'
 ```
 
-For whatever reason, Discord decided to implement this into both their
-web/desktop client and their iOS app. Note that while real `sed` commands can
-get much more complicated, Discord's implementation doesn't support those
-advanced features[^trailing-slash-note].
+Discord likely implemented this in order to appeal to
+[IRC][irc-wikipedia][^irc-definition] users. Since IRC doesn't support editing
+messages, it's common for people to send messages in that format to tell people
+about changes to their previous message. Discord implemented this into both
+their web/desktop client and their iOS app, excluding the Android app.
+
+[irc-wikipedia]: https://en.wikipedia.org/wiki/Internet_Relay_Chat
+
+[^irc-definition]: IRC (Internet Relay Chat) is a simple text-based chat system.
+  It's a very old protocol, however its simplicity and minimalism is the main
+  reason people choose it. It's not very popular anymore.
+
+Note that while real `sed` commands can get much more complicated, Discord's
+implementation doesn't support those advanced features[^trailing-slash-note].
 
 [^trailing-slash-note]: Also note that in Discord's implementation, the trailing
   slash (after `goodbye`) can be ommitted (making it just `s/hello/goodbye`),
