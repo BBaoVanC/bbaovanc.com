@@ -3,28 +3,35 @@
 -->
 <style>
 #isso-thread > h4 {
-    color: var(--text-1);
+    color: var(--text-0);
     margin-bottom: 8px;
 }
 
 #isso-root .isso-comment:not(:first-of-type),
 .isso-follow-up .isso-comment {
-    border-color: var(--background-highlight);
+    border-color: var(--background-3);
 }
 
 .isso-comment > .isso-text-wrapper > .isso-comment-header .isso-author,
 .isso-comment > .isso-text-wrapper > .isso-comment-header .isso-page-author-suffix,
 .isso-comment > .isso-text-wrapper > .isso-comment-footer,
 .isso-comment > .isso-text-wrapper > .isso-comment-footer .isso-votes {
-    color: var(--text-1);
-    opacity: 80%;
+    color: var(--text-gray-0);
+}
+
+.isso-comment > .isso-text-wrapper > .isso-comment-header .isso-spacer,
+.isso-comment > .isso-text-wrapper > .isso-comment-header .isso-spacer:hover,
+.isso-comment > .isso-text-wrapper > .isso-comment-header a.isso-permalink,
+.isso-comment > .isso-text-wrapper > .isso-comment-header a.isso-permalink:hover {
+    color: var(--text-gray-1) !important;
+}
+.isso-comment > .isso-text-wrapper > .isso-comment-header a.isso-author:hover,
+.isso-comment > .isso-text-wrapper > .isso-comment-header a.isso-permalink:hover {
+    text-decoration: underline !important;
 }
 
 .isso-comment.isso-is-page-author > .isso-text-wrapper {
-    background-color: var(--background-accent);
-}
-.isso-comment.isso-is-page-author > .isso-text-wrapper > .isso-comment-header > .isso-author {
-    color: var(--link-color);
+    background-color: var(--background-accent-1);
 }
 
 .isso-postbox > .isso-form-wrapper .isso-preview {
@@ -32,12 +39,12 @@
     background: var(--background-1);
 }
 
-.isso-comment > .isso-text-wrapper > .isso-comment-footer a,
-.isso-comment > .isso-text-wrapper > .isso-comment-footer a:hover {
-    color: var(--link-color) !important;
+.isso-feedlink:hover,
+.isso-comment > .isso-text-wrapper > .isso-comment-footer a.isso-reply {
+    color: var(--link-0) !important;
+    text-shadow: unset !important;
 }
-
-.isso-comment > .isso-text-wrapper > .isso-comment-footer a:hover {
+.isso-comment > .isso-text-wrapper > .isso-comment-footer a.isso-reply:hover {
     text-decoration: underline;
 }
 
@@ -50,11 +57,15 @@
     border-color: var(--background-2) !important;
 }
 
+#isso-thread .isso-textarea.isso-placeholder {
+    color: var(--text-gray-1);
+}
+
 .isso-postbox > .isso-form-wrapper > .isso-auth-section .isso-post-action > input:hover {
     background-color: var(--background-2);
 }
 .isso-postbox > .isso-form-wrapper > .isso-auth-section .isso-post-action > input:active {
-    background-color: var(--background-highlight);
+    background-color: var(--background-3);
 }
 
 #isso-thread .isso-textarea {
@@ -98,6 +109,10 @@
     .isso-feedlink {
         display: none;
     }
+}
+
+@keyframes target-fade {
+    0% { background-color: var(--background-yellow-2); }
 }
 </style>
 
