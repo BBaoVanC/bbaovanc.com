@@ -9,7 +9,6 @@ comments: true
 
 authors:
   - GitHub Copilot
-  - bbaovanc
 
 categories:
 
