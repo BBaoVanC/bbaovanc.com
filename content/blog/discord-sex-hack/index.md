@@ -24,6 +24,10 @@ resources:
     src: example.webp
     title: Result after sending a GIF and then sending `s/e/x`.
 
+  - name: default-sex
+    src: default-sex.webp
+    title: Fallback image on `txnor.com`
+
   - name: double-sex
     src: double-sex.webp
     title: Resulting image after typing `s/e/x` a second time.
@@ -31,6 +35,33 @@ resources:
   - name: chess
     src: chess.webp
     title: This happens once you type `s/w/ag` after having done `s/e/x`.
+
+  - name: sword
+    src: sword.webp
+    title: This happens when you type `s/w/ord` after having done `s/e/x`.
+  - name: sword-atk
+    src: sword-atk.webp
+    title: This happens when you type `s/d/dATK`
+  - name: sword-def
+    src: sword-def.webp
+    title: This happens when you type `s/d/dDEF`
+  - name: sword-hug
+    src: sword-hug.webp
+    title: This happens when you type `s/d/dHUG`
+  - name: sword-win
+    src: sword-win.webp
+    title: Win screen on the `s/w/ord` game.
+  - name: sword-lose
+    src: sword-lose.webp
+    title: Lose screen on the `s/w/ord` game.
+
+  - name: 6969th
+    src: 6969th.webp
+    title: This happens on average (since it's randomized) every 6070th use.
+
+  - name: math-challenge
+    src: math-challenge.webp
+    title: Math challenge example
 
 ---
 
@@ -123,8 +154,22 @@ User-Agent: Mozilla/5.0 (compatible; Discordbot/2.0; +https://discordapp.com/)
 ```
 
 The important part here is the word `Discord`. If you visit the website with
-your user agent set to anything containing `Discord` (case-insensitive), then it
-serves the image directly.
+your user agent set to anything containing `Discord`
+(case-insensitive)[^discord-user-agent], then it serves the image directly.
+
+[^discord-user-agent]: [According to the source code][user-agent-source-code],
+  it looks like `Intel Mac OS X 11.6; rv:92.0` also triggers the same response.
+
+[user-agent-source-code]: https://github.com/rebane2001/txnor-server/blob/26c7c279b0b4668c8a3b061692d83c507aeac7c5/txnor.nginx#L23-L27
+
+## Default image
+
+If you go to any URL on `txnor.com` that doesn't fit one of the existing
+patterns/games, then it returns this fallback image:
+
+{{< figure src="default-sex" >}}
+
+## Extra features
 
 ### Double sex
 
@@ -146,7 +191,76 @@ the initial message of `s/e/x`.
 
 {{< figure src="chess" >}}
 
-## Extra features
+### `s/w/ord`
 
-I'll update this section if I find out about any new features worth mentioning
-in the future.
+If you do `s/w/ord` after `s/e/x`, then it starts a fighting game (titled
+"Wumpagotchi Adventures". You can use three commands: s/d/d**ATK**,
+s/d/d**DEF**, and s/d/d**HUG**.
+
+Here are a few example images:
+
+#### Main `s/w/ord` screen
+
+{{< figure src="sword" >}}
+
+#### ATK command
+
+{{< figure src="sword-atk" >}}
+
+#### DEF command
+
+{{< figure src="sword-def" >}}
+
+#### HUG command
+
+{{< figure src="sword-hug" >}}
+
+#### Win screen
+
+{{< figure src="sword-win" >}}
+
+#### Lose screen
+
+{{< figure src="sword-lose" >}}
+
+### 6969th Discord Sexer
+
+If you happen to get a one in 6970 chance, it will instead return
+a special image:
+
+{{< figure src="6969th" >}}
+
+[6969th-source]: https://github.com/rebane2001/txnor-server/blob/26c7c279b0b4668c8a3b061692d83c507aeac7c5/sex.py#L130-L133
+
+Here's a [snippet of the code that handles this chance][6969th-source]:
+
+```python
+# 6969th winner image (disable for chess)
+if random.randint(0, 6969) == 6969 and "ag" not in name:
+    web.header('Cache-Control', 'no-store')
+    return six_nine
+```
+
+I believe it's supposed to be a 1/6969 chance, but `random.randint` in Python
+[includes both numbers][randint-inclusive]. That means that the possible numbers that it could pick
+would be 0, 1, ... 6968, 6969. If you were to count the numbers included in that
+sequence, it would total 6970.
+
+[randint-inclusive]: https://docs.python.org/3/library/random.html#random.randint
+
+### Math challenge
+
+Any URL that matches [this regular expression][math-challenge-regex] will
+instead return a randomized math challenge:
+
+[math-challenge-regex]: https://regex101.com/r/ddEkML/1
+
+{{< figure src="math-challenge" >}}
+
+## Discord sex is open source
+
+Rebane revealed in a [comment on this post](#isso-16) that the
+server running on `txnor.com` is open source. See
+[rebane2001/txnor-server][txnor-server-github].
+
+[txnor-server-github]: https://github.com/rebane2001/txnor-server
