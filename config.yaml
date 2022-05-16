@@ -59,7 +59,7 @@ params:
     print: true
 
   # show "Latest Posts" section at bottom of content pages
-  latestPostsOnContent: true
+  # latestPostsOnContent: true
 
 
   footer: >-
