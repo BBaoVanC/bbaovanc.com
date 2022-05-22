@@ -257,10 +257,28 @@ instead return a randomized math challenge:
 
 {{< figure src="math-challenge" >}}
 
+What's special is that the math challenge is [set to not be
+cached][math-challenge-caching].
+
+[math-challenge-caching]: https://github.com/rebane2001/txnor-server/blob/26c7c279b0b4668c8a3b061692d83c507aeac7c5/sex.py#L137
+
+How it works is that when each person's Discord client sends a request to the
+Discord CDN to get the image, the client caches that image. That means each
+client will see the same challenge problem, even if the user restarts the
+client. But separate clients will not have it cached, so they'll request it
+again themselves, and different numbers will be generated.
+
 ## Discord sex is open source
 
-Rebane revealed in a [comment on this post](#isso-16) that the
+Thanks to a [comment from Rebane on this post](#isso-16), I now know that the
 server running on `txnor.com` is open source. See
 [rebane2001/txnor-server][txnor-server-github].
 
 [txnor-server-github]: https://github.com/rebane2001/txnor-server
+
+## YouTube video
+
+Rebane also [made a YouTube video][txnor-youtube-video] about this trick. Make
+sure to check it out too!
+
+[txnor-youtube-video]: https://www.youtube.com/watch?v=km8CR-fdB7o
