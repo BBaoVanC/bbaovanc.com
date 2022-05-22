@@ -127,9 +127,11 @@ program to run on it. In fact, it looks like that domain was purchased purely in
 order to make this trick possible[^txnor-domain-date].
 
 [^txnor-domain-date]: According to [a quick WHOIS lookup][txnor-whois], the
-  domain was registered on May 3, 2022. That's the same day that [@Rebane tweeted
-  about the new feature][rebane-tweet] (going to https://txnor.com redirects to
-  this tweet), so I assume that this is the only reason they bought the domain.
+  domain was registered on May 3, 2022. That's the same day that [@Rebane
+  tweeted about the new feature][rebane-tweet] (~~going to https://txnor.com
+  redirects to this tweet~~ now the domain redirects to [Rebane's YouTube video
+  about the hack]({{< ref "#youtube-video" >}})), so I assume that this is the
+  only reason they bought the domain.
 
 [txnor-whois]: https://www.whois.com/whois/txnor.com
 [rebane-tweet]: https://twitter.com/rebane2001/status/1521544722875142145
