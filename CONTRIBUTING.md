@@ -2,9 +2,10 @@
 
 ## Where to put questions/issues/etc
 
-Please use the [proper section on
-bobaforum](https://forum.bbaovanc.com/t/my-website) for issues, questions, or
-discussions.
+Use the [GitHub Discussions forum][github-discussions-url] for any questions,
+or ideas. Use the "Q&A" section for both questions and issues as well.
+
+[github-discussions-url]: https://github.com/BBaoVanC/bbaovanc.com/discussions
 
 ## Building
 

@@ -79,10 +79,6 @@ languages:
     weight: 1
     menu:
       main:
-        - identifier: forum
-          name: Forum
-          url: https://forum.bbaovanc.com
-
         - identifier: status-page
           name: Status Page
           url: https://status.bbaovanc.com
