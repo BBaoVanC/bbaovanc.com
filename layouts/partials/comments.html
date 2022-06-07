@@ -2,31 +2,31 @@
     vim: ft=html
 -->
 <style>
-#isso-thread > h4 {
+h4.isso-thread-heading {
     color: var(--text-0);
     margin-bottom: 8px;
 }
 
-#isso-root .isso-comment:not(:first-of-type),
+.isso-comment:not(:first-of-type),
 .isso-follow-up .isso-comment {
     border-color: var(--background-3);
 }
 
-.isso-comment > .isso-text-wrapper > .isso-comment-header .isso-author,
-.isso-comment > .isso-text-wrapper > .isso-comment-header .isso-page-author-suffix,
-.isso-comment > .isso-text-wrapper > .isso-comment-footer,
-.isso-comment > .isso-text-wrapper > .isso-comment-footer .isso-votes {
+.isso-author,
+.isso-page-author-suffix,
+.isso-comment-footer,
+.isso-comment-footer .isso-votes {
     color: var(--text-gray-0);
 }
 
-.isso-comment > .isso-text-wrapper > .isso-comment-header .isso-spacer,
-.isso-comment > .isso-text-wrapper > .isso-comment-header .isso-spacer:hover,
-.isso-comment > .isso-text-wrapper > .isso-comment-header a.isso-permalink,
-.isso-comment > .isso-text-wrapper > .isso-comment-header a.isso-permalink:hover {
+.isso-comment-header .isso-spacer,
+.isso-spacer:hover,
+.isso-permalink,
+.isso-permalink:hover {
     color: var(--text-gray-1) !important;
 }
-.isso-comment > .isso-text-wrapper > .isso-comment-header a.isso-author:hover,
-.isso-comment > .isso-text-wrapper > .isso-comment-header a.isso-permalink:hover {
+.isso-author:hover,
+.isso-permalink:hover {
     text-decoration: underline !important;
 }
 
@@ -34,63 +34,58 @@
     background-color: var(--background-accent-1);
 }
 
-.isso-postbox > .isso-form-wrapper .isso-preview {
-    color: var(--text-1);
-    background: var(--background-1);
-}
-
 .isso-feedlink:hover,
-.isso-comment > .isso-text-wrapper > .isso-comment-footer a.isso-reply {
+.isso-reply {
     color: var(--link-0) !important;
     text-shadow: unset !important;
 }
-.isso-comment > .isso-text-wrapper > .isso-comment-footer a.isso-reply:hover {
+.isso-reply:hover {
     text-decoration: underline;
 }
 
-.isso-postbox > .isso-form-wrapper > .isso-auth-section .isso-input-wrapper input,
-.isso-postbox > .isso-form-wrapper > .isso-auth-section .isso-post-action > input,
-#isso-thread .isso-textarea,
-.isso-postbox > .isso-form-wrapper .isso-preview {
+.isso-input-wrapper input,
+.isso-post-action > input,
+.isso-textarea,
+.isso-preview {
     color: var(--text-1);
     background-color: var(--background-1);
     border-color: var(--background-2) !important;
 }
 
-.isso-postbox > .isso-form-wrapper > .isso-auth-section .isso-input-wrapper input:focus,
-#isso-thread .isso-textarea:focus {
+.isso-input-wrapper input:focus,
+.isso-textarea:focus {
     border-color: var(--background-3) !important;
 }
 
-.isso-postbox > .isso-form-wrapper > .isso-auth-section .isso-post-action > input:hover {
+.isso-post-action > input:hover {
     background-color: var(--background-2);
 }
-.isso-postbox > .isso-form-wrapper > .isso-auth-section .isso-post-action > input:focus,
-.isso-postbox > .isso-form-wrapper > .isso-auth-section .isso-post-action > input:active {
+.isso-post-action > input:focus,
+.isso-post-action > input:active {
     background-color: var(--background-3);
 }
 
-#isso-thread .isso-textarea {
+.isso-textarea {
     margin-bottom: 4px;
 }
-.isso-postbox > .isso-form-wrapper > .isso-auth-section .isso-input-wrapper {
+.isso-input-wrapper {
     display: inline-flex;
     flex-direction: column;
     margin-right: 4px;
 }
-.isso-postbox > .isso-form-wrapper > .isso-auth-section .isso-input-wrapper input {
+.isso-input-wrapper input {
     order: 1;
 }
-.isso-postbox > .isso-form-wrapper > .isso-auth-section .isso-input-wrapper label {
+.isso-input-wrapper label {
     order: 2;
     font-size: small;
 }
-.isso-postbox > .isso-form-wrapper > .isso-auth-section .isso-post-action {
+.isso-post-action {
     margin-left: 4px;
     margin-top: 0;
 }
 @media screen and (max-width: 600px) {
-    .isso-postbox > .isso-form-wrapper > .isso-auth-section .isso-input-wrapper {
+    .isso-input-wrapper {
         display: block;
         margin-right: 0;
     }
@@ -100,10 +95,10 @@
     .comments {
         break-before: always;
     }
-    #isso-root .isso-comment {
+    .isso-comment {
         max-width: unset;
     }
-    .isso-comment > .isso-text-wrapper {
+    .isso-text-wrapper {
         break-inside: avoid;
     }
 
@@ -113,8 +108,8 @@
     }
 }
 
-@keyframes isso-target-fade {
-    0% { background-color: var(--background-yellow-2); }
+.isso-target {
+    animation: target-fade 10s ease-out; /* defined in bobatheme */
 }
 </style>
 
