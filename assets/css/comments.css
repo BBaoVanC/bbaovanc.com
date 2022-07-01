@@ -40,6 +40,15 @@ a.isso-author:hover,
     text-decoration: underline;
 }
 
+.isso-text pre,
+.isso-text :not(pre) > code {
+    background-color: var(--background-2);
+    border: none;
+    padding: 2px 4px;
+    border-radius: 5px;
+    font-size: 100%;
+}
+
 .isso-input-wrapper input,
 .isso-post-action > input,
 .isso-textarea,
@@ -69,6 +78,7 @@ a.isso-author:hover,
     display: inline-flex;
     flex-direction: column;
     margin-right: 4px;
+    max-width: 25%;
 }
 .isso-input-wrapper input {
     order: 1;
@@ -84,7 +94,7 @@ a.isso-author:hover,
 @media screen and (max-width: 600px) {
     .isso-input-wrapper {
         display: block;
-        margin-right: 0;
+        max-width: 100%;
     }
 }
 
