@@ -71,6 +71,11 @@ Here's how it works.
 
 <!--more-->
 
+{{< aside info >}}
+Credit goes to Rebane2001 (not me) for making this trick, and setting it up on
+`txnor.com`.
+{{< /aside >}}
+
 ## The `sed` syntax
 
 For operating systems based on Unix or Linux, there's usually a simple terminal
