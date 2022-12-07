@@ -35,6 +35,11 @@ to any location inside the message.
 
 <!--more-->
 
+{{< aside note >}}
+This trick only works if you're on desktop/web, and will also only show to
+people on desktop/web.
+{{< /aside >}}
+
 ## Tutorial
 
 Before you start, copy the "right-to-left embedding" character
