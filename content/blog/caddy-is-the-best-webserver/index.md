@@ -95,9 +95,9 @@ configs.
 ### PHP (PrivateBin)
 
 The Caddy config for this example is the same as the [one used for
-bin.boba.best](https://git.boba.best/configs/caddy/src/commit/cd00151fbdd784979a8a181980cc36061be68c7d/conf.d/bin.boba.best).
+bin.boba.best](https://git.boba.best/boba.best/caddy/src/commit/cd00151fbdd784979a8a181980cc36061be68c7d/conf.d/bin.boba.best).
 I've stripped it down a bit by removing the [custom error
-pages](https://git.boba.best/configs/caddy/src/commit/cd00151fbdd784979a8a181980cc36061be68c7d/Caddyfile#L15-L24),
+pages](https://git.boba.best/boba.best/caddy/src/commit/cd00151fbdd784979a8a181980cc36061be68c7d/Caddyfile#L15-L24),
 [HSTS](https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security), [zstd
 compression](https://github.com/facebook/zstd), and logging.
 
