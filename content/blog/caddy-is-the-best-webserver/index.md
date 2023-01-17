@@ -137,7 +137,7 @@ server {
 ### Reverse proxy + static files (Gitea)
 
 This last example is based on
-[git.bbaovanc.com](https://git.bbaovanc.com/configs/caddy/src/commit/57c9f0011eae92ef5fa2992d99f01b0956802d64/conf.d/git.bbaovanc.com).
+[git.bbaovanc.com](https://git.bbaovanc.com/boba.best/caddy/src/commit/57c9f0011eae92ef5fa2992d99f01b0956802d64/conf.d/git.bbaovanc.com).
 Just like the last example, I've stripped off the custom error pages, HSTS, zstd
 compression, and logging.
 
@@ -204,7 +204,7 @@ entirely using Caddy's and Go templates![^caddy-templating]
 #### Error pages using HTTP Cats
 
 I use [this
-snippet](https://git.bbaovanc.com/configs/caddy/src/commit/57c9f0011eae92ef5fa2992d99f01b0956802d64/Caddyfile#L8-L15)
+snippet](https://git.bbaovanc.com/boba.best/caddy/src/commit/57c9f0011eae92ef5fa2992d99f01b0956802d64/Caddyfile#L8-L15)
 on both bbaovanc.com and boba.best to make custom error pages using images from
 [HTTP Cats](https://http.cat). It uses Caddy's template support to generate some
 simple HTML to show the error code, name, and cat image.
