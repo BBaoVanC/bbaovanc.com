@@ -1,6 +1,6 @@
 ---
 
-title: Github Copilot
+title: GitHub Copilot
 
 ---
 
