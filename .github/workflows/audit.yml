@@ -13,7 +13,7 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: 0.108.0
+          hugo-version: latest
           extended: true
 
       - name: Checkout (pull_request)
@@ -111,7 +111,7 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: 0.108.0
+          hugo-version: latest
           extended: true
 
       - name: Build
