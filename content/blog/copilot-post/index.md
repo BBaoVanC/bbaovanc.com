@@ -18,6 +18,9 @@ tags:
 series:
   - github-copilot-experiments
 
+_build:
+  list: never
+
 ---
 
 Did you know that Copilot is a command line interface for Copilot? It's a tool
