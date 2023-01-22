@@ -4,4 +4,4 @@ title: Series
 
 ---
 
-List of series of closely related posts.
+List of series, which are sequences of closely related posts.
