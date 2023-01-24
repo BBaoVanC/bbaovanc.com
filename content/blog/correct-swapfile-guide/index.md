@@ -42,11 +42,9 @@ Linux, and explain each step.
 
 <!--more-->
 
-## Tutorial
-
 {{< include path="include/bashsession.md" markdown=true >}}
 
-### Step 1: Create the file
+## Step 1: Create the file
 
 The first step is to allocate the file.
 
@@ -100,7 +98,7 @@ Remember that if that's not enough, you can add always multiple swapfiles later.
 [^expand-swap-easily-lvm]: If it's not enough, I can still expand the partition
   easily since I use [LVM](https://wiki.archlinux.org/title/LVM) on my drive.
 
-### Step 2: Change swapfile permissions
+## Step 2: Change swapfile permissions
 
 The swapfile should only be readable by the system (`root` user). Run this
 command to change it:
@@ -109,7 +107,7 @@ command to change it:
 # chmod 600 /swapfile
 ```
 
-### Step 3: Format the swapfile
+## Step 3: Format the swapfile
 
 Use the `mkswap` command to format the file to be used as swap (basically just
 add a header to identify it):
@@ -120,7 +118,7 @@ Setting up swapspace version 1, size = 4 GiB (4294963200 bytes)
 no label, UUID=a0b87eca-b951-4344-be2d-020d77cdef48
 ```
 
-### Step 4: Create an entry in `/etc/fstab`
+## Step 4: Create an entry in `/etc/fstab`
 
 An entry needs to be added to `/etc/fstab` for the swapfile to be enabled during
 bootup. Open `/etc/fstab` in a text editor, and add this line to the end (add
@@ -143,7 +141,7 @@ something though).
 
 {{< /aside >}}
 
-### Step 5: Enable the swapfile
+## Step 5: Enable the swapfile
 
 Adding the `fstab` entry won't enable the swapfile until a reboot. To enable it
 now, use the `swapon` command.
@@ -152,7 +150,7 @@ now, use the `swapon` command.
 # swapon /swapfile
 ```
 
-### Finally: check the swap status
+## Finally: check the swap status
 
 Use `swapon` and `free` to verify that your new swapfile has been added:
 
