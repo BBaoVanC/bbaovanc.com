@@ -2,7 +2,7 @@
 
 title: Using GitHub Actions to audit my website with Google Chrome Lighthouse
 date: 2022-05-07T00:54:11-05:00
-lastmod: 2022-05-07T00:54:11-05:00
+lastmod: 2022-05-08T16:16:02-05:00
 toc: true
 comments: true
 

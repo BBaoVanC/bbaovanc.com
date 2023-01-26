@@ -2,7 +2,7 @@
 
 title: Caddy is literally the best webserver
 date: 2021-11-13T00:43:35-06:00
-lastmod: 2022-05-02T00:54:43-05:00
+lastmod: 2023-01-16T20:57:00-06:00
 toc: true
 comments: true
 

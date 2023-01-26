@@ -2,7 +2,7 @@
 
 title: How the "Discord sex" (`s/e/x`) hack works
 date: 2022-05-11T21:11:17-05:00
-lastmod: 2022-05-11T21:11:17-05:00
+lastmod: 2022-09-24T14:56:05-05:00
 toc: true
 comments: true
 

@@ -2,7 +2,7 @@
 
 title: Newsletter for my blog posts
 date: 2022-04-30T01:00:14-05:00
-lastmod: 2022-04-30T01:00:14-05:00
+lastmod: 2022-05-23T02:17:47-05:00
 toc: true
 comments: true
 
