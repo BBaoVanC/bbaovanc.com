@@ -1,4 +1,4 @@
-{{< aside tip >}}
+{{< aside info >}}
 
 Commands in this article are prefixed them with a prompt symbol (either `$` or
 `#`) which is not part of the command. Lines with no prompt symbol are output
