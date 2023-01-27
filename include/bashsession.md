@@ -17,6 +17,8 @@ $ # regular users aren't allowed to view /var/lib/docker, we need root
 builder   containerd  image    overlay2  runtimes  tmp	 volumes
 buildkit  containers  network  plugins	swarm	  trust
 
+$ # we can do the same thing using sudo
+
 $ sudo ls /var/lib/docker
 [sudo] password for bbaovanc:
 builder   containerd  image    overlay2  runtimes  tmp	 volumes
