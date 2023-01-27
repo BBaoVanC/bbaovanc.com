@@ -31,10 +31,10 @@ resources:
 
 ---
 
-This is a step-by-step tutorial on how to create a swapfile on a Linux machine.
-Also included is the correct `fstab` entry (most articles get this "wrong",
-though it doesn't really make a difference) and reasons to use swap(file) in the
-first place.
+This is a step-by-step tutorial on how to create or remove a swapfile on a Linux
+machine. Also included is the correct `fstab` entry (most articles get this
+"wrong", though it doesn't really make a difference) and reasons to use
+swap(file) in the first place.
 
 <!--more-->
 
@@ -68,9 +68,11 @@ easily resize the swap partition anyways.
 
 [lvm-archwiki]: https://wiki.archlinux.org/title/LVM
 
+## Tutorial
+
 {{< include path="include/bashsession.md" markdown=true >}}
 
-## Step 1: Create the file
+### Step 1: Create the file
 
 The first step is to allocate the file.
 
@@ -119,7 +121,7 @@ To create a swapfile 4 GiB in size, you would run:
 
 {{< /aside >}}
 
-## Step 2: Change swapfile permissions
+### Step 2: Change swapfile permissions
 
 The swapfile should only be readable by the system (`root` user). Run this
 command to change it:
@@ -128,7 +130,7 @@ command to change it:
 # chmod 600 /swapfile
 ```
 
-## Step 3: Format the swapfile
+### Step 3: Format the swapfile
 
 Use the `mkswap` command to format the file to be used as swap (basically just
 add a header to identify it):
@@ -139,7 +141,7 @@ Setting up swapspace version 1, size = 4 GiB (4294963200 bytes)
 no label, UUID=a0b87eca-b951-4344-be2d-020d77cdef48
 ```
 
-## Step 4: Create an entry in `/etc/fstab`
+### Step 4: Create an entry in `/etc/fstab`
 
 An entry needs to be added to `/etc/fstab` for the swapfile to be enabled during
 bootup. Open `/etc/fstab` in a text editor, and add this line to the end (add
@@ -172,7 +174,7 @@ UUID=4f7c3ae8-839b-4474-b8a5-96bd78db06f8 none swap bobaswap 0 0
 
 {{< /aside >}}
 
-## Step 5: Enable the swapfile
+### Step 5: Enable the swapfile
 
 Adding the `fstab` entry won't enable the swapfile until a reboot. To enable it
 now, use the `swapon` command.
@@ -181,7 +183,7 @@ now, use the `swapon` command.
 # swapon /swapfile
 ```
 
-## Finally: check the swap status
+### Finally: check the swap status
 
 Use `swapon` and `free` to verify that your new swapfile has been added:
 
@@ -212,3 +214,40 @@ NAME      TYPE SIZE USED PRIO
 ```
 
 {{< /aside >}}
+
+## Removing a swapfile
+
+{{< aside warning >}}
+
+Be careful that the swapfile isn't being highly used because once you run
+`swapoff`, it will dump the entire contents back into RAM and may cause you to
+run out of memory.
+
+{{< /aside >}}
+
+### Step 1: Disable/unload the swapfile
+
+```bashsession
+$ swapon --show
+NAME       TYPE SIZE USED PRIO
+/swapfile  file   4G   0B   -2
+
+$ # the path to the swapfile I want to remove is `/swapfile`
+
+# swapoff /swapfile
+```
+
+### Step 2: Remove the entry from `fstab`
+
+Open `/etc/fstab` in a text editor and find the line matching the swapfile you
+want to remove, and delete it. For example:
+
+```text
+/swapfile none swap sw 0 0
+```
+
+### Step 3: Delete the actual file
+
+```bashsession
+# rm /swapfile
+```
