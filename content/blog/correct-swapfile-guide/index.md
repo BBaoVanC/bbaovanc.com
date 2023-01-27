@@ -31,16 +31,42 @@ resources:
 
 ---
 
-There is a lot of conflicting information out there on how to create a swapfile
-correctly. Although these guides (should) all work perfeclty fine, I spent the
-time to research and find out what is actually the most correct.
-
-In summary: make sure to use the `dd` command to create the swapfile, and create
-an fstab entry that looks similar to `/swapfile none swap sw 0 0`. In this
-article, I will go more in-depth into the correct steps to create a swapfile on
-Linux, and explain each step.
+This is a step-by-step tutorial on how to create a swapfile on a Linux machine.
+Also included is the correct `fstab` entry (most articles get this "wrong",
+though it doesn't really make a difference) and reasons to use swap(file) in the
+first place.
 
 <!--more-->
+
+## Should you use swap?
+
+A common misconception is that adding swap to your system can reduce
+performance. In reality, even if you aren't running out of RAM, it can still be
+beneficial to add swap.
+
+See these points according to [an article by Hayden James][always-add-swap]:
+
+> - Even if there is still available RAM, the Linux Kernel will **move memory
+>   pages that are hardly ever used** into swap space.
+>
+> - It’s better to swap out memory pages that have been inactive for a while,
+>   **keeping often-used data in cache**, and this should happen when the server
+>   is most idle, which is the aim of the Kernel.
+>
+> - Avoid setting your swap space too large if it will result in prolonging
+>   performance issues, outages, or your response time (without proper
+>   monitoring/alerts).
+
+[always-add-swap]: https://haydenjames.io/linux-performance-almost-always-add-swap-space/
+
+### Should you use a swapfile?
+
+Swap partitions should be preferred because swapfiles tend to be slower and more
+complex, especially if hibernating. A swapfile might be preferred due to its
+flexibility (easy to resize), but if you use [LVM][lvm-archwiki] then you can
+easily resize the swap partition anyways.
+
+[lvm-archwiki]: https://wiki.archlinux.org/title/LVM
 
 {{< include path="include/bashsession.md" markdown=true >}}
 
@@ -54,8 +80,8 @@ The first step is to allocate the file.
 
 Replace `[size in MiB]` with the size of your swapfile in Mebibytes (MiB). You
 can use [this online converter](https://www.convertunits.com/from/GiB/to/MiB) to
-convert from Gibibytes (GiB, often confused with Gigabytes, but that doesn't
-matter right now) to MiB, which you can put in the command.
+convert from Gibibytes (GiB, often confused with Gigabytes, but that's a
+misconception for another time) to MiB, which you can put in the command.
 
 Or you can look at this table for common sizes:
 
@@ -70,6 +96,16 @@ Or you can look at this table for common sizes:
 | 16  | count=16384 |
 {{< /table >}}
 
+If you aren't sure how big your swapfile should be, take a look at [Table 15.1
+on this Red Hat documentation page][redhat-swap-table]. Remember that if your
+first swapfile isn't large enough, you can create another one.
+
+[redhat-swap-table]: https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/storage_administration_guide/ch-swapspace#tb-recommended-system-swap-space
+
+On my computer I have 32 GiB of RAM and a 16 GiB swap partition, rather than
+swapfile, because I can flexibly expand the swap partition using
+[LVM][lvm-archwiki].
+
 {{< aside example >}}
 
 To create a swapfile 4 GiB in size, you would run:
@@ -82,21 +118,6 @@ To create a swapfile 4 GiB in size, you would run:
 ```
 
 {{< /aside >}}
-
-If you aren't sure how big your swapfile should be, take a look at the [Ubuntu
-Swap FAQ][ubuntu-swapfaq]. It has a table of common RAM sizes and how much swap
-you should use.
-
-[ubuntu-swapfaq]: https://help.ubuntu.com/community/SwapFaq#How_much_swap_do_I_need.3F
-
-However, I would take it with a grain of salt; for the with hibernation column,
-you probably don't need as much as it says. On my computer I have 32 GiB of RAM,
-but only a 16 GiB swap partition.[^expand-swap-easily-lvm]
-
-Remember that if that's not enough, you can add always multiple swapfiles later.
-
-[^expand-swap-easily-lvm]: If it's not enough, I can still expand the partition
-  easily since I use [LVM](https://wiki.archlinux.org/title/LVM) on my drive.
 
 ## Step 2: Change swapfile permissions
 
@@ -132,12 +153,22 @@ spaces to line up with other entries if you want, whitespace is ignored):
 
 Above, I have filled the "options" field with `sw`. This is actually a result of
 [cargo culting](https://en.wiktionary.org/wiki/cargo_culting). On Linux, the
-`sw` option [isn't valid for `swapon` and is ignored][swapon-options-source].
-However, the field does need to be filled out with something, so feel free to
-put something funny (do let me know in the comments if this somehow breaks
-something though).
+`sw` option (and the [options specified by the commonly used
+`defaults`][fstab-defaults-man]) [isn't valid for `swapon` and is
+ignored][swapon-options-source]. However, the field does need to be filled out
+with something, so feel free to put something funny (do let me know in the
+comments if this somehow breaks something though).
 
+[fstab-defaults-man]: https://man.archlinux.org/man/fstab.5#The_fourth_field_(%3Ci%3Efs_mntops%3C/i%3E).
 [swapon-options-source]: https://github.com/util-linux/util-linux/blob/2ea397239683270a0fc8cd3b72ed5457f52dbda8/sys-utils/swapon.c#L699
+
+If you're curious, this is my `fstab` entry (`UUID` is because I use a swap
+partition, rather than swapfile):
+
+```text
+# /dev/mapper/bobavg0-swap
+UUID=4f7c3ae8-839b-4474-b8a5-96bd78db06f8 none swap bobaswap 0 0
+```
 
 {{< /aside >}}
 
