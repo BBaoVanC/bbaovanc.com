@@ -1,6 +1,6 @@
 ---
 
-title: Guide to the correct swapfile setup
+title: How to create (or remove) a swapfile on Linux
 date: 2023-01-23T20:26:18-06:00
 lastmod: 2023-01-23T20:26:18-06:00
 toc: true
