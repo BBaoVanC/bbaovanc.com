@@ -2,8 +2,6 @@ name: Audit
 
 on:
   push:
-    branches:
-      - master
   pull_request:
 
 jobs:
@@ -65,10 +63,10 @@ jobs:
           DOMAIN: localhost
         run: |
           urls="$(./changed-urls.sh)"
-          urls="${urls//'%'/'%25'}"
-          urls="${urls//$'\n'/'%0A'}"
-          urls="${urls//$'\r'/'%0D'}"
-          echo "::set-output name=urls::$urls"
+          echo "urls<<EOM" >> $GITHUB_OUTPUT
+          echo "$urls" >> $GITHUB_OUTPUT
+          echo "EOM" >> $GITHUB_OUTPUT
+          echo -e "CHANGED:\n$urls"
 
       - name: Install Caddy
         if: "${{ steps.changed_urls.outputs.urls != '' }}"
