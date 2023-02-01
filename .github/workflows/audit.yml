@@ -18,7 +18,7 @@ jobs:
 
       - name: Checkout (pull_request)
         if: github.event.pull_request
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           submodules: recursive
           fetch-depth: 0
@@ -26,7 +26,7 @@ jobs:
 
       - name: Checkout (push)
         if: github.event_name == 'push'
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           submodules: recursive
           fetch-depth: 0
@@ -37,7 +37,7 @@ jobs:
           hugo --buildDrafts --printI18nWarnings --printPathWarnings --baseURL https://localhost -d old/
 
       - name: Checkout current commit
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           submodules: recursive
           fetch-depth: 0
@@ -101,7 +101,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           submodules: recursive
           fetch-depth: 0
