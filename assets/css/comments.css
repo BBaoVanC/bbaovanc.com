@@ -46,7 +46,8 @@ a.isso-author:hover,
     border: none;
     padding: 2px 4px;
     border-radius: 5px;
-    font-size: 100%;
+    /* thanks isso.css for setting this to 85% for whatever reason */
+    font-size: 0.75em;
 }
 
 .isso-input-wrapper input,
