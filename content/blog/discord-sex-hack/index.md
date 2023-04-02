@@ -17,6 +17,10 @@ tags:
   - discord-tricks
   - sed
 
+_build:
+  # won't appear on main Home page, but will in Blog
+  list: local
+
 # this will be shown for the article in list pages and in the page metadata
 # it can be either an image or video (this might change in the future, however)
 resources:
