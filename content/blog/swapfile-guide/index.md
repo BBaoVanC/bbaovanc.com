@@ -33,7 +33,7 @@ resources:
 
 This is a step-by-step tutorial on how to create or remove a swapfile on a Linux
 machine. Also included is the correct `fstab` entry (most articles get this
-"wrong", though it doesn't really make a difference) and reasons to use
+"wrong", though it doesn't actually matter) and reasons to use
 swap(file) in the first place.
 
 <!--more-->
@@ -251,3 +251,19 @@ want to remove, and delete it. For example:
 ```bashsession
 # rm /swapfile
 ```
+
+## References
+
+### Use `dd` instead of `fallocate`
+
+See ["Files with holes" under the man page][swapon-holes-man].
+
+[swapon-holes-man]: https://man.archlinux.org/man/core/util-linux/swapon.8.en#Files_with_holes
+
+### The options field in fstab
+
+On Linux, `sw` doesn't mean anything for `swapon`, so it gets ignored. See:
+
+- [StackExchange answer 1](https://unix.stackexchange.com/a/365961/525130)
+- [StackExchange answer 2](https://unix.stackexchange.com/a/365954/525130)
+- [`parse_options` in the `swapon` source code](https://github.com/util-linux/util-linux/blob/2ea397239683270a0fc8cd3b72ed5457f52dbda8/sys-utils/swapon.c#L699)
