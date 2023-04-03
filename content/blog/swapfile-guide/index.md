@@ -32,16 +32,17 @@ resources:
 ---
 
 This is a step-by-step tutorial on how to create or remove a swapfile on a Linux
-machine. Also included is the correct `fstab` entry (most articles get this
-"wrong", though it doesn't actually matter) and reasons to use
-swap(file) in the first place.
+machine, and whether you should create swap space in the first place.
+
+Also included is the most correct `fstab` entry: most articles get this "wrong"
+(but it doesn't actually matter).
 
 <!--more-->
 
 ## Should you use swap?
 
 A common misconception is that adding swap to your system can reduce
-performance. In reality, even if you aren't running out of RAM, it can still be
+performance. However, even if you aren't running out of RAM, it can still be
 beneficial to add swap.
 
 See these points according to [an article by Hayden James][always-add-swap]:
@@ -59,12 +60,12 @@ See these points according to [an article by Hayden James][always-add-swap]:
 
 [always-add-swap]: https://haydenjames.io/linux-performance-almost-always-add-swap-space/
 
-### Should you use a swapfile?
+### Should you use a swap file or partition?
 
-Swap partitions should be preferred because swapfiles tend to be slower and more
-complex, especially if hibernating. A swapfile might be preferred due to its
-flexibility (easy to resize), but if you use [LVM][lvm-archwiki] then you can
-easily resize the swap partition anyways.
+Swap partitions should be preferred because swapfiles tend to be slower and
+slightly more complex to set up, especially if hibernating. A swapfile might be
+preferred due to its flexibility (ease to resize), but if you use
+[LVM][lvm-archwiki] then you can easily resize the swap partition anyways.
 
 [lvm-archwiki]: https://wiki.archlinux.org/title/LVM
 
