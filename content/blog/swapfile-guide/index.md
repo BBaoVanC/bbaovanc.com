@@ -1,11 +1,10 @@
 ---
 
 title: How to create (or remove) a swapfile on Linux
-date: 2023-01-23T20:26:18-06:00
-lastmod: 2023-01-23T20:26:18-06:00
+date: 2023-04-04T17:26:44-05:00
+lastmod: 2023-04-04T17:26:44-05:00
 toc: true
 comments: true
-draft: true
 
 authors:
   - bbaovanc
@@ -18,16 +17,6 @@ categories:
 tags:
   - linux-swap
   - swapfile
-
-series:
-  - swapfile-guide
-
-# this will be shown for the article in list pages and in the page metadata
-# it can be either an image or video (this might change in the future, however)
-resources:
-  - name: feature
-    src: something.webp
-    title: Some image (image format can be anything; webp is just an example)
 
 ---
 
@@ -263,4 +252,4 @@ On Linux, `sw` doesn't mean anything for `swapon`, so it gets ignored. See:
 - [StackExchange answer 1](https://unix.stackexchange.com/a/365961/525130)
 - [StackExchange answer 2](https://unix.stackexchange.com/a/365954/525130)
 - [`parse_options` in the `swapon` source code](https://github.com/util-linux/util-linux/blob/2ea397239683270a0fc8cd3b72ed5457f52dbda8/sys-utils/swapon.c#L699)
-- [options set by fstab `defaults` (none have any effect on `swapon`](https://man.archlinux.org/man/fstab.5#The_fourth_field_(%3Ci%3Efs_mntops%3C/i%3E))
+- [options set by fstab `defaults` (none have any effect on `swapon`)](https://man.archlinux.org/man/fstab.5#The_fourth_field_(%3Ci%3Efs_mntops%3C/i%3E).)
