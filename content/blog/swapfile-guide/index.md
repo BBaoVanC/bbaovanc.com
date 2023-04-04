@@ -154,16 +154,11 @@ spaces to line up with other entries if you want, whitespace is ignored):
 
 {{< aside note >}}
 
-Above, I have filled the "options" field with `sw`. This is actually a result of
-[cargo culting](https://en.wiktionary.org/wiki/cargo_culting). On Linux, the
-`sw` option (and the [options specified by the commonly used
-`defaults`][fstab-defaults-man]) [isn't valid for `swapon` and is
-ignored][swapon-options-source]. However, the field does need to be filled out
-with something, so feel free to put something funny (do let me know in the
-comments if this somehow breaks something though).
-
-[fstab-defaults-man]: https://man.archlinux.org/man/fstab.5#The_fourth_field_(%3Ci%3Efs_mntops%3C/i%3E).
-[swapon-options-source]: https://github.com/util-linux/util-linux/blob/2ea397239683270a0fc8cd3b72ed5457f52dbda8/sys-utils/swapon.c#L699
+Above, I have filled the "options" field with `sw`. Some guides suggest using
+either `sw` or `defaults`. Neither of those options is valid for `swapon` and
+they are both ignored. However, the field does need to be filled out with
+something, so feel free to put something funny (do let me know in the comments
+if this somehow breaks something though).
 
 If you're curious, this is my `fstab` entry (`UUID` is because I use a swap
 partition, rather than swapfile):
@@ -268,3 +263,4 @@ On Linux, `sw` doesn't mean anything for `swapon`, so it gets ignored. See:
 - [StackExchange answer 1](https://unix.stackexchange.com/a/365961/525130)
 - [StackExchange answer 2](https://unix.stackexchange.com/a/365954/525130)
 - [`parse_options` in the `swapon` source code](https://github.com/util-linux/util-linux/blob/2ea397239683270a0fc8cd3b72ed5457f52dbda8/sys-utils/swapon.c#L699)
+- [options set by fstab `defaults` (none have any effect on `swapon`](https://man.archlinux.org/man/fstab.5#The_fourth_field_(%3Ci%3Efs_mntops%3C/i%3E))
