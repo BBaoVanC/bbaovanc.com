@@ -1,4 +1,4 @@
-{{< aside tip >}}
+{{< aside info >}}
 
 Commands in this article are prefixed them with a prompt symbol (either `$` or
 `#`) which is not part of the command. Lines with no prompt symbol are output
@@ -16,6 +16,8 @@ $ # regular users aren't allowed to view /var/lib/docker, we need root
 # ls /var/lib/docker
 builder   containerd  image    overlay2  runtimes  tmp	 volumes
 buildkit  containers  network  plugins	swarm	  trust
+
+$ # we can do the same thing using sudo
 
 $ sudo ls /var/lib/docker
 [sudo] password for bbaovanc:
