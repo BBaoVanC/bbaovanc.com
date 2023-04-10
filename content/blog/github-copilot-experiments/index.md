@@ -10,11 +10,11 @@ authors:
   - bbaovanc
 
 categories:
-  - programming
   - tinkering
 
 tags:
   - github-copilot
+  - programming
 
 series:
   - github-copilot-experiments

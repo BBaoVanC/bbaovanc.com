@@ -10,12 +10,12 @@ authors:
   - bbaovanc
 
 categories:
-  - linux
-  - sysadmin
   - software
 
 tags:
   - caddy
+  - linux
+  - sysadmin
   - webserver
 
 resources:

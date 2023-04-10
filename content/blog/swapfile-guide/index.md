@@ -11,10 +11,10 @@ authors:
 
 categories:
   - guides
-  - linux
   - tips-and-tricks
 
 tags:
+  - linux
   - linux-swap
   - swapfile
 

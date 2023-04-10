@@ -14,10 +14,10 @@ aliases:
 
 categories:
   - guides
-  - linux
 
 tags:
   - gitea
+  - linux
   - systemd
 
 ---

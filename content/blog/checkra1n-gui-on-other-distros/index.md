@@ -14,12 +14,12 @@ aliases:
 
 categories:
   - guides
-  - jailbreak
-  - linux
 
 tags:
   - arch-linux
   - checkra1n
+  - jailbreak
+  - linux
 
 resources:
   - name: feature

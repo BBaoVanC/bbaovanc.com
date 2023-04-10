@@ -10,11 +10,11 @@ authors:
   - bbaovanc
 
 categories:
-  - devops
   - meta
 
 tags:
   - caddy
+  - devops
   - github-actions
   - google-lighthouse
 
