@@ -27,7 +27,3 @@ I write mostly about technology, including:
 - Open Source Software
 - Programming
 - Web Development
-
-## My other website
-
-I also run another website: https://boba.best.
