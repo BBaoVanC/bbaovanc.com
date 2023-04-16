@@ -1,9 +1,0 @@
-# vim: ft=caddyfile
-
-https://localhost {
-    header Cache-Control no-cache
-    root * public/
-    file_server {
-        precompressed br gzip
-    }
-}

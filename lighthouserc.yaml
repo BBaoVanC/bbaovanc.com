@@ -1,5 +1,0 @@
-ci:
-  collect:
-    startServerCommand: sudo caddy run
-    settings:
-      chromeFlags: "--ignore-certificate-errors --throttling.cpuSlowdownMultiplier=2.4"
