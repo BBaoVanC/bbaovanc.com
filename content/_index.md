@@ -19,6 +19,16 @@ I occasionally write blog posts under the [blog section][blog-section].
 [hugo-website]: https://gohugo.io
 [blog-section]: {{< ref "/blog/" >}}
 
+## Contact
+
+You can contact me by emailing bbaovanc@bbaovanc.com ([PGP key][pgp-key] if
+encryption is needed), or on Mastodon at
+[bbaovanc@procursus.social][mastodon-account] (but I have some plans to
+replace Mastodon... stay tuned).
+
+[pgp-key]: https://keyserver.ubuntu.com/pks/lookup?search=bbaovanc%40bbaovanc.com&fingerprint=on&op=index
+[mastodon-account]: https://procursus.social/@bbaovanc
+
 ## Topics I write about
 
 I write mostly about technology, including:

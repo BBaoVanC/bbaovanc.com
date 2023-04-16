@@ -1,12 +1,5 @@
 # Contributing to bobatheme
 
-## Where to put questions/issues/etc
-
-Use the [GitHub Discussions forum][github-discussions-url] for any questions,
-or ideas. Use the "Q&A" section for both questions and issues as well.
-
-[github-discussions-url]: https://github.com/BBaoVanC/bbaovanc.com/discussions
-
 ## Building
 
 Just in case you need it.
