@@ -28,7 +28,7 @@ resources:
       [What is a
       URL?](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_is_a_URL#parameters)
       by [Mozilla
-      Contributors](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_is_a_URL/contributors.txt)
+      Contributors](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/What_is_a_URL/contributors.txt)
       is licensed under [CC-BY-SA
       2.5](https://creativecommons.org/licenses/by-sa/2.5/)
 
