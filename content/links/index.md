@@ -8,9 +8,6 @@ comments: true
 authors:
   - bbaovanc
 
-aliases:
-  - /blog/links/
-
 description: >-
   A page with links to a lot of my different projects.
 

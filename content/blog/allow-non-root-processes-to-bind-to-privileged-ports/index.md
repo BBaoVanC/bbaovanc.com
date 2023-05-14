@@ -9,9 +9,6 @@ comments: true
 authors:
   - bbaovanc
 
-aliases:
-  - posts/allow-non-root-processes-to-bind-to-privileged-ports/
-
 categories:
   - guides
 

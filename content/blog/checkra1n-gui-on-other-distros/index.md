@@ -9,9 +9,6 @@ comments: true
 authors:
   - bbaovanc
 
-aliases:
-  - posts/checkra1n-gui-on-other-distros/
-
 categories:
   - guides
 

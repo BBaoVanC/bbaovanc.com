@@ -9,10 +9,6 @@ comments: true
 authors:
   - bbaovanc
 
-aliases:
-  - /blog/posts/sed-text-substitution-in-discord/
-  - /blog/posts/text-substitution-in-discord-using-sed/
-
 categories:
   - tips-and-tricks
 

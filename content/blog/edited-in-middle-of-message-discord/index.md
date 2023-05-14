@@ -9,9 +9,6 @@ comments: true
 authors:
   - bbaovanc
 
-aliases:
-  - posts/edited-in-middle-of-message-discord/
-
 categories:
   - guides
   - tips-and-tricks
