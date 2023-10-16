@@ -80,5 +80,5 @@ languages:
     menu:
       main:
         - identifier: status-page
-          name: Status Page
+          name: Status
           url: https://status.bbaovanc.com
