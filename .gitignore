@@ -16,6 +16,3 @@ hugo.linux
 # End of https://www.toptal.com/developers/gitignore/api/hugo
 
 /.hugo_build.lock
-
-# My private drafts
-/content/blog/drafts/
