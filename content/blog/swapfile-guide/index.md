@@ -60,13 +60,13 @@ preferred due to its flexibility (ease to resize), but if you use
 
 ## Tutorial
 
-{{< include path="include/bashsession.md" markdown=true >}}
+{{< include path="include/console.md" markdown=true >}}
 
 ### Step 1: Create the file
 
 The first step is to allocate the file.
 
-```bashsession
+```console
 # dd if=/dev/zero of=/swapfile bs=1M count=[size in MiB] status=progress
 ```
 
@@ -102,7 +102,7 @@ swapfile, because I can flexibly expand the swap partition using
 
 To create a swapfile 4 GiB in size, you would run:
 
-```bashsession
+```console
 # dd if=/dev/zero of=/swapfile bs=1M count=4096 status=progress
 4096+0 records in
 4096+0 records out
@@ -116,7 +116,7 @@ To create a swapfile 4 GiB in size, you would run:
 The swapfile should only be readable by the system (`root` user). Run this
 command to change it:
 
-```bashsession
+```console
 # chmod 600 /swapfile
 ```
 
@@ -125,7 +125,7 @@ command to change it:
 Use the `mkswap` command to format the file to be used as swap (basically just
 add a header to identify it):
 
-```bashsession
+```console
 # mkswap /swapfile
 Setting up swapspace version 1, size = 4 GiB (4294963200 bytes)
 no label, UUID=a0b87eca-b951-4344-be2d-020d77cdef48
@@ -164,7 +164,7 @@ UUID=4f7c3ae8-839b-4474-b8a5-96bd78db06f8 none swap bobaswap 0 0
 Adding the `fstab` entry won't enable the swapfile until a reboot. To enable it
 now, use the `swapon` command.
 
-```bashsession
+```console
 # swapon /swapfile
 ```
 
@@ -172,7 +172,7 @@ now, use the `swapon` command.
 
 Use `swapon` and `free` to verify that your new swapfile has been added:
 
-```bashsession
+```console
 $ swapon --show
 NAME       TYPE SIZE USED PRIO
 /swapfile  file   4G   0B   -2
@@ -189,7 +189,7 @@ If you get an error saying that the `swapon` command was not found, try running
 it as `root` (using `sudo`). On Debian-based distributions the `swapon` command
 is not available to regular users.
 
-```bashsession
+```console
 $ swapon --show
 bash: swapon: command not found
 
@@ -212,7 +212,7 @@ run out of memory.
 
 ### Step 1: Disable/unload the swapfile
 
-```bashsession
+```console
 $ swapon --show
 NAME       TYPE SIZE USED PRIO
 /swapfile  file   4G   0B   -2
@@ -233,7 +233,7 @@ want to remove, and delete it. For example:
 
 ### Step 3: Delete the actual file
 
-```bashsession
+```console
 # rm /swapfile
 ```
 

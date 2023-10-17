@@ -6,7 +6,7 @@ from the command.
 
 The `#` means to run it as `root` (usually using `sudo`):
 
-```bashsession
+```console
 $ ls /var/lib/docker
 ls: cannot open directory '/var/lib/docker': Permission denied
 

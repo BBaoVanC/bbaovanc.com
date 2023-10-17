@@ -89,7 +89,7 @@ run text replacement commands. Here's a very simple example of what a basic
 
 [sed-wikipedia]: https://en.wikipedia.org/wiki/Sed
 
-```bashsession
+```console
 $ sed 's/hello/goodbye/'
 ```
 
