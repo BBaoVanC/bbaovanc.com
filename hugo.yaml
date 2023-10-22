@@ -58,9 +58,6 @@ params:
     telegram: true
     print: true
 
-  # show "Latest Posts" section at bottom of content pages
-  # latestPostsOnContent: true
-
 
   footer: >-
     See the [anonymous and privacy-friendly
