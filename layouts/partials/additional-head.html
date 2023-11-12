@@ -1,9 +1,3 @@
-{{ if and .Params.comments (eq .Kind "page") }}
-    {{ with resources.Get "css/comments.css" | fingerprint "sha512" }}
-        <link rel="stylesheet" type="text/css" href="{{ .Permalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous" media="print" onload="this.media='all'">
-    {{ end }}
-{{ end }}
-
 {{ if eq .Site.BaseURL "https://bbaovanc.com" }}
     <script defer data-domain="bbaovanc.com" src="https://plausible.bbaovanc.com/js/bobalytics.outbound-links.js"></script>
     <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>

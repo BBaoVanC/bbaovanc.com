@@ -1,3 +1,7 @@
+{{ with resources.Get "css/comments.css" | fingerprint "sha512" }}
+    <link rel="stylesheet" type="text/css" href="{{ .Permalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
+{{ end }}
+
 <h2 style="margin-bottom: 0;">Comments</h2>
 <p style="margin: 0; font-size: smaller;">
     If you provide an email address, you can enable notifications for
