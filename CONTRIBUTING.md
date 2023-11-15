@@ -4,12 +4,12 @@
 
 Just in case you need it.
 
-## Automatic deploy previews with GitHub Actions
+### Automatic deploy previews with GitHub Actions
 
 My GitHub Actions workflows will automatically build each pull request into a
 public deploy preview on demo.bbaovanc.com, and will link it in a comment.
 
-## Manual (local) building
+### Manual (local) building
 
 You can also build the site yourself using Hugo, including a live local preview.
 
