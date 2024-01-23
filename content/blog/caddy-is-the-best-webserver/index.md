@@ -10,7 +10,7 @@ authors:
   - bbaovanc
 
 categories:
-  - software
+  - reviews
 
 tags:
   - caddy
