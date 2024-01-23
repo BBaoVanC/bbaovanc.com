@@ -13,9 +13,6 @@ categories:
   - guides
 
 tags:
-  - arch-linux
-  - checkra1n
-  - jailbreak
   - linux
 
 resources:

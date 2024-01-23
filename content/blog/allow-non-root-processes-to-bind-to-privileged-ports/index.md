@@ -13,7 +13,6 @@ categories:
   - guides
 
 tags:
-  - gitea
   - linux
   - systemd
 

@@ -13,7 +13,6 @@ categories:
   - tips-and-tricks
 
 tags:
-  - query-parameters
   - url-structures
   - youtube
 
