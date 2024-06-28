@@ -262,16 +262,22 @@ sequence, it would total 6970.
 ### Math challenge
 
 Any URL that matches [this regular expression][math-challenge-regex] will
-instead return a randomized math challenge:
+instead return a randomized math challenge. This means the URL can be
+`https://txnor.com/` followed by either `math`, `math_challenge`, or
+`mathchallenge`, a single optional slash, and then any text that's made up of
+only letters, numbers, underscores or hyphens.
 
 [math-challenge-regex]: https://regex101.com/r/ddEkML/1
 
 {{< figure src="math-challenge" >}}
 
 What's special is that the math challenge is [set to not be
-cached][math-challenge-caching].
+cached][math-challenge-caching]. That means that it
+*should*[^should-different-question] give everyone a different question.
 
 [math-challenge-caching]: https://github.com/rebane2001/txnor-server/blob/26c7c279b0b4668c8a3b061692d83c507aeac7c5/sex.py#L137
+[^should-different-question]: The caching behavior seems to be inconsistent, so
+    sometimes it does end up giving multiple people the same question.
 
 How it works is that when each person's Discord client sends a request to the
 Discord CDN to get the image, the client caches that image. That means each
