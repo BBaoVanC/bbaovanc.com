@@ -63,4 +63,4 @@ word or two, and Copilot turned it into a couple sentences.
 
 ## The finished product
 
-The actual blog post written by Copilot is available [here]({{< ref "../copilot-post/" >}}).
+The actual blog post written by Copilot is available [here]({{< ref "/blog/copilot-post/" >}}).
