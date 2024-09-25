@@ -7,8 +7,10 @@ copyright: >
   </p>
 sectionPagesMenu: main
 enableRobotsTXT: true
-paginate: 10
 enableGitInfo: true
+
+pagination:
+  pagerSize: 10
 
 taxonomies:
   _merge: deep
