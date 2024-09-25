@@ -1,4 +1,4 @@
-{{ if eq .Site.BaseURL "https://bbaovanc.com" }}
+{{ if not hugo.IsServer }}
     <script defer data-domain="bbaovanc.com" src="https://plausible.bbaovanc.com/js/bobalytics.outbound-links.js"></script>
     <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
 {{ end }}
