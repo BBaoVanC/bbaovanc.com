@@ -77,7 +77,6 @@ misconception for another time) to MiB, which you can put in the command.
 
 Or you can look at this table for common sizes:
 
-{{< table >}}
 | GiB | MiB         |
 |-----|-------------|
 | 1   | count=1024  |
@@ -86,7 +85,7 @@ Or you can look at this table for common sizes:
 | 4   | count=4096  |
 | 8   | count=8192  |
 | 16  | count=16384 |
-{{< /table >}}
+{.simple}
 
 If you aren't sure how big your swapfile should be, take a look at [Table 15.1
 on this Red Hat documentation page][redhat-swap-table]. Remember that if your
