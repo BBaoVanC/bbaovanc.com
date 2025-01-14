@@ -58,3 +58,9 @@ jobs:
         if: always()
         run: |
           ! grep -inorE "hahahugo" public/
+
+      # see layouts/_default/baseof.html in bobatheme
+      - name: Audit - YUZSIQGHE (non-overridden "main" block)
+        if: always()
+        run: |
+          ! grep -inorE "YUZSIQGHE" public/
