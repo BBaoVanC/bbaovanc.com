@@ -10,7 +10,7 @@ authors:
   - bbaovanc
 
 categories:
-  - tinkering
+  - experiments
 
 tags:
   - github-copilot
