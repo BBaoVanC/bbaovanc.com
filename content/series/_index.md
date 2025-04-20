@@ -4,4 +4,4 @@ title: Series
 
 ---
 
-List of series, which are sequences of closely related posts.
+Series are groups of closely related posts, often with some ordering to them.
