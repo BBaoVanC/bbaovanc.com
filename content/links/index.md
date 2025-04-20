@@ -29,17 +29,18 @@ system I use on my website.
 ### Other Websites
 
 - [git.bbaovanc.com](https://git.bbaovanc.com) - mostly just mirrors of my GitHub repos
-- [plausible.bbaovanc.com](https://plausible.bbaovanc.com) - anonymous analytics on my website
+- [plausible.bbaovanc.com](https://plausible.bbaovanc.com/bbaovanc.com) -
+  anonymous analytics on my website
 - [share.boba.best](https://share.boba.best) - temporary file uploader
 - [status.bbaovanc.com](https://status.bbaovanc.com) - my status page
 
 ## My Projects
 
-- [smines](https://github.com/BBaoVanC/smines) - terminal-based minesweeper in C
 - [bobashare](https://github.com/BBaoVanC/bobashare) - simple file sharing
   server, runs https://share.boba.best
 - [bobascheme](https://github.com/BBaoVanC/bobascheme) - theme I use on my
-  terminal
+  terminal and editors
+- [smines](https://github.com/BBaoVanC/smines) - terminal-based minesweeper in C
 - [imgupload.py](https://github.com/imgupload-py/imgupload.py) - simple image
   uploading server written with Python Flask
 - [pynamegen](https://git.bbaovanc.com/bbaovanc/pynamegen) - name generator
