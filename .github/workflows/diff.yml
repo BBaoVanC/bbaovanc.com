@@ -8,12 +8,6 @@ jobs:
   compare:
     runs-on: ubuntu-latest
     steps:
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2
-        with:
-          hugo-version: latest
-          extended: true
-
       - name: Checkout previous (pull_request)
         if: github.event.pull_request
         uses: actions/checkout@v3
@@ -30,6 +24,16 @@ jobs:
           fetch-depth: 0
           ref: ${{ github.event.before }}
 
+      - name: Read HUGO_VERSION (previous)
+        id: hugo_version_old
+        run: echo "HUGO_VERSION=$(cat HUGO_VERSION)" >> $GITHUB_OUTPUT
+
+      - name: Setup Hugo (previous)
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: ${{ steps.hugo_version_old.outputs.HUGO_VERSION }}
+          extended: true
+
       - name: Build previous
         run: |
           hugo --printI18nWarnings --printPathWarnings -d old/
@@ -40,6 +44,16 @@ jobs:
           submodules: recursive
           fetch-depth: 0
           clean: false
+
+      - name: Read HUGO_VERSION (current)
+        id: hugo_version_new
+        run: echo "HUGO_VERSION=$(cat HUGO_VERSION)" >> $GITHUB_OUTPUT
+
+      - name: Setup Hugo (current)
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: ${{ steps.hugo_version_new.outputs.HUGO_VERSION }}
+          extended: true
 
       - name: Build current
         run: |
