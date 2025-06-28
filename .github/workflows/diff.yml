@@ -1,0 +1,58 @@
+name: Diff
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  compare:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: latest
+          extended: true
+
+      - name: Checkout previous (pull_request)
+        if: github.event.pull_request
+        uses: actions/checkout@v3
+        with:
+          submodules: recursive
+          fetch-depth: 0
+          ref: ${{ github.event.pull_request.base.ref }}
+
+      - name: Checkout previous (push)
+        if: github.event_name == 'push'
+        uses: actions/checkout@v3
+        with:
+          submodules: recursive
+          fetch-depth: 0
+          ref: ${{ github.event.before }}
+
+      - name: Build previous
+        run: |
+          hugo --printI18nWarnings --printPathWarnings -d old/
+
+      - name: Checkout current
+        uses: actions/checkout@v3
+        with:
+          submodules: recursive
+          fetch-depth: 0
+          clean: false
+
+      - name: Build current
+        run: |
+          hugo --printI18nWarnings --printPathWarnings -d new/
+
+      - name: Print filenames changed
+        run: diff -qr old/ new/ || true
+
+      - name: Save full diff
+        run: diff -r old/ new/ | tee changes.diff || true
+
+      - name: Upload full diff
+        uses: actions/upload-artifact@v4
+        with:
+          name: diff
+          path: changes.diff
