@@ -60,7 +60,7 @@ preferred due to its flexibility (ease to resize), but if you use
 
 ## Tutorial
 
-{{< include path="include/console.md" markdown=true >}}
+{{% include "snippets/console.md" %}}
 
 ### Step 1: Create the file
 

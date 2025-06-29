@@ -1,3 +1,7 @@
+---
+title: Console command prefix formatting explanation
+---
+
 {{< aside info >}}
 
 Commands in this article are prefixed them with a prompt symbol (either `$` or
