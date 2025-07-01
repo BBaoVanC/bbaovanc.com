@@ -3,4 +3,8 @@
     <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
 {{ end }}
 
+{{ with resources.Get "js/share-event.js" | fingerprint "sha512" }}
+    <script defer src="{{ .Permalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous"></script>
+{{ end }}
+
 <link rel="me" href="https://procursus.social/@bbaovanc" />
