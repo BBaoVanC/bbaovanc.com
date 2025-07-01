@@ -40,11 +40,11 @@ jobs:
           extended: true
 
       - name: Build
-        run: hugo --printI18nWarnings --printPathWarnings --baseURL "https://demo.bbaovanc.com/pull_request/${{ github.event.number }}" --buildDrafts
+        run: AUDIT=y ./build.sh --baseURL "https://demo.bbaovanc.com/pull_request/${{ github.event.number }}"
 
       - name: Compress
         run: |
-          time sudo ./compress.sh
+          time ./compress.sh
 
       - name: Setup SSH
         uses: kielabokkie/ssh-key-and-known-hosts-action@v1

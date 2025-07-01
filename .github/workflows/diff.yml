@@ -36,7 +36,7 @@ jobs:
 
       - name: Build previous
         run: |
-          hugo --printI18nWarnings --printPathWarnings -d old/
+          ./build.sh -d old/
 
       - name: Checkout current
         uses: actions/checkout@v3
@@ -57,7 +57,7 @@ jobs:
 
       - name: Build current
         run: |
-          hugo --printI18nWarnings --printPathWarnings -d new/
+          ./build.sh -d new/
 
       - name: Print filenames changed
         run: diff -qr old/ new/ || true

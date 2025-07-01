@@ -34,11 +34,11 @@ jobs:
           extended: true
 
       - name: Build
-        run: hugo --printI18nWarnings --printPathWarnings
+        run: ./build.sh
 
       - name: Compress
         run: |
-          time sudo ./compress.sh
+          time ./compress.sh
 
       - name: Setup SSH
         uses: kielabokkie/ssh-key-and-known-hosts-action@v1
