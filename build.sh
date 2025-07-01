@@ -1,10 +1,11 @@
-#!/bin/sh -x
+#!/bin/sh -ex
 
-rm -rf public/
-if [ -n "$AUDIT" ]; then
-    echo "Using audit command"
-    HUGO_MINIFY_TDEWOLFF_HTML_KEEPCOMMENTS=true HUGO_ENABLEMISSINGTRANSLATIONPLACEHOLDERS=true hugo --buildDrafts --printI18nWarnings --printPathWarnings $@
-else
-    echo "Using regular command"
-    hugo --printI18nWarnings --printPathWarnings $@
+[ -z "$DEST" ] && DEST="public/"
+rm -rf "$DEST"
+
+hugo --printI18nWarnings --printPathWarnings -d "$DEST" $@
+
+if [ -z "$NO_COMPRESS" ]; then
+    export DEST
+    ./compress.sh
 fi

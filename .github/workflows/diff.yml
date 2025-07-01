@@ -36,7 +36,7 @@ jobs:
 
       - name: Build previous
         run: |
-          ./build.sh -d old/
+          NO_SEARCH=y NO_COMPRESS=y DEST=old/ ./build.sh
 
       - name: Checkout current
         uses: actions/checkout@v3
@@ -57,7 +57,7 @@ jobs:
 
       - name: Build current
         run: |
-          ./build.sh -d new/
+          NO_SEARCH=y NO_COMPRESS=y DEST=new/ ./build.sh
 
       - name: Print filenames changed
         run: diff -qr old/ new/ || true

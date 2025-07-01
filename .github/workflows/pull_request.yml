@@ -40,11 +40,7 @@ jobs:
           extended: true
 
       - name: Build
-        run: AUDIT=y ./build.sh --baseURL "https://demo.bbaovanc.com/pull_request/${{ github.event.number }}"
-
-      - name: Compress
-        run: |
-          time ./compress.sh
+        run: ./build.sh --baseURL "https://demo.bbaovanc.com/pull_request/${{ github.event.number }}"
 
       - name: Setup SSH
         uses: kielabokkie/ssh-key-and-known-hosts-action@v1

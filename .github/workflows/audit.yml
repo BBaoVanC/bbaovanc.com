@@ -26,20 +26,5 @@ jobs:
           hugo-version: ${{ steps.hugo_version.outputs.HUGO_VERSION }}
           extended: true
 
-      - name: Build
-        run: |
-          AUDIT=y ./build.sh
-
-      # For the following steps, see
-      # https://discourse.gohugo.io/t/audit-your-published-site-for-problems/35184
-
-      # https://gohugo.io/troubleshooting/audit/
-      - name: Search for audit strings
-        run: |
-          ! grep -inorE "<\!-- raw HTML omitted -->|ZgotmplZ|\[i18n\]|\(<nil>\)|(&lt;nil&gt;)|hahahugo" public/
-
-      # see layouts/baseof.html in bobatheme
-      - name: Audit - YUZSIQGHE (non-overridden "main" block)
-        if: always()
-        run: |
-          ! grep -inorE "YUZSIQGHE" public/
+      - name: Run audit
+        run: ./audit.sh
