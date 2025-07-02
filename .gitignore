@@ -16,3 +16,7 @@ hugo.linux
 # End of https://www.toptal.com/developers/gitignore/api/hugo
 
 /.hugo_build.lock
+
+# used in demo.sh and staging.sh
+/public.demo/
+/public.staging/
