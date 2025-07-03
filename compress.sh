@@ -9,4 +9,4 @@ time printf '%s\n' "$files" | parallel $@ "echo 'GZIP {}' && gzip -fnk {}"
 time printf '%s\n' "$files" | parallel $@ "echo 'BROTLI {}' && brotli -fZk {}"
 # level 9 chosen based on `zstd -b1 -e22 public/blog/swapfile-guide/index.html`
 # gives a slightly better ratio than default (3)
-time printf '%s\n' "$files" | parallel $@ "echo 'ZSTD {}' && zstd -f -9 {}"
+time printf '%s\n' "$files" | parallel $@ "echo 'ZSTD {}' && zstd -q -f -9 {}"
