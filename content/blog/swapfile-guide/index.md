@@ -20,11 +20,8 @@ tags:
 
 ---
 
-This is a step-by-step tutorial on how to create or remove a swapfile on a Linux
-machine, and whether you should create swap space in the first place.
-
-Also included is the most correct `fstab` entry: most articles get this "wrong"
-(but it doesn't actually matter).
+A step-by-step tutorial on how to create or remove a swapfile on a Linux
+machine, and how to decide if you need one.
 
 <!--more-->
 
