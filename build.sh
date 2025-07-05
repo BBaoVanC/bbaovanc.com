@@ -5,6 +5,7 @@
 rm -rf "$DEST"
 
 hugo --printI18nWarnings --printPathWarnings -d "$DEST" $@
+echo "$(git branch --show-current)-$(git describe --match='' --always --abbrev=0 --dirty)" > "$DEST"/version.txt
 
 if [ -z "$NO_SEARCH" ]; then
     time pagefind --site "$DEST"
