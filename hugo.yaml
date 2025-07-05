@@ -40,7 +40,12 @@ related:
 
 params:
   author:
+    # used in archetypes
     name: bbaovanc
+
+  social:
+    # twitter:site field
+    twitter: bbaovanc
 
   # these are for the OpenGraph/Twitter embeds in Hugo
   description: My personal website
