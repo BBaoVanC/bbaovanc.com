@@ -23,9 +23,10 @@ resources:
 
   - name: listmonk-splash
     src: listmonk-splash.webp
-    title: >-
-      Dashboard on listmonk ---
-      [source](https://listmonk.app/static/images/splash.png)
+    params:
+      alt: >-
+        Dashboard on listmonk ---
+        [source](https://listmonk.app/static/images/splash.png)
 
 ---
 
@@ -51,7 +52,12 @@ newsletter/mailing list manager I looked at that doesn't have an overall old and
 ugly interface. Additionally, it has a live demo, so I was able to test it out
 and see if it would be able to meet my (relatively low) requirements.
 
-{{< figure src="listmonk-splash" >}}
+{{< figure
+  caption=`Dashboard on listmonk ---
+    [source](https://listmonk.app/static/images/splash.png)`
+>}}
+  {{< resource "listmonk-splash.webp" >}}
+{{< /figure >}}
 
 I also tried out [GNU Mailman 3](https://www.list.org/) about a year ago.
 However, I could not get it to integrate cleanly with my email
@@ -71,7 +77,7 @@ I ended up writing my own template for listmonk from scratch, based on the CSS
 used in [bobatheme](https://github.com/BBaoVanC/bobatheme), the theme that my
 website uses. Here's a screenshot of how it currently looks:
 
-{{< figure src="feature" >}}
+{{< figure src="feature" />}}
 
 ## Signing up
 

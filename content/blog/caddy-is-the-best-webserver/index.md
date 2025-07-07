@@ -25,11 +25,6 @@ resources:
       Image source:
       [Caddy](https://caddyserver.com/resources/images/caddy-logo.svg)
 
-  - name: caddy-browse
-    src: caddy-browse.webp
-    title: >-
-      Caddy's gorgeous directory list page.
-
 ---
 
 After switching from NGINX to Caddy on all of my websites, I have come to the
@@ -219,7 +214,9 @@ thousand times better.
 Coincidentally, it matches the theme of my website very well, so I have to put a
 border around the image.
 
-{{< figure src="caddy-browse" >}}
+{{< figure "Caddy's gorgeous directory list page." >}}
+  {{< resource "caddy-browse" >}}
+{{< /figure >}}
 
 
 [^hostname-requirements]: For the rules on what domains have automatic HTTPS by
