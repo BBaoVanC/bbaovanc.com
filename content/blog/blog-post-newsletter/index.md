@@ -39,8 +39,8 @@ I decided that I didn't really want to deal with the extra work of managing a
 newsletter so I've removed it. (I didn't actually get any sign-ups).
 {{< /aside >}}
 
-**See the ["Signing Up" section]({{< ref "#signing-up" >}}) for instructions on
-how to sign up for the newsletter.**
+~~**See the ["Signing Up" section]({{< ref "#signing-up" >}}) for instructions
+on how to sign up for the newsletter.**~~
 
 ## Choosing the right mailing list manager
 
@@ -80,14 +80,16 @@ I decided that I didn't really want to deal with the extra work of managing a
 newsletter so I've removed it. (I didn't actually get any sign-ups anyways.)
 {{< /aside >}}
 
-You can sign up to get emails about new posts on the [newsletter signup form
-here](https://lists.bbaovanc.com/subscription/form). Make sure the box next to
-the list labeled `bbaovanc.com Blog Posts` is checked. You'll need to provide an
-email address, and optionally a nickname (or your real name if you want).
+For posterity, here's the old instructions.
 
-Right now there's only one list with public signup enabled, but that may change
-if you're reading this in the future. In that case, you can sign up for as many
-or as few lists as you want.
+> You can sign up to get emails about new posts on the [newsletter signup form
+> here](https://lists.bbaovanc.com/subscription/form). Make sure the box next to
+> the list labeled `bbaovanc.com Blog Posts` is checked. You'll need to provide
+> an email address, and optionally a nickname (or your real name if you want).
+>
+> Right now there's only one list with public signup enabled, but that may
+> change if you're reading this in the future. In that case, you can sign up for
+> as many or as few lists as you want.
 
 
 
