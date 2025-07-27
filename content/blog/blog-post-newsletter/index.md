@@ -78,7 +78,6 @@ website uses. Here's a screenshot of how it currently looks:
 {{< aside warning >}}
 I decided that I didn't really want to deal with the extra work of managing a
 newsletter so I've removed it. (I didn't actually get any sign-ups anyways.)
-{{< /aside >}}
 
 For posterity, here's the old instructions.
 
@@ -90,6 +89,8 @@ For posterity, here's the old instructions.
 > Right now there's only one list with public signup enabled, but that may
 > change if you're reading this in the future. In that case, you can sign up for
 > as many or as few lists as you want.
+
+{{< /aside >}}
 
 
 
