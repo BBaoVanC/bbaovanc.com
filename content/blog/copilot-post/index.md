@@ -18,7 +18,7 @@ tags:
 series:
   - github-copilot-experiments
 
-_build:
+build:
   list: never
 
 ---
