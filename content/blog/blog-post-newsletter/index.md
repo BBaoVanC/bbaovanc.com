@@ -20,12 +20,22 @@ resources:
   - name: feature
     src: listmonk-bobatheme-template.webp
     title: My custom newsletter template based on my website's custom theme.
+    params:
+      alt: >-
+        Screenshot of an example newsletter email. It has a similar theme to my
+        website, and contains two example paragraphs from my article on the
+        Discord edited message trick. In contrast to most newsletters, the
+        footer and its unsubscribe button is easily legible.
 
-  - name: listmonk-splash
-    src: listmonk-splash.webp
+  - src: listmonk-splash.webp
     title: >-
-      Dashboard on listmonk ---
-      [source](https://listmonk.app/static/images/splash.png)
+        Dashboard on listmonk ---
+        [source](https://listmonk.app/static/images/splash.png)
+    params:
+      alt: >-
+        Screenshot of listmonk admin panel. There are statistics and graphs
+        showing views, clicks, total subscribers, caompaigns, total messages
+        sent, and total lists.
 
 ---
 
@@ -51,7 +61,7 @@ newsletter/mailing list manager I looked at that doesn't have an overall old and
 ugly interface. Additionally, it has a live demo, so I was able to test it out
 and see if it would be able to meet my (relatively low) requirements.
 
-{{< figure src="listmonk-splash" >}}
+{{< figure src="listmonk-splash.webp" />}}
 
 I also tried out [GNU Mailman 3](https://www.list.org/) about a year ago.
 However, I could not get it to integrate cleanly with my email
@@ -71,7 +81,7 @@ I ended up writing my own template for listmonk from scratch, based on the CSS
 used in [bobatheme](https://github.com/BBaoVanC/bobatheme), the theme that my
 website uses. Here's a screenshot of how it currently looks:
 
-{{< figure src="feature" >}}
+{{< figure src="feature" />}}
 
 ## Signing up
 

@@ -19,17 +19,14 @@ tags:
 resources:
   - name: feature
     src: youtube-url.webp
-    title: YouTube URL
+    title: Example YouTube URL
+    params:
+      alt: >-
+        Screenshot of a Firefox address bar. It contains the youtube.com link
+        mentioned in the body of this article.
 
   - name: mdn-url-parameters
     src: mdn-url-parameters@x2.png
-    title: >-
-      [What is a
-      URL?](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_is_a_URL#parameters)
-      by [Mozilla
-      Contributors](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/What_is_a_URL/contributors.txt)
-      is licensed under [CC-BY-SA
-      2.5](https://creativecommons.org/licenses/by-sa/2.5/)
 
 ---
 
@@ -52,7 +49,15 @@ Query parameters can be added to a URL just by suffixing it with something like
 to `else`. Note how the first parameter is prefixed with `?`, and then the
 following parameters are separated with `&`.
 
-{{< figure src="mdn-url-parameters" >}}
+{{< figure src="mdn-url-parameters" caption=`
+  [What is a URL?][what-is-url] by [Mozilla Contributors][moz-contribs] is
+  licensed under [CC-BY-SA 2.5][cc-by-sa-2.5]
+
+  [what-is-url]: https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_is_a_URL#parameters
+  [moz-contribs]: https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/What_is_a_URL/contributors.txt
+  [cc-by-sa-2.5]: https://creativecommons.org/licenses/by-sa/2.5/
+`
+/>}}
 
 See the [page on the Mozilla Developer
 Docs](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_is_a_URL)

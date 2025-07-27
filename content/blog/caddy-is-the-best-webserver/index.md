@@ -21,14 +21,21 @@ tags:
 resources:
   - name: feature
     src: caddy.webp
+    params:
+      alt:
+        Caddy's official logo
     title: >-
       Image source:
       [Caddy](https://caddyserver.com/resources/images/caddy-logo.svg)
 
-  - name: caddy-browse
-    src: caddy-browse.webp
-    title: >-
-      Caddy's gorgeous directory list page.
+  - src: caddy-browse.webp
+    params:
+      alt: >-
+        Screenshot of a simple, dark-themed webpage showing a directory listing.
+        There is a filter/search box available near the top left. There
+        are five folders: "a", "epicdiscord", "md", "parkour", and "test". There
+        is one file named "upload.html". There are additional columns for size
+        and modification date. The footer says "Served with Caddy".
 
 ---
 
@@ -219,7 +226,7 @@ thousand times better.
 Coincidentally, it matches the theme of my website very well, so I have to put a
 border around the image.
 
-{{< figure src="caddy-browse" >}}
+{{< figure src="caddy-browse.webp" caption="Caddy's gorgeous directory list page." />}}
 
 
 [^hostname-requirements]: For the rules on what domains have automatic HTTPS by
