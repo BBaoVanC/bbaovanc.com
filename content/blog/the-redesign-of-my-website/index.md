@@ -75,9 +75,9 @@ pull requests.
 Every pull request has its own preview built for it using GitHub Actions, which
 is linked in a comment, and shown as a deployment on the pull request.
 
-{{< figure src="actions-comment" >}}
+{{< figure src="actions-comment" />}}
 
-{{< figure src="deployment" >}}
+{{< figure src="deployment" />}}
 
 ## Translations
 

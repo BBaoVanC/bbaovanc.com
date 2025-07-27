@@ -21,6 +21,10 @@ resources:
   - name: feature
     src: example.webp
     title: Example image
+    params:
+      alt: >-
+        Discord screenshot showing a message from "bbaovanc" at 4:11 PM, which
+        says "example1 (edited) example2"
 
 ---
 

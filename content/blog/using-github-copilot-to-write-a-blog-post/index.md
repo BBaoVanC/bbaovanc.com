@@ -48,13 +48,13 @@ That turned out to be a great idea, and led to the creation of this blog post.
 After using Copilot as an encyclopedia, I got an idea. What if I used GitHub
 Copilot to generate ideas?
 
-{{< figure src="print-a-news-article" >}}
+{{< figure src="print-a-news-article" />}}
 
 I decided to take it a step further and set the language to Markdown. I started
 writing out the basic structure of a blog post on my website and let it
 autocomplete.
 
-{{< figure src="feature" >}}
+{{< figure src="feature" />}}
 
 I'm not quite sure who Kurt A. Smith is, why Copilot chose April Fools 2020 for
 the date, or why it was so adamant on writing a blog post about itself. What I

@@ -25,13 +25,6 @@ resources:
     src: dashboard-performance-graph.webp
     title: Picture of the `Performance` section on the Lighthouse CI dashboard
 
-  - name: youtube-embed-performance-comparison
-    src: youtube-embed-performance-comparison.webp
-    title: >-
-      Performance hit caused by adding a YouTube embed. You can see the
-      comparison itself [on this comparison
-      page](https://lhci.bbaovanc.com/app/projects/bbaovanc.com/compare/01d2064b6fac?baseUrl=https%3A%2F%2Flocalhost%2Fblog%2Fthe-redesign-of-my-website%2F&compareUrl=https%3A%2F%2Flocalhost%2Fblog%2Fyoutube-url-structures-you-should-know%2F&baseBuild=01d2064b-6fac-40df-b4e6-373037ae1f9e).
-
 ---
 
 The other day I set up automatic testing of my website using [Google Chrome
@@ -122,7 +115,12 @@ where everything is throttled down a bunch, so the performance impact is more
 clear. Below is a screenshot of the difference in score between my blog post
 with a YouTube embed and a similarly sized blog post which has no video.
 
-{{< figure src="youtube-embed-performance-comparison" >}}
+{{< figure src="youtube-embed-performance-comparison.webp" caption=`
+  Performance hit caused by adding a YouTube embed. You can see the
+  comparison itself [on this comparison
+  page](https://lhci.bbaovanc.com/app/projects/bbaovanc.com/compare/01d2064b6fac?baseUrl=https%3A%2F%2Flocalhost%2Fblog%2Fthe-redesign-of-my-website%2F&compareUrl=https%3A%2F%2Flocalhost%2Fblog%2Fyoutube-url-structures-you-should-know%2F&baseBuild=01d2064b-6fac-40df-b4e6-373037ae1f9e).
+`
+/>}}
 
 I can probably optimize this a little by making a copy of the built-in Hugo
 YouTube shortcode, and modifying it to defer the loading of the remote scripts.

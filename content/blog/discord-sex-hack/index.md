@@ -24,43 +24,32 @@ resources:
     src: example.webp
     title: Result after sending a GIF and then sending `s/e/x`.
 
-  - name: default-sex
-    src: default-sex.webp
+  - src: default-sex.webp
     title: Fallback image on `txnor.com`
 
-  - name: double-sex
-    src: double-sex.webp
+  - src: double-sex.webp
     title: Resulting image after typing `s/e/x` a second time.
 
-  - name: chess
-    src: chess.webp
+  - src: chess.webp
     title: This happens once you type `s/w/ag` after having done `s/e/x`.
 
-  - name: sword
-    src: sword.webp
+  - src: sword.webp
     title: This happens when you type `s/w/ord` after having done `s/e/x`.
-  - name: sword-atk
-    src: sword-atk.webp
+  - src: sword-atk.webp
     title: This happens when you type `s/d/dATK`
-  - name: sword-def
-    src: sword-def.webp
+  - src: sword-def.webp
     title: This happens when you type `s/d/dDEF`
-  - name: sword-hug
-    src: sword-hug.webp
+  - src: sword-hug.webp
     title: This happens when you type `s/d/dHUG`
-  - name: sword-win
-    src: sword-win.webp
+  - src: sword-win.webp
     title: Win screen on the `s/w/ord` game.
-  - name: sword-lose
-    src: sword-lose.webp
+  - src: sword-lose.webp
     title: Lose screen on the `s/w/ord` game.
 
-  - name: 6969th
-    src: 6969th.webp
+  - src: 6969th.webp
     title: This happens on average (since it's randomized) every 6070th use.
 
-  - name: math-challenge
-    src: math-challenge.webp
+  - src: math-challenge.webp
     title: Math challenge example
 
 ---
@@ -174,7 +163,7 @@ your user agent set to anything containing `Discord`
 If you go to any URL on `txnor.com` that doesn't fit one of the existing
 patterns/games, then it returns this fallback image:
 
-{{< figure src="default-sex" >}}
+{{< figure src="default-sex.webp" />}}
 
 ## Extra features
 
@@ -182,7 +171,7 @@ patterns/games, then it returns this fallback image:
 
 If you then run `s/e/x` a second time, then it changes to a different image:
 
-{{< figure src="double-sex" >}}
+{{< figure src="double-sex.webp" />}}
 
 This works in a simple way as well. The next `e` that appears in the URL is
 inside `/view/`. So, after typing `s/e/x` a second time, the URL becomes:
@@ -196,7 +185,7 @@ inside `/view/`. So, after typing `s/e/x` a second time, the URL becomes:
 Another cool feature is that you can play chess by typing `s/w/ag` after typing
 the initial message of `s/e/x`.
 
-{{< figure src="chess" >}}
+{{< figure src="chess.webp" />}}
 
 ### `s/w/ord`
 
@@ -208,34 +197,34 @@ Here are a few example images:
 
 #### Main `s/w/ord` screen
 
-{{< figure src="sword" >}}
+{{< figure src="sword.webp" />}}
 
 #### ATK command
 
-{{< figure src="sword-atk" >}}
+{{< figure src="sword-atk.webp" />}}
 
 #### DEF command
 
-{{< figure src="sword-def" >}}
+{{< figure src="sword-def.webp" />}}
 
 #### HUG command
 
-{{< figure src="sword-hug" >}}
+{{< figure src="sword-hug.webp" />}}
 
 #### Win screen
 
-{{< figure src="sword-win" >}}
+{{< figure src="sword-win.webp" />}}
 
 #### Lose screen
 
-{{< figure src="sword-lose" >}}
+{{< figure src="sword-lose.webp" />}}
 
 ### 6969th Discord Sexer
 
 If you happen to get a one in 6970 chance, it will instead return
 a special image:
 
-{{< figure src="6969th" >}}
+{{< figure src="6969th.webp" />}}
 
 [6969th-source]: https://github.com/rebane2001/txnor-server/blob/26c7c279b0b4668c8a3b061692d83c507aeac7c5/sex.py#L130-L133
 
@@ -265,7 +254,7 @@ only letters, numbers, underscores or hyphens.
 
 [math-challenge-regex]: https://regex101.com/r/ddEkML/1
 
-{{< figure src="math-challenge" >}}
+{{< figure src="math-challenge.webp" />}}
 
 What's special is that the math challenge is [set to not be
 cached][math-challenge-caching]. That means that it
