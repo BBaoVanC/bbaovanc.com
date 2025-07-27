@@ -20,7 +20,7 @@ tags:
 resources:
   - name: feature
     src: example.mov
-    title: Example Video
+    title: Demonstration Video
 
 ---
 
