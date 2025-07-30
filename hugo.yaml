@@ -43,6 +43,13 @@ params:
     # used in archetypes
     name: bbaovanc
 
+
+  # https://microformats.org/wiki/rel-me
+  # https://indieweb.org/rel-me
+  # i.e. Mastodon domain verification
+  rel_me:
+    - https://procursus.social/@bbaovanc
+
   social:
     # twitter:site field
     twitter: bbaovanc
