@@ -2,7 +2,7 @@
 
 title: Youtube URL structures you should know
 date: 2021-10-30T21:20:38-05:00
-lastmod: 2023-01-16T21:04:09-06:00
+lastmod: 2025-01-15T06:57:00+00:00
 toc: true
 comments: true
 
@@ -124,6 +124,27 @@ For example, the direct link to the playlist in the two example links I used is:
 - https://youtube.com/playlist?list=PLwxnUUM01nt2nMh9DPq09e6fIDbumybgt
 
 As far as I know, it's not possible to link to a playlist using `youtu.be`.
+
+## Search query parameter (`pp=`)
+
+YouTube URLs sometimes include a `pp=` parameter that indicates the search query
+that was used to find the video. The value after `pp=` is Base64 encoded and
+contains the original search terms. This parameter is typically added
+automatically when you navigate to a video from search results.
+
+For example, a URL might look like:
+
+```text
+https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUJcmljayByb2xs
+```
+
+In this case, `ygUJcmljayByb2xs` is the Base64 encoded representation of the
+search query that led to this video. If you decode this Base64 string, you
+would get the original search terms.
+
+This parameter helps YouTube track how users discover content and can be useful
+for analytics purposes. However, it's not required for the video to play - you
+can remove the `pp=` parameter and the video will still work normally.
 
 ## Further reading
 
