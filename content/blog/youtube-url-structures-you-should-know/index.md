@@ -2,7 +2,7 @@
 
 title: Youtube URL structures you should know
 date: 2021-10-30T21:20:38-05:00
-lastmod: 2025-01-15T06:57:00+00:00
+lastmod: 2025-08-15T07:29:09+00:00
 toc: true
 comments: true
 
