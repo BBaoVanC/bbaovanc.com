@@ -41,13 +41,16 @@ system I use on my website.
 - [bobascheme](https://github.com/BBaoVanC/bobascheme) - theme I use on my
   terminal and editors
 - [smines](https://github.com/BBaoVanC/smines) - terminal-based minesweeper in C
+
+Older, lesser maintained projects:
+
 - [imgupload.py](https://github.com/imgupload-py/imgupload.py) - simple image
   uploading server written with Python Flask
-- [pynamegen](https://git.bbaovanc.com/bbaovanc/pynamegen) - name generator
+- [pynamegen](https://github.com/BBaoVanC/pynamegen) - name generator
   written in Python
-  - [libnamegen](https://git.bbaovanc.com/bbaovanc/libnamegen)
-  - [liblistloader](https://git.bbaovanc.com/bbaovanc/liblistloader)
-  - [libprogress](https://git.bbaovanc.com/bbaovanc/libprogress)
+  - [libnamegen](https://github.com/BBaoVanC/libnamegen)
+  - [liblistloader](https://github.com/BBaoVanC/liblistloader)
+  - [libprogress](https://github.com/BBaoVanC/libprogress)
 - [RokuRemote](https://github.com/BBaoVanC/RokuRemote) - keyboard-based remote
   control for Roku
 
