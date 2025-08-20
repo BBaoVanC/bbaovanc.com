@@ -54,7 +54,7 @@ following parameters are separated with `&`.
   licensed under [CC-BY-SA 2.5][cc-by-sa-2.5]
 
   [what-is-url]: https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_is_a_URL#parameters
-  [moz-contribs]: https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/What_is_a_URL/contributors.txt
+  [moz-contribs]: https://developer.mozilla.org/en-US/docs/Learn_web_development/Howto/Web_mechanics/What_is_a_URL/contributors.txt
   [cc-by-sa-2.5]: https://creativecommons.org/licenses/by-sa/2.5/
 `
 />}}
