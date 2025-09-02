@@ -26,6 +26,10 @@ jobs:
       - name: Read HUGO_VERSION
         id: hugo_version
         run: echo "HUGO_VERSION=$(cat HUGO_VERSION)" >> $GITHUB_OUTPUT
+      - name: Read PAGEFIND_VERSION
+        id: pagefind_version
+        # put this one in the env so it's easier to call in the shell
+        run: echo "PAGEFIND_VERSION=$(cat PAGEFIND_VERSION)" >> $GITHUB_ENV
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
@@ -37,7 +41,8 @@ jobs:
         run: |
           mkdir -p ~/.local/bin/
           echo "$HOME/.local/bin" >> "$GITHUB_PATH"
-          curl -L https://github.com/Pagefind/pagefind/releases/download/v1.3.0/pagefind-v1.3.0-x86_64-unknown-linux-musl.tar.gz | tar zxv -C ~/.local/bin pagefind
+          curl -L "https://github.com/Pagefind/pagefind/releases/download/$PAGEFIND_VERSION/pagefind-$PAGEFIND_VERSION-x86_64-unknown-linux-musl.tar.gz" |
+            tar zxv -C ~/.local/bin pagefind
 
       - name: Build
         run: ./build.sh
