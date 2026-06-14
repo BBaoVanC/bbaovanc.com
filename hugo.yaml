@@ -94,7 +94,7 @@ privacy:
 
 languages:
   en:
-    languageName: English
+    label: English
     title: bbaovanc's Website
     weight: 1
     menu:
