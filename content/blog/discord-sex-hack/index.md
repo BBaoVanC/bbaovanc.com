@@ -2,7 +2,7 @@
 
 title: How the "Discord sex" (`s/e/x`) hack works
 date: 2022-05-11T21:11:17-05:00
-lastmod: 2022-09-24T14:56:05-05:00
+lastmod: 2026-07-04T22:53:02-05:00
 toc: true
 comments: true
 
@@ -63,6 +63,13 @@ Here's how it works.
 {{< aside info >}}
 Credit goes to Rebane2001 (not me) for making this trick, and setting it up on
 `txnor.com`.
+{{< /aside >}}
+
+{{< aside note >}}
+On June 30, 2026, Google killed the Tenor GIF API, causing the Discord GIF
+picker to switch to Klipy. As a result, GIFs chosen from the picker today won't
+work with the Discord sex hack. But if you've saved Tenor GIFs in your favorites and
+resend them now, they will still work.
 {{< /aside >}}
 
 ## The `sed` syntax
