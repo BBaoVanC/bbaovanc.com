@@ -142,6 +142,14 @@ For example, the direct link to the playlist in the two example links I used is:
 
 As far as I know, it's not possible to link to a playlist using `youtu.be`.
 
+There is also an `index=` parameter used when playing through a playlist, which
+keeps track of the current position in the playlist you're at. Here's an example
+using the video at the beginning of this section, but with the `index=`
+parameter included like YouTube automatically does (note the added `&index=166`
+at the end):
+
+- https://www.youtube.com/watch?v=47dtFZ8CFo8&list=PLwxnUUM01nt2nMh9DPq09e6fIDbumybgt&index=166
+
 ## Further reading
 
 [This Stack Exchange answer](https://webapps.stackexchange.com/a/9881) is a good
