@@ -63,6 +63,23 @@ See the [page on the Mozilla Developer
 Docs](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_is_a_URL)
 for more information on the anatomy of a URL.
 
+## Privacy parameters
+
+**I'm putting this near the top as I think it's important.** Around 2021, the
+`pp=` parameter was added, which contains the search term used to find the
+video, and a few more bits that are not known. Around 2023, the tracking
+parameters were extended with the `si=` parameter, which contains a source
+identifier. When you click a link with the parameter, it allows YouTube to
+connect you to the person who shared the link. Notably, this includes
+information to identify *your* YouTube channel every time you share a link.
+Sometimes when somebody clicks on a link with the `si=` parameter intact, they
+are shown your YouTube channel, similar to sites like Instagram Reels. The `si=`
+parameter was replaced with `is=` somewhere in early 2026, but it appears to
+have the same function.
+
+For privacy reasons, I would recommend **removing** the `si=` and `is=` parameters
+any time you share a YouTube link.
+
 ## Linking to a video
 
 Here's the video I'll be using as an example:
