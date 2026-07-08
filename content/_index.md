@@ -7,6 +7,9 @@ description: >-
   theme named bobatheme, which is available at
   https://github.com/BBaoVanC/bobatheme.
 
+aliases:
+  - /contact
+
 ---
 
 ## My Website

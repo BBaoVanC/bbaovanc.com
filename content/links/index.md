@@ -5,6 +5,9 @@ menu: main
 toc: true
 comments: true
 
+aliases:
+  - /blog/links/
+
 authors:
   - bbaovanc
 

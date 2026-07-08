@@ -6,6 +6,9 @@ lastmod: 2021-10-19T14:02:08-05:00
 toc: false
 comments: true
 
+aliases:
+  - /blog/sed-text-substitution-in-discord/
+
 authors:
   - bbaovanc
 
