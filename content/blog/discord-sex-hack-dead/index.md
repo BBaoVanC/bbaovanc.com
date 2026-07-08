@@ -2,7 +2,7 @@
 
 title: "The Discord Sex Hack is dead. (or: 69 to 67)"
 date: 2026-07-04T20:29:27-05:00
-lastmod: 2026-07-04T22:56:27-05:00
+lastmod: 2026-07-08T01:23:50-05:00
 toc: true
 comments: true
 
@@ -48,15 +48,25 @@ results or the trending categories in the Discord GIF picker.
 
 <!--more-->
 
+## Six-seven
+
 Klipy has an "i" in the middle. So, a new hack has been created by
 [kip (limes.pink)](https://limes.pink), called
 [s/i/x-seven](https://limes.pink/s/i/x-seven). All you have to do is share a new
 Klipy GIF today using the GIF picker and type `s/i/x-seven`!
 
-{{< see-also "discord-sex-hack" >}}
-
 As of now, I'm not aware of any special easter eggs in the new `s/i/x-seven`
 hack, but I will update this post if they are revealed.
+
+## Six hack
+
+In addition to the new `s/i/x-seven` hack mentioned above, Rebane has also
+[updated the old `s/e/x` hack][updated-klxpy] using the `klxpy.com` domain, so
+you can use all the same hacks you're familiar with on `s/e/x`.
+
+[updated-klxpy]: https://www.reddit.com/r/discordapp/comments/1ukmx0r/since_discord_migrated_over_to_klipy_i_upgraded/
+
+{{< see-also "discord-sex-hack" >}}
 
 ## Epilogue
 
